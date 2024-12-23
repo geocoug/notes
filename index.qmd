@@ -18,7 +18,7 @@ about:
       href: https://geocoug.com
 ---
 
-This site is designed to be my personal curated toolkit. It is where I store useful information, resources, tools, and code snippets I use on a regular basis.
+This site is my personal toolkit - a collection of insights, resources, and inspirations that keep me productive and creative. You will find a wide array of content from development tips and code snippets to workout plans and recipes.
 
 ---
 

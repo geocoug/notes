@@ -50,7 +50,7 @@ Steps are pulled from a [Digital Ocean tutorial](https://www.digitalocean.com/co
     su - ${USER}
     ```
 
-1. Verify user is now aded to the docker group.
+1. Verify user is now added to the docker group.
 
     ```sh
     groups

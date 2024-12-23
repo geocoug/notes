@@ -84,7 +84,7 @@ check all new commits: `git log`
 
 ### Directory
 
-`git rm --cahced -r dir/`
+`git rm --cached -r dir/`
 
 ## pre-commit
 

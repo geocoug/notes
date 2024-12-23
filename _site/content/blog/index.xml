@@ -6,21 +6,22 @@
       version="2.0">
 <channel>
 <title>Toolkit</title>
-<link>http://toolkit.goecoug.com/content/blog/index.html</link>
+<link>http://toolkit.goecoug.com/content/blog/</link>
 <atom:link href="http://toolkit.goecoug.com/content/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Space for tips, commentary, and miscellaneous content.</description>
 <image>
 <url>https://resilienteducator.com/wp-content/uploads/2015/09/Revising-With-Pictures-How-Word-Clouds-Help-Students-Become-Better-Writers.jpg</url>
 <title>Toolkit</title>
-<link>http://toolkit.goecoug.com/content/blog/index.html</link>
+<link>http://toolkit.goecoug.com/content/blog/</link>
 </image>
-<generator>quarto-1.3.450</generator>
+<generator>quarto-1.6.39</generator>
 <lastBuildDate>Sat, 28 Oct 2023 07:00:00 GMT</lastBuildDate>
 <item>
   <title>Infographics</title>
   <dc:creator>Caleb Grant</dc:creator>
-  <link>http://toolkit.goecoug.com/content/blog/posts/infographics/index.html</link>
+  <link>http://toolkit.goecoug.com/content/blog/posts/infographics/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -49,7 +50,6 @@
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-
 <table class="quarto-listing-table table">
 <thead>
 <tr>
@@ -303,7 +303,6 @@
 </td>
 </tr>
 </tbody>
-
 </table>
 <div class="listing-no-matching d-none">
 No matching items
@@ -315,15 +314,16 @@ No matching items
 
  ]]></description>
   <category>Templates</category>
-  <guid>http://toolkit.goecoug.com/content/blog/posts/infographics/index.html</guid>
+  <guid>http://toolkit.goecoug.com/content/blog/posts/infographics/</guid>
   <pubDate>Sat, 28 Oct 2023 07:00:00 GMT</pubDate>
   <media:content url="http://toolkit.goecoug.com/static/logo.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
   <title>Linux Filesystem</title>
   <dc:creator>Caleb Grant</dc:creator>
-  <link>http://toolkit.goecoug.com/content/blog/posts/linux-filesystem/index.html</link>
+  <link>http://toolkit.goecoug.com/content/blog/posts/linux-filesystem/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -334,15 +334,16 @@ No matching items
 
  ]]></description>
   <category>Linux</category>
-  <guid>http://toolkit.goecoug.com/content/blog/posts/linux-filesystem/index.html</guid>
+  <guid>http://toolkit.goecoug.com/content/blog/posts/linux-filesystem/</guid>
   <pubDate>Sat, 28 Oct 2023 07:00:00 GMT</pubDate>
   <media:content url="http://toolkit.goecoug.com/static/logo.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
   <title>Data Engineering Blogs</title>
   <dc:creator>Caleb Grant</dc:creator>
-  <link>http://toolkit.goecoug.com/content/blog/posts/data-engineering-blogs/index.html</link>
+  <link>http://toolkit.goecoug.com/content/blog/posts/data-engineering-blogs/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -410,15 +411,16 @@ No matching items
 
  ]]></description>
   <category>Blog</category>
-  <guid>http://toolkit.goecoug.com/content/blog/posts/data-engineering-blogs/index.html</guid>
+  <guid>http://toolkit.goecoug.com/content/blog/posts/data-engineering-blogs/</guid>
   <pubDate>Mon, 09 Oct 2023 07:00:00 GMT</pubDate>
   <media:content url="http://toolkit.goecoug.com/static/logo.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
-  <title>DIFFing PDF and DOCX files</title>
+  <title>DIFFind PDF and DOCX files</title>
   <dc:creator>Caleb Grant</dc:creator>
-  <link>http://toolkit.goecoug.com/content/blog/posts/diff-pdf-and-docx/index.html</link>
+  <link>http://toolkit.goecoug.com/content/blog/posts/diff-pdf-and-docx/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -486,15 +488,16 @@ font-style: inherit;">--word-diff</span> file1.txt file2.txt</span></code></pre>
  ]]></description>
   <category>Linux</category>
   <category>Utility</category>
-  <guid>http://toolkit.goecoug.com/content/blog/posts/diff-pdf-and-docx/index.html</guid>
+  <guid>http://toolkit.goecoug.com/content/blog/posts/diff-pdf-and-docx/</guid>
   <pubDate>Tue, 08 Aug 2023 07:00:00 GMT</pubDate>
   <media:content url="http://toolkit.goecoug.com/static/logo.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
   <title>Quarto Tabsets</title>
   <dc:creator>Caleb Grant</dc:creator>
-  <link>http://toolkit.goecoug.com/content/blog/posts/quarto-tabsets/index.html</link>
+  <link>http://toolkit.goecoug.com/content/blog/posts/quarto-tabsets/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -548,15 +551,16 @@ font-style: inherit;">H</span></span></code></pre></div>
 
  ]]></description>
   <category>Quarto</category>
-  <guid>http://toolkit.goecoug.com/content/blog/posts/quarto-tabsets/index.html</guid>
+  <guid>http://toolkit.goecoug.com/content/blog/posts/quarto-tabsets/</guid>
   <pubDate>Mon, 07 Aug 2023 07:00:00 GMT</pubDate>
   <media:content url="http://toolkit.goecoug.com/static/logo.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
   <title>Changing your PostgreSQL password</title>
   <dc:creator>Caleb Grant</dc:creator>
-  <link>http://toolkit.goecoug.com/content/blog/posts/change-postgres-password/index.html</link>
+  <link>http://toolkit.goecoug.com/content/blog/posts/change-postgres-password/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -569,15 +573,16 @@ font-style: inherit;">H</span></span></code></pre></div>
 
  ]]></description>
   <category>PostgreSQL</category>
-  <guid>http://toolkit.goecoug.com/content/blog/posts/change-postgres-password/index.html</guid>
+  <guid>http://toolkit.goecoug.com/content/blog/posts/change-postgres-password/</guid>
   <pubDate>Tue, 11 Jul 2023 07:00:00 GMT</pubDate>
   <media:content url="http://toolkit.goecoug.com/static/logo.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
   <title>SFTP</title>
   <dc:creator>Caleb Grant</dc:creator>
-  <link>http://toolkit.goecoug.com/content/blog/posts/sftp/index.html</link>
+  <link>http://toolkit.goecoug.com/content/blog/posts/sftp/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -606,15 +611,16 @@ font-style: inherit;">get</span> {remote-path} {local-path}</span></code></pre><
 
  ]]></description>
   <category>Linux</category>
-  <guid>http://toolkit.goecoug.com/content/blog/posts/sftp/index.html</guid>
+  <guid>http://toolkit.goecoug.com/content/blog/posts/sftp/</guid>
   <pubDate>Fri, 07 Jul 2023 07:00:00 GMT</pubDate>
   <media:content url="http://toolkit.goecoug.com/static/logo.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
   <title>Mounting a Windows Share</title>
   <dc:creator>Caleb Grant</dc:creator>
-  <link>http://toolkit.goecoug.com/content/blog/posts/mounting-a-windows-share/index.html</link>
+  <link>http://toolkit.goecoug.com/content/blog/posts/mounting-a-windows-share/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -630,6 +636,7 @@ font-style: inherit;">&lt;</span>user<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">&gt;</span>/mnt/DataManagement <span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">&amp;&amp;</span> <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">\</span></span>
@@ -677,15 +684,16 @@ font-style: inherit;">//192.168.50.19/Transfer</span> /mnt/share/Q cifs credenti
 
  ]]></description>
   <category>Linux</category>
-  <guid>http://toolkit.goecoug.com/content/blog/posts/mounting-a-windows-share/index.html</guid>
+  <guid>http://toolkit.goecoug.com/content/blog/posts/mounting-a-windows-share/</guid>
   <pubDate>Wed, 05 Jul 2023 07:00:00 GMT</pubDate>
   <media:content url="http://toolkit.goecoug.com/static/logo.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
   <title>Git Merge</title>
   <dc:creator>Caleb Grant</dc:creator>
-  <link>http://toolkit.goecoug.com/content/blog/posts/git-merge/index.html</link>
+  <link>http://toolkit.goecoug.com/content/blog/posts/git-merge/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -708,9 +716,19 @@ font-style: inherit;">//192.168.50.19/Transfer</span> /mnt/share/Q cifs credenti
 <li><code>git checkout main</code></li>
 <li><code>git merge dev</code></li>
 </ol>
-<img src="http://toolkit.goecoug.com/content/blog/posts/git-merge/merge.png" class="img-fluid" alt="img"></li>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="http://toolkit.goecoug.com/content/blog/posts/git-merge/merge.png" class="img-fluid figure-img"></p>
+<figcaption>img</figcaption>
+</figure>
+</div></li>
 <li><p>Check the branch status: <code>git status</code></p>
-<img src="http://toolkit.goecoug.com/content/blog/posts/git-merge/status.png" class="img-fluid" alt="img"></li>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="http://toolkit.goecoug.com/content/blog/posts/git-merge/status.png" class="img-fluid figure-img"></p>
+<figcaption>img</figcaption>
+</figure>
+</div></li>
 <li><p>Evaluate the two files with a conflict (ie. <code>.gitignore</code> and <code>requirements.txt</code>) and reconcile issues, then <code>git add</code> when ready.</p></li>
 <li><p>Commit the changes: <code>git commit -m "merge @tnelson-integral dev branch with main"</code></p></li>
 <li><p>Push changes to the remote on GitHub: <code>git push origin main</code></p></li>
@@ -726,15 +744,16 @@ font-style: inherit;">//192.168.50.19/Transfer</span> /mnt/share/Q cifs credenti
 
  ]]></description>
   <category>Git</category>
-  <guid>http://toolkit.goecoug.com/content/blog/posts/git-merge/index.html</guid>
+  <guid>http://toolkit.goecoug.com/content/blog/posts/git-merge/</guid>
   <pubDate>Fri, 30 Jun 2023 07:00:00 GMT</pubDate>
   <media:content url="http://toolkit.goecoug.com/static/logo.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
   <title>Linux Permissions</title>
   <dc:creator>Caleb Grant</dc:creator>
-  <link>http://toolkit.goecoug.com/content/blog/posts/linux-permissions/index.html</link>
+  <link>http://toolkit.goecoug.com/content/blog/posts/linux-permissions/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -786,6 +805,7 @@ font-style: inherit;">//192.168.50.19/Transfer</span> /mnt/share/Q cifs credenti
 background-color: null;
 font-style: inherit;">sudo</span> mkdir /share <span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">&amp;&amp;</span> <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">\</span></span>
@@ -795,6 +815,7 @@ font-style: inherit;">sudo</span> chgrp <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">-R</span> staff /share <span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">&amp;&amp;</span> <span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">\ #</span> assign group</span>
@@ -804,6 +825,7 @@ font-style: inherit;">sudo</span> chmod <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">-R</span> g+w /share <span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">&amp;&amp;</span> <span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">\ #</span> permissions</span>
@@ -821,15 +843,16 @@ font-style: inherit;"># inherit permissions for newly created files/folders</spa
 
  ]]></description>
   <category>Linux</category>
-  <guid>http://toolkit.goecoug.com/content/blog/posts/linux-permissions/index.html</guid>
+  <guid>http://toolkit.goecoug.com/content/blog/posts/linux-permissions/</guid>
   <pubDate>Fri, 30 Jun 2023 07:00:00 GMT</pubDate>
   <media:content url="http://toolkit.goecoug.com/static/logo.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
   <title>Creating a Blog Post</title>
   <dc:creator>Caleb Grant</dc:creator>
-  <link>http://toolkit.goecoug.com/content/blog/posts/creating-a-post/index.html</link>
+  <link>http://toolkit.goecoug.com/content/blog/posts/creating-a-post/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -841,15 +864,16 @@ font-style: inherit;"># inherit permissions for newly created files/folders</spa
  ]]></description>
   <category>Quarto</category>
   <category>Blog</category>
-  <guid>http://toolkit.goecoug.com/content/blog/posts/creating-a-post/index.html</guid>
+  <guid>http://toolkit.goecoug.com/content/blog/posts/creating-a-post/</guid>
   <pubDate>Thu, 29 Jun 2023 07:00:00 GMT</pubDate>
   <media:content url="http://toolkit.goecoug.com/static/logo.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
   <title>Accessing Quarto Variables</title>
   <dc:creator>Caleb Grant</dc:creator>
-  <link>http://toolkit.goecoug.com/content/blog/posts/accessing-quarto-variables/index.html</link>
+  <link>http://toolkit.goecoug.com/content/blog/posts/accessing-quarto-variables/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -862,7 +886,7 @@ font-style: inherit;"># inherit permissions for newly created files/folders</spa
  ]]></description>
   <category>Quarto</category>
   <category>Variables</category>
-  <guid>http://toolkit.goecoug.com/content/blog/posts/accessing-quarto-variables/index.html</guid>
+  <guid>http://toolkit.goecoug.com/content/blog/posts/accessing-quarto-variables/</guid>
   <pubDate>Thu, 15 Jun 2023 07:00:00 GMT</pubDate>
   <media:content url="http://toolkit.goecoug.com/static/logo.svg" medium="image" type="image/svg+xml"/>
 </item>

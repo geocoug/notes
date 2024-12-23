@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="Load sleep data into PostgreSQL collected from the Sleep Cycle phone app">
 
-<title>Toolkit - Sleep Data</title>
+<title>Sleep Data – Toolkit</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -34,7 +34,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -73,19 +73,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-0626ff4d7a71b55c8707dcae1d04a9b6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-e25cc82807363e79c52e96bc8b7855f1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-cc62c3bb2915d631aed5c5273114e56f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-888a70d03101a4ade01c9fc78ea256cb.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": true,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -94,6 +99,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -110,57 +116,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../../../../static/logo.svg" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../../../../content/development/index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Development</span></a>
+    <a class="nav-link active" href="../../../../content/development/index.html" aria-current="page"> 
+<span class="menu-text">Development</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../content/recipes/index.html" rel="" target="">
- <span class="menu-text">Recipes</span></a>
+    <a class="nav-link" href="../../../../content/recipes/index.html"> 
+<span class="menu-text">Recipes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../content/workouts/index.html" rel="" target="">
- <span class="menu-text">Workouts</span></a>
+    <a class="nav-link" href="../../../../content/workouts/index.html"> 
+<span class="menu-text">Workouts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../content/blog/index.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../../../../content/blog/index.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../content/development/code/index.html">Code</a></li><li class="breadcrumb-item"><a href="../../../../content/development/code/notebooks/index.html">Notebooks</a></li><li class="breadcrumb-item"><a href="../../../../content/development/code/notebooks/sleep-data.html">Sleep Data</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../content/development/code/index.html">Code</a></li><li class="breadcrumb-item"><a href="../../../../content/development/code/notebooks/index.html">Notebooks</a></li><li class="breadcrumb-item"><a href="../../../../content/development/code/notebooks/sleep-data.html">Sleep Data</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
     </div>
   </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -173,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../../../../content/development/code/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Code</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -230,7 +236,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../../../../content/development/code/notebooks/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Notebooks</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -301,9 +307,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Tools</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -338,7 +344,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../../../../content/development/server/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Server</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -366,7 +372,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -377,12 +383,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#create-dataframe" id="toc-create-dataframe" class="nav-link" data-scroll-target="#create-dataframe">Create DataFrame</a></li>
   <li><a href="#create-db-safe-column-names" id="toc-create-db-safe-column-names" class="nav-link" data-scroll-target="#create-db-safe-column-names">Create DB Safe Column Names</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/geocoug/toolkit/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/geocoug/toolkit/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../content/development/code/index.html">Code</a></li><li class="breadcrumb-item"><a href="../../../../content/development/code/notebooks/index.html">Notebooks</a></li><li class="breadcrumb-item"><a href="../../../../content/development/code/notebooks/sleep-data.html">Sleep Data</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Sleep Data</h1>
 </div>
@@ -402,31 +408,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
 
+
 <p><a href="https://www.sleepcycle.com/">Sleep Cycle</a></p>
-<div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> psycopg2</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sqlalchemy <span class="im">import</span> create_engine</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="b6cc3944-1019-422f-bc53-4926569d4ee9" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="b6cc3944-1019-422f-bc53-4926569d4ee9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="b6cc3944-1019-422f-bc53-4926569d4ee9-1"><a href="#b6cc3944-1019-422f-bc53-4926569d4ee9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
+<span id="b6cc3944-1019-422f-bc53-4926569d4ee9-2"><a href="#b6cc3944-1019-422f-bc53-4926569d4ee9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="b6cc3944-1019-422f-bc53-4926569d4ee9-3"><a href="#b6cc3944-1019-422f-bc53-4926569d4ee9-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="b6cc3944-1019-422f-bc53-4926569d4ee9-4"><a href="#b6cc3944-1019-422f-bc53-4926569d4ee9-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sqlalchemy <span class="im">import</span> create_engine</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>sleepdata <span class="op">=</span> <span class="st">"./data/sleepdata.csv"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="5f34f5d8-d7b6-44cf-87b8-43e5422d8aa4" class="cell">
+<div class="sourceCode cell-code" id="5f34f5d8-d7b6-44cf-87b8-43e5422d8aa4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="5f34f5d8-d7b6-44cf-87b8-43e5422d8aa4-1"><a href="#5f34f5d8-d7b6-44cf-87b8-43e5422d8aa4-1" aria-hidden="true" tabindex="-1"></a>sleepdata <span class="op">=</span> <span class="st">"./data/sleepdata.csv"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="database-credentials" class="level2">
 <h2 class="anchored" data-anchor-id="database-credentials">Database credentials</h2>
-<div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"../../postgres.txt"</span>, <span class="st">"r"</span>) <span class="im">as</span> f:</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    user, pwd <span class="op">=</span> [s.strip() <span class="cf">for</span> s <span class="kw">in</span> f.readlines()]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="5235cbfe-a0e8-4ab6-8e08-72a15caec13a" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="5235cbfe-a0e8-4ab6-8e08-72a15caec13a"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="5235cbfe-a0e8-4ab6-8e08-72a15caec13a-1"><a href="#5235cbfe-a0e8-4ab6-8e08-72a15caec13a-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"../../postgres.txt"</span>) <span class="im">as</span> f:</span>
+<span id="5235cbfe-a0e8-4ab6-8e08-72a15caec13a-2"><a href="#5235cbfe-a0e8-4ab6-8e08-72a15caec13a-2" aria-hidden="true" tabindex="-1"></a>    user, pwd <span class="op">=</span> (s.strip() <span class="cf">for</span> s <span class="kw">in</span> f.readlines())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="create-dataframe" class="level2">
 <h2 class="anchored" data-anchor-id="create-dataframe">Create DataFrame</h2>
-<div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(sleepdata, delimiter<span class="op">=</span><span class="st">";"</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df.dtypes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="6c2f662c-8691-4c1e-8ce1-1bf1d5993be5" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="6c2f662c-8691-4c1e-8ce1-1bf1d5993be5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="6c2f662c-8691-4c1e-8ce1-1bf1d5993be5-1"><a href="#6c2f662c-8691-4c1e-8ce1-1bf1d5993be5-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(sleepdata, delimiter<span class="op">=</span><span class="st">";"</span>)</span>
+<span id="6c2f662c-8691-4c1e-8ce1-1bf1d5993be5-2"><a href="#6c2f662c-8691-4c1e-8ce1-1bf1d5993be5-2" aria-hidden="true" tabindex="-1"></a>df.dtypes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>Start                           object
 End                             object
@@ -455,19 +462,19 @@ dtype: object</code></pre>
 </section>
 <section id="create-db-safe-column-names" class="level2">
 <h2 class="anchored" data-anchor-id="create-db-safe-column-names">Create DB Safe Column Names</h2>
-<div class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>nonword_pattern <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r"[^\w]"</span>)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>spacing_pattern <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r"[_]{2,}"</span>)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>ending_pattern <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r"_$"</span>)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> [</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    re.sub(</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        ending_pattern,</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">""</span>,</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>        re.sub(spacing_pattern, <span class="st">"_"</span>, re.sub(nonword_pattern, <span class="st">"_"</span>, col)),</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    ).lower()</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> col <span class="kw">in</span> df.columns</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>df.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="67f3f7de-4abf-46bc-9cf7-0150ddd74367" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="67f3f7de-4abf-46bc-9cf7-0150ddd74367"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="67f3f7de-4abf-46bc-9cf7-0150ddd74367-1"><a href="#67f3f7de-4abf-46bc-9cf7-0150ddd74367-1" aria-hidden="true" tabindex="-1"></a>nonword_pattern <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r"[^\w]"</span>)</span>
+<span id="67f3f7de-4abf-46bc-9cf7-0150ddd74367-2"><a href="#67f3f7de-4abf-46bc-9cf7-0150ddd74367-2" aria-hidden="true" tabindex="-1"></a>spacing_pattern <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r"[_]{2,}"</span>)</span>
+<span id="67f3f7de-4abf-46bc-9cf7-0150ddd74367-3"><a href="#67f3f7de-4abf-46bc-9cf7-0150ddd74367-3" aria-hidden="true" tabindex="-1"></a>ending_pattern <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r"_$"</span>)</span>
+<span id="67f3f7de-4abf-46bc-9cf7-0150ddd74367-4"><a href="#67f3f7de-4abf-46bc-9cf7-0150ddd74367-4" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> [</span>
+<span id="67f3f7de-4abf-46bc-9cf7-0150ddd74367-5"><a href="#67f3f7de-4abf-46bc-9cf7-0150ddd74367-5" aria-hidden="true" tabindex="-1"></a>    re.sub(</span>
+<span id="67f3f7de-4abf-46bc-9cf7-0150ddd74367-6"><a href="#67f3f7de-4abf-46bc-9cf7-0150ddd74367-6" aria-hidden="true" tabindex="-1"></a>        ending_pattern,</span>
+<span id="67f3f7de-4abf-46bc-9cf7-0150ddd74367-7"><a href="#67f3f7de-4abf-46bc-9cf7-0150ddd74367-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">""</span>,</span>
+<span id="67f3f7de-4abf-46bc-9cf7-0150ddd74367-8"><a href="#67f3f7de-4abf-46bc-9cf7-0150ddd74367-8" aria-hidden="true" tabindex="-1"></a>        re.sub(spacing_pattern, <span class="st">"_"</span>, re.sub(nonword_pattern, <span class="st">"_"</span>, col)),</span>
+<span id="67f3f7de-4abf-46bc-9cf7-0150ddd74367-9"><a href="#67f3f7de-4abf-46bc-9cf7-0150ddd74367-9" aria-hidden="true" tabindex="-1"></a>    ).lower()</span>
+<span id="67f3f7de-4abf-46bc-9cf7-0150ddd74367-10"><a href="#67f3f7de-4abf-46bc-9cf7-0150ddd74367-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> col <span class="kw">in</span> df.columns</span>
+<span id="67f3f7de-4abf-46bc-9cf7-0150ddd74367-11"><a href="#67f3f7de-4abf-46bc-9cf7-0150ddd74367-11" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="67f3f7de-4abf-46bc-9cf7-0150ddd74367-12"><a href="#67f3f7de-4abf-46bc-9cf7-0150ddd74367-12" aria-hidden="true" tabindex="-1"></a>df.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>Index(['start', 'end', 'sleep_quality', 'regularity', 'mood', 'heart_rate_bpm',
        'steps', 'alarm_mode', 'air_pressure_pa', 'city', 'movements_per_hour',
@@ -477,14 +484,14 @@ dtype: object</code></pre>
       dtype='object')</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>db_host <span class="op">=</span> <span class="st">"localhost"</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>db_table <span class="op">=</span> <span class="st">"sleepdata"</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>db_name <span class="op">=</span> <span class="st">"personal"</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>engine <span class="op">=</span> create_engine(<span class="ss">f"postgresql://</span><span class="sc">{</span>user<span class="sc">}</span><span class="ss">:</span><span class="sc">{</span>pwd<span class="sc">}</span><span class="ss">@</span><span class="sc">{</span>db_host<span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>db_name<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>df.to_sql(<span class="ss">f"</span><span class="sc">{</span>db_table<span class="sc">}</span><span class="ss">"</span>, engine, if_exists<span class="op">=</span><span class="st">"replace"</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="29b9102c-a3c0-487a-b3ef-bd613d6be628" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="29b9102c-a3c0-487a-b3ef-bd613d6be628"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="29b9102c-a3c0-487a-b3ef-bd613d6be628-1"><a href="#29b9102c-a3c0-487a-b3ef-bd613d6be628-1" aria-hidden="true" tabindex="-1"></a>db_host <span class="op">=</span> <span class="st">"localhost"</span></span>
+<span id="29b9102c-a3c0-487a-b3ef-bd613d6be628-2"><a href="#29b9102c-a3c0-487a-b3ef-bd613d6be628-2" aria-hidden="true" tabindex="-1"></a>db_table <span class="op">=</span> <span class="st">"sleepdata"</span></span>
+<span id="29b9102c-a3c0-487a-b3ef-bd613d6be628-3"><a href="#29b9102c-a3c0-487a-b3ef-bd613d6be628-3" aria-hidden="true" tabindex="-1"></a>db_name <span class="op">=</span> <span class="st">"personal"</span></span>
+<span id="29b9102c-a3c0-487a-b3ef-bd613d6be628-4"><a href="#29b9102c-a3c0-487a-b3ef-bd613d6be628-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="29b9102c-a3c0-487a-b3ef-bd613d6be628-5"><a href="#29b9102c-a3c0-487a-b3ef-bd613d6be628-5" aria-hidden="true" tabindex="-1"></a>engine <span class="op">=</span> create_engine(<span class="ss">f"postgresql://</span><span class="sc">{</span>user<span class="sc">}</span><span class="ss">:</span><span class="sc">{</span>pwd<span class="sc">}</span><span class="ss">@</span><span class="sc">{</span>db_host<span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>db_name<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="29b9102c-a3c0-487a-b3ef-bd613d6be628-6"><a href="#29b9102c-a3c0-487a-b3ef-bd613d6be628-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="29b9102c-a3c0-487a-b3ef-bd613d6be628-7"><a href="#29b9102c-a3c0-487a-b3ef-bd613d6be628-7" aria-hidden="true" tabindex="-1"></a>df.to_sql(<span class="ss">f"</span><span class="sc">{</span>db_table<span class="sc">}</span><span class="ss">"</span>, engine, if_exists<span class="op">=</span><span class="st">"replace"</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
 <pre><code>509</code></pre>
 </div>
@@ -535,6 +542,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -603,13 +637,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -644,18 +680,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -687,11 +712,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("http:\/\/toolkit\.goecoug\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -701,8 +763,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -714,7 +785,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -758,6 +951,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -783,6 +977,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -844,12 +1064,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../../content/development/code/notebooks/python-fundamentals.html" class="pagination-link">
+      <a href="../../../../content/development/code/notebooks/python-fundamentals.html" class="pagination-link" aria-label="Python Fundamentals">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Python Fundamentals</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../../content/development/code/notebooks/visualization-with-seaborn.html" class="pagination-link">
+      <a href="../../../../content/development/code/notebooks/visualization-with-seaborn.html" class="pagination-link" aria-label="Visualization with Seaborn">
         <span class="nav-page-text">Visualization with Seaborn</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -857,10 +1077,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Caleb Grant, 2023</div>   
+    <div class="nav-footer-left">
+<p>Caleb Grant, 2023</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/geocoug/toolkit/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
@@ -873,6 +1095,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+
 
 
 

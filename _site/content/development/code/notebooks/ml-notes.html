@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="Machine Learning (supervised learning) notes">
 
-<title>Toolkit - ML Notes</title>
+<title>ML Notes – Toolkit</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -34,7 +34,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -73,19 +73,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-0626ff4d7a71b55c8707dcae1d04a9b6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-e25cc82807363e79c52e96bc8b7855f1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-cc62c3bb2915d631aed5c5273114e56f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-888a70d03101a4ade01c9fc78ea256cb.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": true,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -94,6 +99,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -110,57 +116,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../../../../static/logo.svg" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../../../../content/development/index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Development</span></a>
+    <a class="nav-link active" href="../../../../content/development/index.html" aria-current="page"> 
+<span class="menu-text">Development</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../content/recipes/index.html" rel="" target="">
- <span class="menu-text">Recipes</span></a>
+    <a class="nav-link" href="../../../../content/recipes/index.html"> 
+<span class="menu-text">Recipes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../content/workouts/index.html" rel="" target="">
- <span class="menu-text">Workouts</span></a>
+    <a class="nav-link" href="../../../../content/workouts/index.html"> 
+<span class="menu-text">Workouts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../content/blog/index.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../../../../content/blog/index.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../content/development/code/index.html">Code</a></li><li class="breadcrumb-item"><a href="../../../../content/development/code/notebooks/index.html">Notebooks</a></li><li class="breadcrumb-item"><a href="../../../../content/development/code/notebooks/ml-notes.html">ML Notes</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../content/development/code/index.html">Code</a></li><li class="breadcrumb-item"><a href="../../../../content/development/code/notebooks/index.html">Notebooks</a></li><li class="breadcrumb-item"><a href="../../../../content/development/code/notebooks/ml-notes.html">ML Notes</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
     </div>
   </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -173,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../../../../content/development/code/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Code</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -230,7 +236,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../../../../content/development/code/notebooks/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Notebooks</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -301,9 +307,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Tools</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -338,7 +344,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../../../../content/development/server/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Server</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -366,7 +372,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -392,12 +398,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#random-forests" id="toc-random-forests" class="nav-link" data-scroll-target="#random-forests">Random Forests</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/geocoug/toolkit/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/geocoug/toolkit/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../content/development/code/index.html">Code</a></li><li class="breadcrumb-item"><a href="../../../../content/development/code/notebooks/index.html">Notebooks</a></li><li class="breadcrumb-item"><a href="../../../../content/development/code/notebooks/ml-notes.html">ML Notes</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">ML Notes</h1>
 </div>
@@ -417,18 +423,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
 
-<p>Use of algorithms and statistical models to perform tasks without explicit instructions, instead using paterns and inference.</p>
+
+<p>Use of algorithms and statistical models to perform tasks without explicit instructions, instead using patterns and inference.</p>
 <p>Examples:</p>
 <ul>
 <li>House price predictor</li>
 <li>Netflix recommendations</li>
 <li>Marketing</li>
 </ul>
-<div class="cell" data-execution_count="79">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="76cfcb14-3461-4e09-86e0-e014b157616c" class="cell" data-execution_count="79">
+<div class="sourceCode cell-code" id="76cfcb14-3461-4e09-86e0-e014b157616c"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="76cfcb14-3461-4e09-86e0-e014b157616c-1"><a href="#76cfcb14-3461-4e09-86e0-e014b157616c-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="76cfcb14-3461-4e09-86e0-e014b157616c-2"><a href="#76cfcb14-3461-4e09-86e0-e014b157616c-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Matplotlib:</p>
 <ul>
@@ -440,46 +448,58 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <section id="practical-example---plotting" class="level2">
 <h2 class="anchored" data-anchor-id="practical-example---plotting">Practical Example - Plotting</h2>
-<div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect of time spent walking (hours) on the distance travelled (miles)</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>time_spent_walking <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]  <span class="co"># (independent variable)</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>distance <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">10</span>]  <span class="co"># (dependent variable)</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>plt.plot(time_spent_walking, distance)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Time Spent Walking (hours)"</span>)</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Distance (miles)"</span>)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Effect of time spent walking on distance travelled"</span>)</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="34215f44-d83d-42ec-97b4-c2ab5cb84d4c" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="34215f44-d83d-42ec-97b4-c2ab5cb84d4c"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="34215f44-d83d-42ec-97b4-c2ab5cb84d4c-1"><a href="#34215f44-d83d-42ec-97b4-c2ab5cb84d4c-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect of time spent walking (hours) on the distance travelled (miles)</span></span>
+<span id="34215f44-d83d-42ec-97b4-c2ab5cb84d4c-2"><a href="#34215f44-d83d-42ec-97b4-c2ab5cb84d4c-2" aria-hidden="true" tabindex="-1"></a>time_spent_walking <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]  <span class="co"># (independent variable)</span></span>
+<span id="34215f44-d83d-42ec-97b4-c2ab5cb84d4c-3"><a href="#34215f44-d83d-42ec-97b4-c2ab5cb84d4c-3" aria-hidden="true" tabindex="-1"></a>distance <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">10</span>]  <span class="co"># (dependent variable)</span></span>
+<span id="34215f44-d83d-42ec-97b4-c2ab5cb84d4c-4"><a href="#34215f44-d83d-42ec-97b4-c2ab5cb84d4c-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="34215f44-d83d-42ec-97b4-c2ab5cb84d4c-5"><a href="#34215f44-d83d-42ec-97b4-c2ab5cb84d4c-5" aria-hidden="true" tabindex="-1"></a>plt.plot(time_spent_walking, distance)</span>
+<span id="34215f44-d83d-42ec-97b4-c2ab5cb84d4c-6"><a href="#34215f44-d83d-42ec-97b4-c2ab5cb84d4c-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Time Spent Walking (hours)"</span>)</span>
+<span id="34215f44-d83d-42ec-97b4-c2ab5cb84d4c-7"><a href="#34215f44-d83d-42ec-97b4-c2ab5cb84d4c-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Distance (miles)"</span>)</span>
+<span id="34215f44-d83d-42ec-97b4-c2ab5cb84d4c-8"><a href="#34215f44-d83d-42ec-97b4-c2ab5cb84d4c-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Effect of time spent walking on distance travelled"</span>)</span>
+<span id="34215f44-d83d-42ec-97b4-c2ab5cb84d4c-9"><a href="#34215f44-d83d-42ec-97b4-c2ab5cb84d4c-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="ml-notes_files/figure-html/cell-3-output-1.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="ml-notes_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
 </div>
 </div>
-<div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect of car age (years) on price ($)</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>car_age <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">30</span>]</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>price <span class="op">=</span> [<span class="dv">30000</span>, <span class="dv">25000</span>, <span class="dv">18000</span>, <span class="dv">10000</span>, <span class="dv">4000</span>]</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>plt.plot(car_age, price)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Car Age (years)"</span>)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Price ($)"</span>)</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Effect of car age on price"</span>)</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-1"><a href="#3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect of car age (years) on price ($)</span></span>
+<span id="3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-2"><a href="#3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-2" aria-hidden="true" tabindex="-1"></a>car_age <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">30</span>]</span>
+<span id="3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-3"><a href="#3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-3" aria-hidden="true" tabindex="-1"></a>price <span class="op">=</span> [<span class="dv">30000</span>, <span class="dv">25000</span>, <span class="dv">18000</span>, <span class="dv">10000</span>, <span class="dv">4000</span>]</span>
+<span id="3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-4"><a href="#3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-5"><a href="#3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-5" aria-hidden="true" tabindex="-1"></a>plt.plot(car_age, price)</span>
+<span id="3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-6"><a href="#3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Car Age (years)"</span>)</span>
+<span id="3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-7"><a href="#3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Price ($)"</span>)</span>
+<span id="3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-8"><a href="#3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Effect of car age on price"</span>)</span>
+<span id="3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-9"><a href="#3eaedf8a-bf56-4bcc-8c8d-92a2eee15b85-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="ml-notes_files/figure-html/cell-4-output-1.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="ml-notes_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
 </div>
 </div>
-<div class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect of amount of time spent studying (hours) on test score results (%)</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>study_time <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">50</span>, <span class="dv">100</span>]</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>test_score_results <span class="op">=</span> [<span class="dv">40</span>, <span class="dv">60</span>, <span class="dv">70</span>, <span class="dv">75</span>, <span class="dv">88</span>, <span class="dv">93</span>]</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>plt.plot(study_time, test_score_results)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Study Time (hours)"</span>)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Test Score (%)"</span>)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Effect of study time on test scores"</span>)</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="78d89cad-2920-4fec-b902-defd741ac0b2" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="78d89cad-2920-4fec-b902-defd741ac0b2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="78d89cad-2920-4fec-b902-defd741ac0b2-1"><a href="#78d89cad-2920-4fec-b902-defd741ac0b2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect of amount of time spent studying (hours) on test score results (%)</span></span>
+<span id="78d89cad-2920-4fec-b902-defd741ac0b2-2"><a href="#78d89cad-2920-4fec-b902-defd741ac0b2-2" aria-hidden="true" tabindex="-1"></a>study_time <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">50</span>, <span class="dv">100</span>]</span>
+<span id="78d89cad-2920-4fec-b902-defd741ac0b2-3"><a href="#78d89cad-2920-4fec-b902-defd741ac0b2-3" aria-hidden="true" tabindex="-1"></a>test_score_results <span class="op">=</span> [<span class="dv">40</span>, <span class="dv">60</span>, <span class="dv">70</span>, <span class="dv">75</span>, <span class="dv">88</span>, <span class="dv">93</span>]</span>
+<span id="78d89cad-2920-4fec-b902-defd741ac0b2-4"><a href="#78d89cad-2920-4fec-b902-defd741ac0b2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="78d89cad-2920-4fec-b902-defd741ac0b2-5"><a href="#78d89cad-2920-4fec-b902-defd741ac0b2-5" aria-hidden="true" tabindex="-1"></a>plt.plot(study_time, test_score_results)</span>
+<span id="78d89cad-2920-4fec-b902-defd741ac0b2-6"><a href="#78d89cad-2920-4fec-b902-defd741ac0b2-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Study Time (hours)"</span>)</span>
+<span id="78d89cad-2920-4fec-b902-defd741ac0b2-7"><a href="#78d89cad-2920-4fec-b902-defd741ac0b2-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Test Score (%)"</span>)</span>
+<span id="78d89cad-2920-4fec-b902-defd741ac0b2-8"><a href="#78d89cad-2920-4fec-b902-defd741ac0b2-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Effect of study time on test scores"</span>)</span>
+<span id="78d89cad-2920-4fec-b902-defd741ac0b2-9"><a href="#78d89cad-2920-4fec-b902-defd741ac0b2-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="ml-notes_files/figure-html/cell-5-output-1.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="ml-notes_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -493,21 +513,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <section id="example-1" class="level3">
 <h3 class="anchored" data-anchor-id="example-1">Example 1</h3>
-<div class="cell" data-execution_count="18">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">10</span>]</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x, y)</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="6999eb70-bf30-416f-ab07-7129f551e6fc" class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="6999eb70-bf30-416f-ab07-7129f551e6fc"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="6999eb70-bf30-416f-ab07-7129f551e6fc-1"><a href="#6999eb70-bf30-416f-ab07-7129f551e6fc-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span>
+<span id="6999eb70-bf30-416f-ab07-7129f551e6fc-2"><a href="#6999eb70-bf30-416f-ab07-7129f551e6fc-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">10</span>]</span>
+<span id="6999eb70-bf30-416f-ab07-7129f551e6fc-3"><a href="#6999eb70-bf30-416f-ab07-7129f551e6fc-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="6999eb70-bf30-416f-ab07-7129f551e6fc-4"><a href="#6999eb70-bf30-416f-ab07-7129f551e6fc-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x, y)</span>
+<span id="6999eb70-bf30-416f-ab07-7129f551e6fc-5"><a href="#6999eb70-bf30-416f-ab07-7129f551e6fc-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="ml-notes_files/figure-html/cell-6-output-1.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="ml-notes_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
 </div>
 </div>
-<div class="cell" data-execution_count="19">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># y = 2x + 2</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> x:</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> i</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="e171c463-6720-490d-a490-f02e30657b5e" class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="e171c463-6720-490d-a490-f02e30657b5e"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="e171c463-6720-490d-a490-f02e30657b5e-1"><a href="#e171c463-6720-490d-a490-f02e30657b5e-1" aria-hidden="true" tabindex="-1"></a><span class="co"># y = 2x + 2</span></span>
+<span id="e171c463-6720-490d-a490-f02e30657b5e-2"><a href="#e171c463-6720-490d-a490-f02e30657b5e-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> x:</span>
+<span id="e171c463-6720-490d-a490-f02e30657b5e-3"><a href="#e171c463-6720-490d-a490-f02e30657b5e-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> i</span>
+<span id="e171c463-6720-490d-a490-f02e30657b5e-4"><a href="#e171c463-6720-490d-a490-f02e30657b5e-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>2
 4
@@ -519,21 +543,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="example-2" class="level3">
 <h3 class="anchored" data-anchor-id="example-2">Example 2</h3>
-<div class="cell" data-execution_count="22">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> [<span class="dv">6</span>, <span class="dv">9</span>, <span class="dv">12</span>, <span class="dv">15</span>, <span class="dv">18</span>]</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x, y)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="b930588f-bb6e-46ff-b919-487642042dfd" class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="b930588f-bb6e-46ff-b919-487642042dfd"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="b930588f-bb6e-46ff-b919-487642042dfd-1"><a href="#b930588f-bb6e-46ff-b919-487642042dfd-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span>
+<span id="b930588f-bb6e-46ff-b919-487642042dfd-2"><a href="#b930588f-bb6e-46ff-b919-487642042dfd-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> [<span class="dv">6</span>, <span class="dv">9</span>, <span class="dv">12</span>, <span class="dv">15</span>, <span class="dv">18</span>]</span>
+<span id="b930588f-bb6e-46ff-b919-487642042dfd-3"><a href="#b930588f-bb6e-46ff-b919-487642042dfd-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="b930588f-bb6e-46ff-b919-487642042dfd-4"><a href="#b930588f-bb6e-46ff-b919-487642042dfd-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x, y)</span>
+<span id="b930588f-bb6e-46ff-b919-487642042dfd-5"><a href="#b930588f-bb6e-46ff-b919-487642042dfd-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="ml-notes_files/figure-html/cell-8-output-1.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="ml-notes_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
+</figure>
 </div>
 </div>
-<div class="cell" data-execution_count="30">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># y = mx + b</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> x:</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> (<span class="dv">3</span> <span class="op">*</span> i) <span class="op">+</span> <span class="dv">3</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="c775664a-fe62-486a-bfe0-465e357b63ef" class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="c775664a-fe62-486a-bfe0-465e357b63ef"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="c775664a-fe62-486a-bfe0-465e357b63ef-1"><a href="#c775664a-fe62-486a-bfe0-465e357b63ef-1" aria-hidden="true" tabindex="-1"></a><span class="co"># y = mx + b</span></span>
+<span id="c775664a-fe62-486a-bfe0-465e357b63ef-2"><a href="#c775664a-fe62-486a-bfe0-465e357b63ef-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> x:</span>
+<span id="c775664a-fe62-486a-bfe0-465e357b63ef-3"><a href="#c775664a-fe62-486a-bfe0-465e357b63ef-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> (<span class="dv">3</span> <span class="op">*</span> i) <span class="op">+</span> <span class="dv">3</span></span>
+<span id="c775664a-fe62-486a-bfe0-465e357b63ef-4"><a href="#c775664a-fe62-486a-bfe0-465e357b63ef-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>6
 9
@@ -545,23 +573,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="example-3" class="level3">
 <h3 class="anchored" data-anchor-id="example-3">Example 3</h3>
-<div class="cell" data-execution_count="42">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> [<span class="dv">6</span>, <span class="dv">9</span>, <span class="dv">12</span>, <span class="dv">15</span>, <span class="dv">18</span>]</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x, y)</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="78bb3659-4525-47d5-947d-469191d6ff0b" class="cell" data-execution_count="42">
+<div class="sourceCode cell-code" id="78bb3659-4525-47d5-947d-469191d6ff0b"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="78bb3659-4525-47d5-947d-469191d6ff0b-1"><a href="#78bb3659-4525-47d5-947d-469191d6ff0b-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
+<span id="78bb3659-4525-47d5-947d-469191d6ff0b-2"><a href="#78bb3659-4525-47d5-947d-469191d6ff0b-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> [<span class="dv">6</span>, <span class="dv">9</span>, <span class="dv">12</span>, <span class="dv">15</span>, <span class="dv">18</span>]</span>
+<span id="78bb3659-4525-47d5-947d-469191d6ff0b-3"><a href="#78bb3659-4525-47d5-947d-469191d6ff0b-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="78bb3659-4525-47d5-947d-469191d6ff0b-4"><a href="#78bb3659-4525-47d5-947d-469191d6ff0b-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x, y)</span>
+<span id="78bb3659-4525-47d5-947d-469191d6ff0b-5"><a href="#78bb3659-4525-47d5-947d-469191d6ff0b-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="ml-notes_files/figure-html/cell-10-output-1.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="ml-notes_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+</figure>
 </div>
 </div>
-<div class="cell" data-execution_count="41">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># y = mx + b</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># y = 3x + 6</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> x:</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> (<span class="dv">3</span> <span class="op">*</span> i) <span class="op">+</span> <span class="dv">6</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="fb4c5cca-9ddd-4b82-8476-1c7d9dafaeed" class="cell" data-execution_count="41">
+<div class="sourceCode cell-code" id="fb4c5cca-9ddd-4b82-8476-1c7d9dafaeed"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="fb4c5cca-9ddd-4b82-8476-1c7d9dafaeed-1"><a href="#fb4c5cca-9ddd-4b82-8476-1c7d9dafaeed-1" aria-hidden="true" tabindex="-1"></a><span class="co"># y = mx + b</span></span>
+<span id="fb4c5cca-9ddd-4b82-8476-1c7d9dafaeed-2"><a href="#fb4c5cca-9ddd-4b82-8476-1c7d9dafaeed-2" aria-hidden="true" tabindex="-1"></a><span class="co"># y = 3x + 6</span></span>
+<span id="fb4c5cca-9ddd-4b82-8476-1c7d9dafaeed-3"><a href="#fb4c5cca-9ddd-4b82-8476-1c7d9dafaeed-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="fb4c5cca-9ddd-4b82-8476-1c7d9dafaeed-4"><a href="#fb4c5cca-9ddd-4b82-8476-1c7d9dafaeed-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> x:</span>
+<span id="fb4c5cca-9ddd-4b82-8476-1c7d9dafaeed-5"><a href="#fb4c5cca-9ddd-4b82-8476-1c7d9dafaeed-5" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> (<span class="dv">3</span> <span class="op">*</span> i) <span class="op">+</span> <span class="dv">6</span></span>
+<span id="fb4c5cca-9ddd-4b82-8476-1c7d9dafaeed-6"><a href="#fb4c5cca-9ddd-4b82-8476-1c7d9dafaeed-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>0 6
 1 9
@@ -576,26 +608,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="practical-examples---linear-regression-y-mx-b">Practical Examples - Linear Regression (<code>y = mx + b</code>)</h2>
 <section id="question-1" class="level4">
 <h4 class="anchored" data-anchor-id="question-1">Question 1</h4>
-<div class="cell" data-execution_count="53">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect of amount of water provided (L) per day on size of trees (m)</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>water <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>]</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>tree_size <span class="op">=</span> [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">12</span>]</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>plt.plot(water, tree_size)</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="2c8a6842-0a36-44ec-8c0b-3f4086a65a13" class="cell" data-execution_count="53">
+<div class="sourceCode cell-code" id="2c8a6842-0a36-44ec-8c0b-3f4086a65a13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="2c8a6842-0a36-44ec-8c0b-3f4086a65a13-1"><a href="#2c8a6842-0a36-44ec-8c0b-3f4086a65a13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect of amount of water provided (L) per day on size of trees (m)</span></span>
+<span id="2c8a6842-0a36-44ec-8c0b-3f4086a65a13-2"><a href="#2c8a6842-0a36-44ec-8c0b-3f4086a65a13-2" aria-hidden="true" tabindex="-1"></a>water <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>]</span>
+<span id="2c8a6842-0a36-44ec-8c0b-3f4086a65a13-3"><a href="#2c8a6842-0a36-44ec-8c0b-3f4086a65a13-3" aria-hidden="true" tabindex="-1"></a>tree_size <span class="op">=</span> [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">12</span>]</span>
+<span id="2c8a6842-0a36-44ec-8c0b-3f4086a65a13-4"><a href="#2c8a6842-0a36-44ec-8c0b-3f4086a65a13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="2c8a6842-0a36-44ec-8c0b-3f4086a65a13-5"><a href="#2c8a6842-0a36-44ec-8c0b-3f4086a65a13-5" aria-hidden="true" tabindex="-1"></a>plt.plot(water, tree_size)</span>
+<span id="2c8a6842-0a36-44ec-8c0b-3f4086a65a13-6"><a href="#2c8a6842-0a36-44ec-8c0b-3f4086a65a13-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="ml-notes_files/figure-html/cell-12-output-1.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="ml-notes_files/figure-html/cell-12-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
 <section id="solution" class="level4">
 <h4 class="anchored" data-anchor-id="solution">Solution</h4>
-<div class="cell" data-execution_count="67">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># y = mx + b</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> water:</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> (<span class="dv">1</span> <span class="op">*</span> x) <span class="op">+</span> <span class="dv">4</span></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x, y)</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># y = x + 4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="5aadcb0b-0af0-4b29-90b1-bcd710d1ff76" class="cell" data-execution_count="67">
+<div class="sourceCode cell-code" id="5aadcb0b-0af0-4b29-90b1-bcd710d1ff76"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="5aadcb0b-0af0-4b29-90b1-bcd710d1ff76-1"><a href="#5aadcb0b-0af0-4b29-90b1-bcd710d1ff76-1" aria-hidden="true" tabindex="-1"></a><span class="co"># y = mx + b</span></span>
+<span id="5aadcb0b-0af0-4b29-90b1-bcd710d1ff76-2"><a href="#5aadcb0b-0af0-4b29-90b1-bcd710d1ff76-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> water:</span>
+<span id="5aadcb0b-0af0-4b29-90b1-bcd710d1ff76-3"><a href="#5aadcb0b-0af0-4b29-90b1-bcd710d1ff76-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> (<span class="dv">1</span> <span class="op">*</span> x) <span class="op">+</span> <span class="dv">4</span></span>
+<span id="5aadcb0b-0af0-4b29-90b1-bcd710d1ff76-4"><a href="#5aadcb0b-0af0-4b29-90b1-bcd710d1ff76-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x, y)</span>
+<span id="5aadcb0b-0af0-4b29-90b1-bcd710d1ff76-5"><a href="#5aadcb0b-0af0-4b29-90b1-bcd710d1ff76-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># y = x + 4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>0 4
 1 5
@@ -611,25 +647,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="question-2" class="level4">
 <h4 class="anchored" data-anchor-id="question-2">Question 2</h4>
-<div class="cell" data-execution_count="56">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect of wingspan (cm) on flying speed (km/h)</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>wingspan <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>, <span class="dv">50</span>, <span class="dv">60</span>, <span class="dv">70</span>, <span class="dv">80</span>, <span class="dv">90</span>, <span class="dv">100</span>]</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>flying_speed <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">30</span>, <span class="dv">35</span>, <span class="dv">40</span>, <span class="dv">45</span>, <span class="dv">50</span>]</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>plt.plot(wingspan, flying_speed)</span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="97071294-af62-4202-b931-9e571fe51c05" class="cell" data-execution_count="56">
+<div class="sourceCode cell-code" id="97071294-af62-4202-b931-9e571fe51c05"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="97071294-af62-4202-b931-9e571fe51c05-1"><a href="#97071294-af62-4202-b931-9e571fe51c05-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect of wingspan (cm) on flying speed (km/h)</span></span>
+<span id="97071294-af62-4202-b931-9e571fe51c05-2"><a href="#97071294-af62-4202-b931-9e571fe51c05-2" aria-hidden="true" tabindex="-1"></a>wingspan <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>, <span class="dv">50</span>, <span class="dv">60</span>, <span class="dv">70</span>, <span class="dv">80</span>, <span class="dv">90</span>, <span class="dv">100</span>]</span>
+<span id="97071294-af62-4202-b931-9e571fe51c05-3"><a href="#97071294-af62-4202-b931-9e571fe51c05-3" aria-hidden="true" tabindex="-1"></a>flying_speed <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">30</span>, <span class="dv">35</span>, <span class="dv">40</span>, <span class="dv">45</span>, <span class="dv">50</span>]</span>
+<span id="97071294-af62-4202-b931-9e571fe51c05-4"><a href="#97071294-af62-4202-b931-9e571fe51c05-4" aria-hidden="true" tabindex="-1"></a>plt.plot(wingspan, flying_speed)</span>
+<span id="97071294-af62-4202-b931-9e571fe51c05-5"><a href="#97071294-af62-4202-b931-9e571fe51c05-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="ml-notes_files/figure-html/cell-14-output-1.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="ml-notes_files/figure-html/cell-14-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
 <section id="solution-1" class="level4">
 <h4 class="anchored" data-anchor-id="solution-1">Solution</h4>
-<div class="cell" data-execution_count="70">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># y = mx + b</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> wingspan:</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="fl">0.5</span> <span class="op">*</span> x</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x, y)</span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># y = 0.5x + 0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="3af83fc1-cbd6-4b63-bd81-0820408b6f71" class="cell" data-execution_count="70">
+<div class="sourceCode cell-code" id="3af83fc1-cbd6-4b63-bd81-0820408b6f71"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="3af83fc1-cbd6-4b63-bd81-0820408b6f71-1"><a href="#3af83fc1-cbd6-4b63-bd81-0820408b6f71-1" aria-hidden="true" tabindex="-1"></a><span class="co"># y = mx + b</span></span>
+<span id="3af83fc1-cbd6-4b63-bd81-0820408b6f71-2"><a href="#3af83fc1-cbd6-4b63-bd81-0820408b6f71-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> wingspan:</span>
+<span id="3af83fc1-cbd6-4b63-bd81-0820408b6f71-3"><a href="#3af83fc1-cbd6-4b63-bd81-0820408b6f71-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="fl">0.5</span> <span class="op">*</span> x</span>
+<span id="3af83fc1-cbd6-4b63-bd81-0820408b6f71-4"><a href="#3af83fc1-cbd6-4b63-bd81-0820408b6f71-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x, y)</span>
+<span id="3af83fc1-cbd6-4b63-bd81-0820408b6f71-5"><a href="#3af83fc1-cbd6-4b63-bd81-0820408b6f71-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># y = 0.5x + 0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>0 0.0
 10 5.0
@@ -647,25 +687,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="question-3" class="level4">
 <h4 class="anchored" data-anchor-id="question-3">Question 3</h4>
-<div class="cell" data-execution_count="69">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect of number of gifts given to employees each year, on staff statisfaction levels (100%)</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>num_of_gifts <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>satisfaction <span class="op">=</span> [<span class="dv">50</span>, <span class="dv">55</span>, <span class="dv">60</span>, <span class="dv">65</span>, <span class="dv">70</span>, <span class="dv">75</span>]</span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>plt.plot(num_of_gifts, satisfaction)</span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="51142707-7c6f-4c14-b974-376f936229c2" class="cell" data-execution_count="69">
+<div class="sourceCode cell-code" id="51142707-7c6f-4c14-b974-376f936229c2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="51142707-7c6f-4c14-b974-376f936229c2-1"><a href="#51142707-7c6f-4c14-b974-376f936229c2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect of number of gifts given to employees each year, on staff statisfaction levels (100%)</span></span>
+<span id="51142707-7c6f-4c14-b974-376f936229c2-2"><a href="#51142707-7c6f-4c14-b974-376f936229c2-2" aria-hidden="true" tabindex="-1"></a>num_of_gifts <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span>
+<span id="51142707-7c6f-4c14-b974-376f936229c2-3"><a href="#51142707-7c6f-4c14-b974-376f936229c2-3" aria-hidden="true" tabindex="-1"></a>satisfaction <span class="op">=</span> [<span class="dv">50</span>, <span class="dv">55</span>, <span class="dv">60</span>, <span class="dv">65</span>, <span class="dv">70</span>, <span class="dv">75</span>]</span>
+<span id="51142707-7c6f-4c14-b974-376f936229c2-4"><a href="#51142707-7c6f-4c14-b974-376f936229c2-4" aria-hidden="true" tabindex="-1"></a>plt.plot(num_of_gifts, satisfaction)</span>
+<span id="51142707-7c6f-4c14-b974-376f936229c2-5"><a href="#51142707-7c6f-4c14-b974-376f936229c2-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="ml-notes_files/figure-html/cell-16-output-1.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="ml-notes_files/figure-html/cell-16-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
 <section id="solution-2" class="level4">
 <h4 class="anchored" data-anchor-id="solution-2">Solution</h4>
-<div class="cell" data-execution_count="71">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># y = mx + b</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> num_of_gifts:</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> (<span class="dv">5</span> <span class="op">*</span> x) <span class="op">+</span> <span class="dv">50</span></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x, y)</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># y = 5x + 50</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="f00995bd-45ca-4b7c-a720-146ade8cb3db" class="cell" data-execution_count="71">
+<div class="sourceCode cell-code" id="f00995bd-45ca-4b7c-a720-146ade8cb3db"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="f00995bd-45ca-4b7c-a720-146ade8cb3db-1"><a href="#f00995bd-45ca-4b7c-a720-146ade8cb3db-1" aria-hidden="true" tabindex="-1"></a><span class="co"># y = mx + b</span></span>
+<span id="f00995bd-45ca-4b7c-a720-146ade8cb3db-2"><a href="#f00995bd-45ca-4b7c-a720-146ade8cb3db-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> num_of_gifts:</span>
+<span id="f00995bd-45ca-4b7c-a720-146ade8cb3db-3"><a href="#f00995bd-45ca-4b7c-a720-146ade8cb3db-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> (<span class="dv">5</span> <span class="op">*</span> x) <span class="op">+</span> <span class="dv">50</span></span>
+<span id="f00995bd-45ca-4b7c-a720-146ade8cb3db-4"><a href="#f00995bd-45ca-4b7c-a720-146ade8cb3db-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x, y)</span>
+<span id="f00995bd-45ca-4b7c-a720-146ade8cb3db-5"><a href="#f00995bd-45ca-4b7c-a720-146ade8cb3db-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># y = 5x + 50</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>0 50
 1 55
@@ -685,7 +729,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="ml-notes_files/figure-html/e94e11ab-74f4-4c06-b083-7e21eb40e2f2-1-d30ea074-72ad-41ef-b7a3-2f8a207638b5.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">image.png</figcaption>
+<figcaption>image.png</figcaption>
 </figure>
 </div>
 </section>
@@ -694,33 +738,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="ml-notes_files/figure-html/4728d976-ce91-4c79-96b5-229b2a0102cc-1-c8f5996c-4b8b-478b-8847-b5d8ea4c5059.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">image.png</figcaption>
+<figcaption>image.png</figcaption>
 </figure>
 </div>
 <p><strong><em>Mean Squared Error</em></strong> = sum (Y @ prediction - y at datapoint)^2 / number of datapoints</p>
 <section id="example" class="level3">
 <h3 class="anchored" data-anchor-id="example">Example</h3>
-<div class="cell" data-execution_count="89">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Data</span></span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>x_data <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">8</span>, <span class="dv">10</span>]</span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>y_data <span class="op">=</span> [<span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">7</span>]</span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Data plot</span></span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>plt.plot(x_data, y_data)</span>
-<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4" class="cell" data-execution_count="89">
+<div class="sourceCode cell-code" id="d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4-1"><a href="#d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Data</span></span>
+<span id="d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4-2"><a href="#d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4-2" aria-hidden="true" tabindex="-1"></a>x_data <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">8</span>, <span class="dv">10</span>]</span>
+<span id="d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4-3"><a href="#d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4-3" aria-hidden="true" tabindex="-1"></a>y_data <span class="op">=</span> [<span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">7</span>]</span>
+<span id="d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4-4"><a href="#d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4-5"><a href="#d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Data plot</span></span>
+<span id="d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4-6"><a href="#d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4-6" aria-hidden="true" tabindex="-1"></a>plt.plot(x_data, y_data)</span>
+<span id="d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4-7"><a href="#d73eb2b5-5e6c-4a9d-bebc-b889b86f7ab4-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="ml-notes_files/figure-html/cell-18-output-1.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="ml-notes_files/figure-html/cell-18-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 <p><strong><em>Best fit line (y = mx + b)</em></strong></p>
-<div class="cell" data-execution_count="91">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate m, b</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>m, b <span class="op">=</span> np.polyfit(x_data, y_data, <span class="dv">1</span>)</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Best fit line equation:</span></span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> x_data:</span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> (m <span class="op">*</span> x) <span class="op">+</span> b</span>
-<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a" class="cell" data-execution_count="91">
+<div class="sourceCode cell-code" id="60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a-1"><a href="#60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate m, b</span></span>
+<span id="60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a-2"><a href="#60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a-2" aria-hidden="true" tabindex="-1"></a>m, b <span class="op">=</span> np.polyfit(x_data, y_data, <span class="dv">1</span>)</span>
+<span id="60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a-3"><a href="#60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a-4"><a href="#60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Best fit line equation:</span></span>
+<span id="60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a-5"><a href="#60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> x_data:</span>
+<span id="60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a-6"><a href="#60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a-6" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> (m <span class="op">*</span> x) <span class="op">+</span> b</span>
+<span id="60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a-7"><a href="#60f47dbc-6de7-4d4f-bc98-d5e8fd4d4b9a-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>1 5.04347826086957
 5 6.608695652173917
@@ -732,10 +780,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="ml-notes_files/figure-html/e1c5f1ae-a5c3-414c-bf67-b62a10eba057-1-1bc05613-ff13-4d77-a2cb-33cc20d516d4.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">image.png</figcaption>
+<figcaption>image.png</figcaption>
 </figure>
 </div>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>variable</th>
@@ -776,11 +824,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-<div class="cell" data-execution_count="96">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># cost = (y[hat] - y) ^ 2 / 4</span></span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>mse <span class="op">=</span> <span class="dv">10</span> <span class="op">/</span> <span class="dv">4</span></span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>mse</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="c7c46261-74d0-4859-b2a2-c7927e184d4c" class="cell" data-execution_count="96">
+<div class="sourceCode cell-code" id="c7c46261-74d0-4859-b2a2-c7927e184d4c"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="c7c46261-74d0-4859-b2a2-c7927e184d4c-1"><a href="#c7c46261-74d0-4859-b2a2-c7927e184d4c-1" aria-hidden="true" tabindex="-1"></a><span class="co"># cost = (y[hat] - y) ^ 2 / 4</span></span>
+<span id="c7c46261-74d0-4859-b2a2-c7927e184d4c-2"><a href="#c7c46261-74d0-4859-b2a2-c7927e184d4c-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="c7c46261-74d0-4859-b2a2-c7927e184d4c-3"><a href="#c7c46261-74d0-4859-b2a2-c7927e184d4c-3" aria-hidden="true" tabindex="-1"></a>mse <span class="op">=</span> <span class="dv">10</span> <span class="op">/</span> <span class="dv">4</span></span>
+<span id="c7c46261-74d0-4859-b2a2-c7927e184d4c-4"><a href="#c7c46261-74d0-4859-b2a2-c7927e184d4c-4" aria-hidden="true" tabindex="-1"></a>mse</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="96">
 <pre><code>2.5</code></pre>
 </div>
@@ -792,23 +840,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="ml-notes_files/figure-html/d1cb8eec-30fb-4dcf-973a-9f5cc504696f-1-961de2d2-ff59-4fff-b1eb-8b8ab4016abb.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">image.png</figcaption>
+<figcaption>image.png</figcaption>
 </figure>
 </div>
 </section>
 <section id="overfitting" class="level2">
 <h2 class="anchored" data-anchor-id="overfitting">Overfitting</h2>
-<p>Best fit <strong><em>too</em></strong> accuratly defines traning data and minimizes the loss… but thats only training data and new data will keep the model humble.</p>
+<p>Best fit <strong><em>too</em></strong> accurately defines training data and minimizes the loss… but thats only training data and new data will keep the model humble.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="ml-notes_files/figure-html/74a07f29-81c6-49d9-a919-fe7f2abf8523-2-94e50a04-0ee0-4c63-9af8-c7a03a26756c.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">image.png</figcaption>
+<figcaption>image.png</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="ml-notes_files/figure-html/74a07f29-81c6-49d9-a919-fe7f2abf8523-1-50aa1d04-3d6e-41dd-9705-9a0b8dda396b.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">image.png</figcaption>
+<figcaption>image.png</figcaption>
 </figure>
 </div>
 <section id="random-forests" class="level3">
@@ -863,6 +911,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -931,13 +1006,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -972,18 +1049,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1015,11 +1081,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("http:\/\/toolkit\.goecoug\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1029,8 +1132,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1042,7 +1154,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1086,6 +1320,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1111,6 +1346,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1172,12 +1433,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../../content/development/code/notebooks/logging.html" class="pagination-link">
+      <a href="../../../../content/development/code/notebooks/logging.html" class="pagination-link" aria-label="Logging">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Logging</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../../content/development/code/notebooks/ml-train-and-test.html" class="pagination-link">
+      <a href="../../../../content/development/code/notebooks/ml-train-and-test.html" class="pagination-link" aria-label="ML Training">
         <span class="nav-page-text">ML Training</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -1185,10 +1446,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Caleb Grant, 2023</div>   
+    <div class="nav-footer-left">
+<p>Caleb Grant, 2023</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/geocoug/toolkit/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
@@ -1201,6 +1464,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+
 
 
 

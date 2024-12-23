@@ -116,7 +116,7 @@ PassengerId,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
 1006,1,"Straus, Mrs. Isidor (Rosalie Ida Blun)",female,63,1,0,PC 17483,221.7792,C55 C57,S
 1007,3,"Chronopoulos, Mr. Demetrios",male,18,1,0,2680,14.4542,,C
 1008,3,"Thomas, Mr. John",male,,0,0,2681,6.4375,,C
-1009,3,"Sandstrom, Miss. Beatrice Irene",female,1,1,1,PP 9549,16.7,G6,S
+1009,3,"Sandstorm, Miss. Beatrice Irene",female,1,1,1,PP 9549,16.7,G6,S
 1010,1,"Beattie, Mr. Thomson",male,36,0,0,13050,75.2417,C6,C
 1011,2,"Chapman, Mrs. John Henry (Sara Elizabeth Lawry)",female,29,1,0,SC/AH 29037,26,,S
 1012,2,"Watt, Miss. Bertha J",female,12,0,0,C.A. 33595,15.75,,S
@@ -306,9 +306,9 @@ PassengerId,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
 1196,3,"McCarthy, Miss. Catherine Katie""""",female,,0,0,383123,7.75,,Q
 1197,1,"Crosby, Mrs. Edward Gifford (Catherine Elizabeth Halstead)",female,64,1,1,112901,26.55,B26,S
 1198,1,"Allison, Mr. Hudson Joshua Creighton",male,30,1,2,113781,151.55,C22 C26,S
-1199,3,"Aks, Master. Philip Frank",male,0.83,0,1,392091,9.35,,S
+1199,3,"Ask, Master. Philip Frank",male,0.83,0,1,392091,9.35,,S
 1200,1,"Hays, Mr. Charles Melville",male,55,1,1,12749,93.5,B69,S
-1201,3,"Hansen, Mrs. Claus Peter (Jennie L Howard)",female,45,1,0,350026,14.1083,,S
+1201,3,"Hansen, Mrs. Clause Peter (Jennie L Howard)",female,45,1,0,350026,14.1083,,S
 1202,3,"Cacic, Mr. Jego Grga",male,18,0,0,315091,8.6625,,S
 1203,3,"Vartanian, Mr. David",male,22,0,0,2658,7.225,,C
 1204,3,"Sadowitz, Mr. Harry",male,,0,0,LP 1588,7.575,,S
@@ -382,7 +382,7 @@ PassengerId,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
 1272,3,"O'Connor, Mr. Patrick",male,,0,0,366713,7.75,,Q
 1273,3,"Foley, Mr. Joseph",male,26,0,0,330910,7.8792,,Q
 1274,3,"Risien, Mrs. Samuel (Emma)",female,,0,0,364498,14.5,,S
-1275,3,"McNamee, Mrs. Neal (Eileen O'Leary)",female,19,1,0,376566,16.1,,S
+1275,3,"McNamee, Mrs. Neal (Eileen O'Leery)",female,19,1,0,376566,16.1,,S
 1276,2,"Wheeler, Mr. Edwin Frederick""""",male,,0,0,SC/PARIS 2159,12.875,,S
 1277,2,"Herman, Miss. Kate",female,24,1,2,220845,65,,S
 1278,3,"Aronsson, Mr. Ernst Axel Algot",male,24,0,0,349911,7.775,,S

@@ -41,8 +41,6 @@ website:
     left:
       - text: "Development"
         href: content/development/index.qmd
-      # - text: "Data Management"
-      #   href: content/data-management/index.qmd
       - text: "Recipes"
         href: content/recipes/index.qmd
       - text: "Workouts"
@@ -74,16 +72,6 @@ website:
           href: content/development/server/index.qmd
           contents:
             - auto: "content/development/server/*"
-    # - id: data-management
-    #   collapse-level: 1
-    #   align: left
-    #   contents:
-    #     - content/data-management/index.qmd
-    #     - auto: "content/data-management/*"
-    #     - section: "Processes"
-    #       href: content/data-management/processes/index.qmd
-    #       contents:
-    #         - auto: "content/data-management/processes/*"
     - id: workouts
       title: "Workouts"
       collapse-level: 1

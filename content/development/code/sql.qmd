@@ -59,14 +59,14 @@ where table_name = 'd_location'
 - foreign_table: foreign table schema and name
 - rel: relationship symbol implicating direction
 - primary_table: primary (rerefenced) table schema and name
-- fk_columns: list of FK colum names, separated with ","
+- fk_columns: list of FK column names, separated with ","
 - constraint_name: foreign key constraint name
 
 **Rows**
 
 - One row represents one foreign key.
 - If foreign key consists of multiple columns (composite key) it is still represented as one row.
-- Scope of rows: all foregin keys in a database.
+- Scope of rows: all foreign keys in a database.
 - Ordered by foreign table schema name and table name.
 
 ### Ordering Tables by FK
@@ -162,10 +162,10 @@ select * from
 (select relations.table_name as table_name, -- schema name and table name
        count(relations.table_name) as relationships, -- number of table relationships
        count(relations.referenced_tables) as foreign_keys, -- number of foreign keys in a table
-       count(relations.referencing_tables) as references, -- number of foreign keys that are refering to this table
+       count(relations.referencing_tables) as references, -- number of foreign keys that are referring to this table
        count(distinct related_table) as related_tables, -- number of related tables
        count(distinct relations.referenced_tables) as referenced_tables, -- number of different tables referenced with FKs (multiple FKs can refer to one table, so number of FKs might be different than number of referenced tables)
-       count(distinct relations.referencing_tables) as referencing_tables -- number of different tables that are refering to this table (similar to referenced_tables)
+       count(distinct relations.referencing_tables) as referencing_tables -- number of different tables that are referring to this table (similar to referenced_tables)
 from(
      select pk_tco.table_schema || '.' || pk_tco.table_name as table_name,
             fk_tco.table_schema || '.' || fk_tco.table_name as related_table,
@@ -541,7 +541,7 @@ and n.nspname = 'gsidb'
 order by function_schema, function_name;
 ```
 
-### Whos logged in
+### Whose logged in
 
 ```sql
 select * from pg_stat_activity
