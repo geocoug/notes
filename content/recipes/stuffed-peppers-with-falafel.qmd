@@ -1,7 +1,7 @@
 ---
 title: Stuffed Peppers with Falafel
 description: Stuffed Peppers with Falafel
-categories: [Healthy,Meal]
+categories: [Lunch,Dinner]
 cooktime: 45 minutes
 date: 2023-11-24
 ---

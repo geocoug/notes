@@ -1,7 +1,7 @@
 ---
 title: Shrimp Fried Cauliflower Rice
 description: Shrimp fried cauliflower rice
-categories: [Healthy, Lunch, Dinner]
+categories: [Lunch, Dinner]
 cooktime: 20 minutes
 date: 2024-01-14
 ---

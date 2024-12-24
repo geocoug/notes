@@ -1,7 +1,7 @@
 ---
 title: Chipotle Burrito Bowl
 description: Chipotle Burrito Bowl
-categories: [Healthy,Meal]
+categories: [Lunch,Dinner]
 cooktime: 3 hours
 date: 2023-11-24
 ---

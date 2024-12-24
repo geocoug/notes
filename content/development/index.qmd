@@ -45,3 +45,140 @@ General coding best practices are a set of guidelines and recommendations that h
 14. **Keep up with best practices**: Stay updated with the latest best practices, coding standards, and programming language conventions. Regularly learn and improve your coding skills to write better code over time.
 
 Remember that best practices may vary depending on the specific programming language, domain, and project requirements. It's important to adapt and adjust these practices as needed for each situation.
+
+## Mounting a Windows Share
+
+### Quick Reference
+
+The command below can be used to create a temporary mount point although the mount will disassociate on next server reboot.
+
+```sh
+mkdir /home/<user>/mnt/DataManagement && \
+sudo mount -t cifs //10.10.145.5/DataManagement /home/<user>/mnt/DataManagement -o username=<user>,password="",uid=1000
+```
+  
+### Persistent Mounts
+
+1. Create a mount point to a Windows share name (e.g. Q):  `sudo mkdir /mnt/share/Q`
+2. Append the following similar line to `/etc/fstab`-- to associate the mount automatically upon machine boot:
+
+    ```sh
+    //192.168.50.19/Transfer /mnt/share/Q cifs credentials=/home/DatamanBU/.smbpasswd,uid=1011,gid=1005,dir_mode=0775,file_mode=0775,rw 0 0
+    ```
+  
+    Notes:
+
+    - `uid=1011`: mount as user `username`. Find UID with `id -u <username>`
+    - `gid=1005`: mount as group `datamgrs`
+    - `dir_mode=0775`, `file_mode=0775`: readable/writeable by any users that are members of datamgrs group
+    - The credentials file `/home/DatamanBU/.smpbasswd` must already exist (or be created) by root. It contains 2 lines:
+
+        ```txt
+        username=DatamanBU
+        password=password
+        ```
+
+    - Make the credentials file only readable by root:  `sudo chmod 700 /home/DatamanBU/.smbpasswd`
+
+3. Associate the mount immediately:  `sudo mount -a -v -t cifs`
+
+## Linux Permissions
+
+### Syntax
+
+General: `_rwxrwxrwx 1 owner group`
+
+`_ | rwx | rwx | rwx` = Special | Owner | Group | All Users
+
+#### Shorthand
+
+- `4` | `r` = Read
+- `2` | `w` = Write
+- `1` | `x` = Execute
+
+#### Detailed
+
+- `0` = `---`
+- `1` = `--x`
+- `2` = `-w-`
+- `3` = `-wx`
+- `4` = `r-`
+- `5` = `r-x`
+- `6` = `rw-`
+- `7` = `rwx`
+
+### Commands
+
+`chgrp` = Change group
+
+_Example_: `sudo chgrp -R <group> <folder>`
+
+`chown` = Change ownership
+
+_Example_: `sudo chown -R <user>:<group> <file/folder>`
+
+`chmod` = Change permissions
+
+_Example_: `sudo chmod -R 774 <file/folder>`
+
+Make new files inherit the group: `sudo chmod g+s <folder>`
+
+#### Example
+
+Create a shared directory for a group.1. Create a shared directory for users to access: `/share`
+
+1. Assign users to a common group (staff): `sudo usermod -a -G staff <user>`
+2. Verify user groups: `groups <user>`
+3. Create shared directory and assign permissions:
+
+```bash
+sudo mkdir /share && \
+sudo chgrp -R staff /share && \ # assign group
+sudo chmod -R g+w /share && \ # permissions
+sudo chmod -R +s /share # inherit permissions for newly created files/folders
+```
+
+## Diffing PDF and DOCX files
+
+If you have a `PDF` and `DOCX` of the _same_ document and want to check for difference in text, use `diff` to compare them. Since we’re using `--word-diff`, it doesn’t matter that the two files use _wildly_ different line wrapping.
+
+```sh
+gs -q -sDEVICE=txtwrite -o- file1.pdf > file1.txt
+pandoc -t plain file2.docx > file2.txt
+git diff --no-index --word-diff file1.txt file2.txt
+```
+
+Or create a shortcut...
+
+```sh
+alias pdfcat='gs -q -sDEVICE=txtwrite -o-'
+alias doccat='pandoc -t plain'
+pdfcat file1.pdf > file1.txt
+doccat file2.docx > file2.txt
+git diff --no-index --word-diff file1.txt file2.txt
+```
+
+[Credits](https://chaos.social/@scy/110854990215865183)
+
+## SFTP
+
+Below are steps for pulling server files to a local machine using SFTP.
+
+1. Allow secure connection for local IP on remote machine
+
+    ```sh
+    sudo ufw allow from 73.239.143.170 to any port 22
+    ```
+
+1. Create SFTP connection to remote from local machine
+
+   ```sh
+   sftp hostname@167.99.102.213
+   sftp hostname@167.99.102.213's password: SuperSecret
+   ```
+
+1. Pull remote files to local machine
+
+    ```sh
+    get {remote-path} {local-path}
+    ```

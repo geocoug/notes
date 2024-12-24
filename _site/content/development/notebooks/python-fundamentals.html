@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Concepts and methods on the fundamentals of Python">
+
+<title>Python Fundamentals – Toolkit</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../content/development/notebooks/sleep-data.html" rel="next">
+<link href="../../../content/development/notebooks/pyspark-practice.html" rel="prev">
+<link href="../../..//static/favicon.ico" rel="icon">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-0626ff4d7a71b55c8707dcae1d04a9b6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-e25cc82807363e79c52e96bc8b7855f1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-cc62c3bb2915d631aed5c5273114e56f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-888a70d03101a4ade01c9fc78ea256cb.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": true,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+</script>
+
+
+<link rel="stylesheet" href="../../../static/styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../static/logo.svg" alt="" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../content/development/index.html" aria-current="page"> 
+<span class="menu-text">Development</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../content/recipes/index.html"> 
+<span class="menu-text">Recipes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../content/workouts/index.html"> 
+<span class="menu-text">Workouts</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../content/development/notebooks/index.html">Notebooks</a></li><li class="breadcrumb-item"><a href="../../../content/development/notebooks/python-fundamentals.html">Python Fundamentals</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Best Practices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/blogs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Blogs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/infographics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Infographics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../content/development/code/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/code/bash.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bash</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/code/python.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/code/regex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Regex</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/code/sql.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SQL</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../content/development/notebooks/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notebooks</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/notebooks/data-science.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Science</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/notebooks/grib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GRIB</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/notebooks/logging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Logging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/notebooks/ml-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ML Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/notebooks/ml-train-and-test.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ML Training</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/notebooks/pyspark-practice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PySpark Practice</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/notebooks/python-fundamentals.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Python Fundamentals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/notebooks/sleep-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sleep Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/notebooks/visualization-with-seaborn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualization with Seaborn</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/notebooks/web-scraping.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Web Scraping</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tools</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/tools/docker.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Docker</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/tools/git.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/tools/github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GitHub</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/tools/miscellaneous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Miscellaneous</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../content/development/server/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Server</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/server/jupyter-server.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jupyter Server</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/server/python-web-app.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Web App</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/development/server/rstudio-server.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rstudio Server</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#python-fundamentals" id="toc-python-fundamentals" class="nav-link active" data-scroll-target="#python-fundamentals">Python Fundamentals</a></li>
+  <li><a href="#modules-methods" id="toc-modules-methods" class="nav-link" data-scroll-target="#modules-methods">Modules &amp; Methods</a></li>
+  <li><a href="#object-oriented-programming-oop" id="toc-object-oriented-programming-oop" class="nav-link" data-scroll-target="#object-oriented-programming-oop">Object Oriented Programming (OOP)</a>
+  <ul class="collapse">
+  <li><a href="#creating-a-class" id="toc-creating-a-class" class="nav-link" data-scroll-target="#creating-a-class">Creating a class</a></li>
+  <li><a href="#methods-in-a-class" id="toc-methods-in-a-class" class="nav-link" data-scroll-target="#methods-in-a-class">Methods in a class</a></li>
+  <li><a href="#init__" id="toc-init__" class="nav-link" data-scroll-target="#init__"><code>__init__</code></a></li>
+  <li><a href="#using-attributes-in-a-method" id="toc-using-attributes-in-a-method" class="nav-link" data-scroll-target="#using-attributes-in-a-method">Using attributes in a method</a></li>
+  <li><a href="#changing-variable-names-in-a-class-object" id="toc-changing-variable-names-in-a-class-object" class="nav-link" data-scroll-target="#changing-variable-names-in-a-class-object">Changing variable names in a class object</a></li>
+  <li><a href="#practical-example---payfriend" id="toc-practical-example---payfriend" class="nav-link" data-scroll-target="#practical-example---payfriend">Practical Example - PayFriend</a></li>
+  </ul></li>
+  <li><a href="#functional-programming" id="toc-functional-programming" class="nav-link" data-scroll-target="#functional-programming">Functional Programming</a>
+  <ul class="collapse">
+  <li><a href="#lambda" id="toc-lambda" class="nav-link" data-scroll-target="#lambda">Lambda</a></li>
+  <li><a href="#map" id="toc-map" class="nav-link" data-scroll-target="#map">Map</a></li>
+  <li><a href="#filter" id="toc-filter" class="nav-link" data-scroll-target="#filter">Filter</a></li>
+  <li><a href="#generators" id="toc-generators" class="nav-link" data-scroll-target="#generators">Generators</a>
+  <ul class="collapse">
+  <li><a href="#nested-generators" id="toc-nested-generators" class="nav-link" data-scroll-target="#nested-generators">Nested Generators</a></li>
+  <li><a href="#generator-vs.-list-comprehension" id="toc-generator-vs.-list-comprehension" class="nav-link" data-scroll-target="#generator-vs.-list-comprehension">Generator vs.&nbsp;List Comprehension</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/geocoug/toolkit/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../content/development/notebooks/index.html">Notebooks</a></li><li class="breadcrumb-item"><a href="../../../content/development/notebooks/python-fundamentals.html">Python Fundamentals</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Python Fundamentals</h1>
+</div>
+
+<div>
+  <div class="description">
+    Concepts and methods on the fundamentals of Python
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="python-fundamentals" class="level1">
+<h1>Python Fundamentals</h1>
+<p>Concepts and methods on the fundamentals of Python.</p>
+</section>
+<section id="modules-methods" class="level1">
+<h1>Modules &amp; Methods</h1>
+<p>Modules contain a “library” of methods</p>
+</section>
+<section id="object-oriented-programming-oop" class="level1">
+<h1>Object Oriented Programming (OOP)</h1>
+<p><strong><em>Classes</em></strong></p>
+<p>Consists of attributes and methods</p>
+<p><strong>Example</strong>: Car</p>
+<p><em>Attributes</em>: fuel, max speed, color</p>
+<p><em>Method</em> (function): refuel(), setSpeed()</p>
+<p>Methods create attributes for classes</p>
+<section id="creating-a-class" class="level2">
+<h2 class="anchored" data-anchor-id="creating-a-class">Creating a class</h2>
+<div id="revised-makeup" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="revised-makeup"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="revised-makeup-1"><a href="#revised-makeup-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> MyClass:</span>
+<span id="revised-makeup-2"><a href="#revised-makeup-2" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="dv">55</span></span>
+<span id="revised-makeup-3"><a href="#revised-makeup-3" aria-hidden="true" tabindex="-1"></a>    name <span class="op">=</span> <span class="st">"Allie Trent"</span></span>
+<span id="revised-makeup-4"><a href="#revised-makeup-4" aria-hidden="true" tabindex="-1"></a>    attr_list <span class="op">=</span> [<span class="st">"Bones"</span>, <span class="st">"Food"</span>, <span class="st">"Frisbee"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tested-andorra" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="tested-andorra"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="tested-andorra-1"><a href="#tested-andorra-1" aria-hidden="true" tabindex="-1"></a>MyClass.name</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<pre><code>'Allie Trent'</code></pre>
+</div>
+</div>
+</section>
+<section id="methods-in-a-class" class="level2">
+<h2 class="anchored" data-anchor-id="methods-in-a-class">Methods in a class</h2>
+<div id="coral-civilian" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="coral-civilian"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="coral-civilian-1"><a href="#coral-civilian-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Methods_Class:</span>
+<span id="coral-civilian-2"><a href="#coral-civilian-2" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">"Hello World"</span></span>
+<span id="coral-civilian-3"><a href="#coral-civilian-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="coral-civilian-4"><a href="#coral-civilian-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> my_method():</span>
+<span id="coral-civilian-5"><a href="#coral-civilian-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Contents of my_method"</span>)</span>
+<span id="coral-civilian-6"><a href="#coral-civilian-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="coral-civilian-7"><a href="#coral-civilian-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> subtractor(num_one, num_two):</span>
+<span id="coral-civilian-8"><a href="#coral-civilian-8" aria-hidden="true" tabindex="-1"></a>        product <span class="op">=</span> num_one <span class="op">-</span> num_two</span>
+<span id="coral-civilian-9"><a href="#coral-civilian-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>num_two<span class="sc">}</span><span class="ss"> - </span><span class="sc">{</span>num_one<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>product<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="coral-civilian-10"><a href="#coral-civilian-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="coral-civilian-11"><a href="#coral-civilian-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> print_stuff(a, b):</span>
+<span id="coral-civilian-12"><a href="#coral-civilian-12" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(a, b)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="above-miracle" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="above-miracle"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="above-miracle-1"><a href="#above-miracle-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Methods_Class)</span>
+<span id="above-miracle-2"><a href="#above-miracle-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Methods_Class.x)</span>
+<span id="above-miracle-3"><a href="#above-miracle-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Methods_Class.my_method)</span>
+<span id="above-miracle-4"><a href="#above-miracle-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Methods_Class.my_method())</span>
+<span id="above-miracle-5"><a href="#above-miracle-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Methods_Class.subtractor(<span class="dv">20</span>, <span class="dv">5</span>))</span>
+<span id="above-miracle-6"><a href="#above-miracle-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Methods_Class.print_stuff(<span class="dv">3</span>, <span class="st">"Hello"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class '__main__.Methods_Class'&gt;
+Hello World
+&lt;function Methods_Class.my_method at 0xffffab79b400&gt;
+Contents of my_method
+None
+5 - 20 = 15
+None
+3 Hello
+None</code></pre>
+</div>
+</div>
+</section>
+<section id="init__" class="level2">
+<h2 class="anchored" data-anchor-id="init__"><code>__init__</code></h2>
+<p>Function defined at the start of a class</p>
+<div id="alien-ordinary" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="alien-ordinary"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="alien-ordinary-1"><a href="#alien-ordinary-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Animals:</span>
+<span id="alien-ordinary-2"><a href="#alien-ordinary-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, size, noise, color, num_of_legs):</span>
+<span id="alien-ordinary-3"><a href="#alien-ordinary-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.size <span class="op">=</span> size</span>
+<span id="alien-ordinary-4"><a href="#alien-ordinary-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.noise <span class="op">=</span> noise</span>
+<span id="alien-ordinary-5"><a href="#alien-ordinary-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.color <span class="op">=</span> color</span>
+<span id="alien-ordinary-6"><a href="#alien-ordinary-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.num_of_legs <span class="op">=</span> num_of_legs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="involved-rolling" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="involved-rolling"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="involved-rolling-1"><a href="#involved-rolling-1" aria-hidden="true" tabindex="-1"></a>dog <span class="op">=</span> Animals(<span class="st">"Large"</span>, <span class="st">"Woof"</span>, <span class="st">"Liver &amp; White"</span>, <span class="dv">4</span>)</span>
+<span id="involved-rolling-2"><a href="#involved-rolling-2" aria-hidden="true" tabindex="-1"></a>dog</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<pre><code>&lt;__main__.Animals at 0xffffab81e590&gt;</code></pre>
+</div>
+</div>
+<div id="broke-priority" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="broke-priority"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="broke-priority-1"><a href="#broke-priority-1" aria-hidden="true" tabindex="-1"></a>dog.noise</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<pre><code>'Woof'</code></pre>
+</div>
+</div>
+</section>
+<section id="using-attributes-in-a-method" class="level2">
+<h2 class="anchored" data-anchor-id="using-attributes-in-a-method">Using attributes in a method</h2>
+<div id="norman-poland" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="norman-poland"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="norman-poland-1"><a href="#norman-poland-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Animals:</span>
+<span id="norman-poland-2"><a href="#norman-poland-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, species, name, noise, color):</span>
+<span id="norman-poland-3"><a href="#norman-poland-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.species <span class="op">=</span> species</span>
+<span id="norman-poland-4"><a href="#norman-poland-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.name <span class="op">=</span> name</span>
+<span id="norman-poland-5"><a href="#norman-poland-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.noise <span class="op">=</span> noise</span>
+<span id="norman-poland-6"><a href="#norman-poland-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.color <span class="op">=</span> color</span>
+<span id="norman-poland-7"><a href="#norman-poland-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="norman-poland-8"><a href="#norman-poland-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> describe(<span class="va">self</span>):</span>
+<span id="norman-poland-9"><a href="#norman-poland-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> is </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>color<span class="sc">}</span><span class="ss"> which makes a </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>noise<span class="sc">}</span><span class="ss"> noise"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="meaningful-utility" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="meaningful-utility"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="meaningful-utility-1"><a href="#meaningful-utility-1" aria-hidden="true" tabindex="-1"></a>dog <span class="op">=</span> Animals(<span class="st">"Dog"</span>, <span class="st">"Allie"</span>, <span class="st">"Woof"</span>, <span class="st">"Liver &amp; White"</span>)</span>
+<span id="meaningful-utility-2"><a href="#meaningful-utility-2" aria-hidden="true" tabindex="-1"></a>cat <span class="op">=</span> Animals(<span class="st">"Cat"</span>, <span class="st">"Misty"</span>, <span class="st">"Meow"</span>, <span class="st">"Black"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="random-protest" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="random-protest"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="random-protest-1"><a href="#random-protest-1" aria-hidden="true" tabindex="-1"></a>dog.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Allie is Liver &amp; White which makes a Woof noise</code></pre>
+</div>
+</div>
+</section>
+<section id="changing-variable-names-in-a-class-object" class="level2">
+<h2 class="anchored" data-anchor-id="changing-variable-names-in-a-class-object">Changing variable names in a class object</h2>
+<div id="sustainable-animal" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="sustainable-animal"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="sustainable-animal-1"><a href="#sustainable-animal-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Ages:</span>
+<span id="sustainable-animal-2"><a href="#sustainable-animal-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, age):</span>
+<span id="sustainable-animal-3"><a href="#sustainable-animal-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.age <span class="op">=</span> age</span>
+<span id="sustainable-animal-4"><a href="#sustainable-animal-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="sustainable-animal-5"><a href="#sustainable-animal-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> plus_year(<span class="va">self</span>):</span>
+<span id="sustainable-animal-6"><a href="#sustainable-animal-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.age <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="sustainable-animal-7"><a href="#sustainable-animal-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="sustainable-animal-8"><a href="#sustainable-animal-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> show_age(<span class="va">self</span>):</span>
+<span id="sustainable-animal-9"><a href="#sustainable-animal-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Your age is </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>age<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="fossil-selling" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="fossil-selling"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="fossil-selling-1"><a href="#fossil-selling-1" aria-hidden="true" tabindex="-1"></a>me <span class="op">=</span> Ages(<span class="dv">27</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="random-focus" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="random-focus"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="random-focus-1"><a href="#random-focus-1" aria-hidden="true" tabindex="-1"></a>me.plus_year()</span>
+<span id="random-focus-2"><a href="#random-focus-2" aria-hidden="true" tabindex="-1"></a>me.show_age()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Your age is 28</code></pre>
+</div>
+</div>
+<div id="satisfactory-intensity" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="satisfactory-intensity"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="satisfactory-intensity-1"><a href="#satisfactory-intensity-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Warrior:</span>
+<span id="satisfactory-intensity-2"><a href="#satisfactory-intensity-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name, strength, health):</span>
+<span id="satisfactory-intensity-3"><a href="#satisfactory-intensity-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.name <span class="op">=</span> name</span>
+<span id="satisfactory-intensity-4"><a href="#satisfactory-intensity-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.strength <span class="op">=</span> strength</span>
+<span id="satisfactory-intensity-5"><a href="#satisfactory-intensity-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.health <span class="op">=</span> health</span>
+<span id="satisfactory-intensity-6"><a href="#satisfactory-intensity-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="satisfactory-intensity-7"><a href="#satisfactory-intensity-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> report(<span class="va">self</span>):</span>
+<span id="satisfactory-intensity-8"><a href="#satisfactory-intensity-8" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(</span>
+<span id="satisfactory-intensity-9"><a href="#satisfactory-intensity-9" aria-hidden="true" tabindex="-1"></a>            <span class="ss">f"Hi </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss">, your strength is </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>strength<span class="sc">}</span><span class="ss"> and health is </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>health<span class="sc">}</span><span class="ss">"</span></span>
+<span id="satisfactory-intensity-10"><a href="#satisfactory-intensity-10" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="satisfactory-intensity-11"><a href="#satisfactory-intensity-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="satisfactory-intensity-12"><a href="#satisfactory-intensity-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> heal(<span class="va">self</span>):</span>
+<span id="satisfactory-intensity-13"><a href="#satisfactory-intensity-13" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.health <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="satisfactory-intensity-14"><a href="#satisfactory-intensity-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="satisfactory-intensity-15"><a href="#satisfactory-intensity-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> damage(<span class="va">self</span>):</span>
+<span id="satisfactory-intensity-16"><a href="#satisfactory-intensity-16" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.health <span class="op">-=</span> <span class="dv">1</span></span>
+<span id="satisfactory-intensity-17"><a href="#satisfactory-intensity-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="satisfactory-intensity-18"><a href="#satisfactory-intensity-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> workout(<span class="va">self</span>):</span>
+<span id="satisfactory-intensity-19"><a href="#satisfactory-intensity-19" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.strength <span class="op">+=</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="foreign-halifax" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="foreign-halifax"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="foreign-halifax-1"><a href="#foreign-halifax-1" aria-hidden="true" tabindex="-1"></a>character <span class="op">=</span> Warrior(<span class="st">"Geocoug"</span>, <span class="dv">60</span>, <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="moved-windows" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="moved-windows"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="moved-windows-1"><a href="#moved-windows-1" aria-hidden="true" tabindex="-1"></a>[character.damage() <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">8</span>)]</span>
+<span id="moved-windows-2"><a href="#moved-windows-2" aria-hidden="true" tabindex="-1"></a>character.report()</span>
+<span id="moved-windows-3"><a href="#moved-windows-3" aria-hidden="true" tabindex="-1"></a>[character.heal() <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>)]</span>
+<span id="moved-windows-4"><a href="#moved-windows-4" aria-hidden="true" tabindex="-1"></a>character.report()</span>
+<span id="moved-windows-5"><a href="#moved-windows-5" aria-hidden="true" tabindex="-1"></a>character.workout()</span>
+<span id="moved-windows-6"><a href="#moved-windows-6" aria-hidden="true" tabindex="-1"></a>character.report()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Hi Geocoug, your strength is 60 and health is 92
+Hi Geocoug, your strength is 60 and health is 97
+Hi Geocoug, your strength is 61 and health is 97</code></pre>
+</div>
+</div>
+</section>
+<section id="practical-example---payfriend" class="level2">
+<h2 class="anchored" data-anchor-id="practical-example---payfriend">Practical Example - PayFriend</h2>
+<p>Create an online bank where: - User can create a new account that includes: Account type (current, savings, etc), name of account holder, account balance, etc. - User can withdraw or deposit money, or check balance</p>
+<div id="august-complex" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="august-complex"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="august-complex-1"><a href="#august-complex-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Banking:</span>
+<span id="august-complex-2"><a href="#august-complex-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name, account, balance):</span>
+<span id="august-complex-3"><a href="#august-complex-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.name <span class="op">=</span> name</span>
+<span id="august-complex-4"><a href="#august-complex-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.account <span class="op">=</span> account</span>
+<span id="august-complex-5"><a href="#august-complex-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.balance <span class="op">=</span> balance</span>
+<span id="august-complex-6"><a href="#august-complex-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="august-complex-7"><a href="#august-complex-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> deposit(<span class="va">self</span>, amount):</span>
+<span id="august-complex-8"><a href="#august-complex-8" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.balance <span class="op">+=</span> amount</span>
+<span id="august-complex-9"><a href="#august-complex-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="august-complex-10"><a href="#august-complex-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> withdraw(<span class="va">self</span>, amount):</span>
+<span id="august-complex-11"><a href="#august-complex-11" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.balance <span class="op">-=</span> amount</span>
+<span id="august-complex-12"><a href="#august-complex-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="august-complex-13"><a href="#august-complex-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> report(<span class="va">self</span>):</span>
+<span id="august-complex-14"><a href="#august-complex-14" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss">, the balance of </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>account<span class="sc">}</span><span class="ss"> is $</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>balance<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="measured-dimension" class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="measured-dimension"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="measured-dimension-1"><a href="#measured-dimension-1" aria-hidden="true" tabindex="-1"></a>my_account <span class="op">=</span> Banking(<span class="st">"Geocoug"</span>, <span class="st">"Savings"</span>, <span class="dv">1000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="recreational-massage" class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="recreational-massage"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="recreational-massage-1"><a href="#recreational-massage-1" aria-hidden="true" tabindex="-1"></a>my_account.deposit(<span class="dv">50</span>)</span>
+<span id="recreational-massage-2"><a href="#recreational-massage-2" aria-hidden="true" tabindex="-1"></a>my_account.report()</span>
+<span id="recreational-massage-3"><a href="#recreational-massage-3" aria-hidden="true" tabindex="-1"></a>my_account.withdraw(<span class="dv">500</span>)</span>
+<span id="recreational-massage-4"><a href="#recreational-massage-4" aria-hidden="true" tabindex="-1"></a>my_account.report()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Geocoug, the balance of Savings is $1050
+Geocoug, the balance of Savings is $550</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="functional-programming" class="level1">
+<h1>Functional Programming</h1>
+<section id="lambda" class="level2">
+<h2 class="anchored" data-anchor-id="lambda">Lambda</h2>
+<p>Quicker way of creating functions</p>
+<div id="acquired-facial" class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="acquired-facial"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="acquired-facial-1"><a href="#acquired-facial-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> some_func(x):</span>
+<span id="acquired-facial-2"><a href="#acquired-facial-2" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> x <span class="op">+</span> <span class="dv">2</span></span>
+<span id="acquired-facial-3"><a href="#acquired-facial-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="acquired-facial-4"><a href="#acquired-facial-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="acquired-facial-5"><a href="#acquired-facial-5" aria-hidden="true" tabindex="-1"></a><span class="kw">lambda</span> x: x <span class="op">+</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="20">
+<pre><code>&lt;function __main__.&lt;lambda&gt;(x)&gt;</code></pre>
+</div>
+</div>
+<div id="economic-waterproof" class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="economic-waterproof"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="economic-waterproof-1"><a href="#economic-waterproof-1" aria-hidden="true" tabindex="-1"></a>lambda_func <span class="op">=</span> <span class="kw">lambda</span> x: x <span class="op">+</span> <span class="dv">2</span></span>
+<span id="economic-waterproof-2"><a href="#economic-waterproof-2" aria-hidden="true" tabindex="-1"></a>lambda_func(<span class="dv">6</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="21">
+<pre><code>8</code></pre>
+</div>
+</div>
+<div id="sacred-cleanup" class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="sacred-cleanup"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="sacred-cleanup-1"><a href="#sacred-cleanup-1" aria-hidden="true" tabindex="-1"></a>other_func <span class="op">=</span> <span class="kw">lambda</span> name: <span class="ss">f"Hello there, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">"</span></span>
+<span id="sacred-cleanup-2"><a href="#sacred-cleanup-2" aria-hidden="true" tabindex="-1"></a>other_func(<span class="st">"Geocoug"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="22">
+<pre><code>'Hello there, Geocoug'</code></pre>
+</div>
+</div>
+<div id="parliamentary-lincoln" class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="parliamentary-lincoln"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="parliamentary-lincoln-1"><a href="#parliamentary-lincoln-1" aria-hidden="true" tabindex="-1"></a>another_func <span class="op">=</span> <span class="kw">lambda</span> x, y: x <span class="op">+</span> y</span>
+<span id="parliamentary-lincoln-2"><a href="#parliamentary-lincoln-2" aria-hidden="true" tabindex="-1"></a>another_func(<span class="dv">3</span>, <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="23">
+<pre><code>7</code></pre>
+</div>
+</div>
+</section>
+<section id="map" class="level2">
+<h2 class="anchored" data-anchor-id="map">Map</h2>
+<p>Apply the same function/operation on all elements in a list</p>
+<p><code>map(name of function, name of list)</code></p>
+<div id="dimensional-prisoner" class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="dimensional-prisoner"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="dimensional-prisoner-1"><a href="#dimensional-prisoner-1" aria-hidden="true" tabindex="-1"></a><span class="co"># using map as a normal function</span></span>
+<span id="dimensional-prisoner-2"><a href="#dimensional-prisoner-2" aria-hidden="true" tabindex="-1"></a>somelist <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">15</span>]</span>
+<span id="dimensional-prisoner-3"><a href="#dimensional-prisoner-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="dimensional-prisoner-4"><a href="#dimensional-prisoner-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="dimensional-prisoner-5"><a href="#dimensional-prisoner-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> divider(x):</span>
+<span id="dimensional-prisoner-6"><a href="#dimensional-prisoner-6" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> x <span class="op">/</span> <span class="dv">5</span></span>
+<span id="dimensional-prisoner-7"><a href="#dimensional-prisoner-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> y</span>
+<span id="dimensional-prisoner-8"><a href="#dimensional-prisoner-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="dimensional-prisoner-9"><a href="#dimensional-prisoner-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="dimensional-prisoner-10"><a href="#dimensional-prisoner-10" aria-hidden="true" tabindex="-1"></a>newlist <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(divider, somelist))</span>
+<span id="dimensional-prisoner-11"><a href="#dimensional-prisoner-11" aria-hidden="true" tabindex="-1"></a>newlist</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="24">
+<pre><code>[0.2, 2.0, 4.0, 3.0]</code></pre>
+</div>
+</div>
+<div id="above-documentation" class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="above-documentation"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="above-documentation-1"><a href="#above-documentation-1" aria-hidden="true" tabindex="-1"></a>somelist <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">15</span>]</span>
+<span id="above-documentation-2"><a href="#above-documentation-2" aria-hidden="true" tabindex="-1"></a>newlist <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x <span class="op">/</span> <span class="dv">5</span>, somelist))</span>
+<span id="above-documentation-3"><a href="#above-documentation-3" aria-hidden="true" tabindex="-1"></a>newlist</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="25">
+<pre><code>[0.2, 2.0, 4.0, 3.0]</code></pre>
+</div>
+</div>
+<div id="classical-extension" class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="classical-extension"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="classical-extension-1"><a href="#classical-extension-1" aria-hidden="true" tabindex="-1"></a>num_tuple <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">15</span>)</span>
+<span id="classical-extension-2"><a href="#classical-extension-2" aria-hidden="true" tabindex="-1"></a>new_tuple <span class="op">=</span> <span class="bu">tuple</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x <span class="op">/</span> <span class="dv">5</span>, num_tuple))</span>
+<span id="classical-extension-3"><a href="#classical-extension-3" aria-hidden="true" tabindex="-1"></a>new_tuple</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="26">
+<pre><code>(0.2, 2.0, 4.0, 3.0)</code></pre>
+</div>
+</div>
+<div id="essential-structure" class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="essential-structure"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="essential-structure-1"><a href="#essential-structure-1" aria-hidden="true" tabindex="-1"></a>list_one <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
+<span id="essential-structure-2"><a href="#essential-structure-2" aria-hidden="true" tabindex="-1"></a>list_two <span class="op">=</span> [<span class="dv">90</span>, <span class="dv">80</span>, <span class="dv">70</span>, <span class="dv">60</span>]</span>
+<span id="essential-structure-3"><a href="#essential-structure-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="essential-structure-4"><a href="#essential-structure-4" aria-hidden="true" tabindex="-1"></a>new_list <span class="op">=</span> <span class="bu">map</span>(<span class="kw">lambda</span> x, y: x <span class="op">+</span> y, list_one, list_two)</span>
+<span id="essential-structure-5"><a href="#essential-structure-5" aria-hidden="true" tabindex="-1"></a><span class="bu">list</span>(new_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="27">
+<pre><code>[91, 82, 73, 64]</code></pre>
+</div>
+</div>
+</section>
+<section id="filter" class="level2">
+<h2 class="anchored" data-anchor-id="filter">Filter</h2>
+<div id="hourly-blade" class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="hourly-blade"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="hourly-blade-1"><a href="#hourly-blade-1" aria-hidden="true" tabindex="-1"></a>my_list <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">14</span>, <span class="dv">53</span>, <span class="dv">72</span>, <span class="dv">22</span>, <span class="dv">99</span>]</span>
+<span id="hourly-blade-2"><a href="#hourly-blade-2" aria-hidden="true" tabindex="-1"></a>filtered_list <span class="op">=</span> <span class="bu">filter</span>(<span class="kw">lambda</span> x: x <span class="op">&gt;=</span> <span class="dv">50</span>, my_list)</span>
+<span id="hourly-blade-3"><a href="#hourly-blade-3" aria-hidden="true" tabindex="-1"></a><span class="bu">list</span>(filtered_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="28">
+<pre><code>[53, 72, 99]</code></pre>
+</div>
+</div>
+</section>
+<section id="generators" class="level2">
+<h2 class="anchored" data-anchor-id="generators">Generators</h2>
+<p>Generators - <code>yield</code> instead of return. Return terminates local variables, yield ‘pauses’.</p>
+<p>See - <a href="https://towardsdatascience.com/cpython-internals-how-do-generators-work-ba1c4405b4bc">How do python generators work?</a></p>
+<div id="macro-camel" class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="macro-camel"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="macro-camel-1"><a href="#macro-camel-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> a():</span>
+<span id="macro-camel-2"><a href="#macro-camel-2" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="macro-camel-3"><a href="#macro-camel-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">yield</span> x</span>
+<span id="macro-camel-4"><a href="#macro-camel-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="macro-camel-5"><a href="#macro-camel-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="macro-camel-6"><a href="#macro-camel-6" aria-hidden="true" tabindex="-1"></a>a()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="29">
+<pre><code>&lt;generator object a at 0xffffab9637d0&gt;</code></pre>
+</div>
+</div>
+<div id="seven-asset" class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="seven-asset"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="seven-asset-1"><a href="#seven-asset-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> a():</span>
+<span id="seven-asset-2"><a href="#seven-asset-2" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="seven-asset-3"><a href="#seven-asset-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">yield</span> x</span>
+<span id="seven-asset-4"><a href="#seven-asset-4" aria-hidden="true" tabindex="-1"></a>    x <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="seven-asset-5"><a href="#seven-asset-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">yield</span> x</span>
+<span id="seven-asset-6"><a href="#seven-asset-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="seven-asset-7"><a href="#seven-asset-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="seven-asset-8"><a href="#seven-asset-8" aria-hidden="true" tabindex="-1"></a>example <span class="op">=</span> a()</span>
+<span id="seven-asset-9"><a href="#seven-asset-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">next</span>(example))</span>
+<span id="seven-asset-10"><a href="#seven-asset-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">next</span>(example))</span>
+<span id="seven-asset-11"><a href="#seven-asset-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">next</span>(example))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>5
+6</code></pre>
+</div>
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">StopIteration</span>                             Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[30], line 9</span>
+<span class="ansi-green-fg ansi-bold">      7</span> <span style="color:rgb(0,135,0)">print</span>(<span style="color:rgb(0,135,0)">next</span>(example))
+<span class="ansi-green-fg ansi-bold">      8</span> <span style="color:rgb(0,135,0)">print</span>(<span style="color:rgb(0,135,0)">next</span>(example))
+<span class="ansi-green-fg">----&gt; 9</span> <span style="color:rgb(0,135,0)">print</span>(<span style="color:rgb(0,135,0)" class="ansi-yellow-bg">next</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">example</span><span class="ansi-yellow-bg">)</span>)
+
+<span class="ansi-red-fg">StopIteration</span>: </pre>
+</div>
+</div>
+</div>
+<div id="c673ddbb-b441-4911-bf14-9baddff6d6e3" class="cell" data-execution_count="31">
+<div class="sourceCode cell-code" id="c673ddbb-b441-4911-bf14-9baddff6d6e3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="c673ddbb-b441-4911-bf14-9baddff6d6e3-1"><a href="#c673ddbb-b441-4911-bf14-9baddff6d6e3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> generator_fn(x):</span>
+<span id="c673ddbb-b441-4911-bf14-9baddff6d6e3-2"><a href="#c673ddbb-b441-4911-bf14-9baddff6d6e3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(x):</span>
+<span id="c673ddbb-b441-4911-bf14-9baddff6d6e3-3"><a href="#c673ddbb-b441-4911-bf14-9baddff6d6e3-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">yield</span> i</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="af9ab703-0677-4c7c-81c5-1076f53386bb" class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="af9ab703-0677-4c7c-81c5-1076f53386bb"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="af9ab703-0677-4c7c-81c5-1076f53386bb-1"><a href="#af9ab703-0677-4c7c-81c5-1076f53386bb-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
+<span id="af9ab703-0677-4c7c-81c5-1076f53386bb-2"><a href="#af9ab703-0677-4c7c-81c5-1076f53386bb-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="af9ab703-0677-4c7c-81c5-1076f53386bb-3"><a href="#af9ab703-0677-4c7c-81c5-1076f53386bb-3" aria-hidden="true" tabindex="-1"></a>sys.getsizeof(example)  <span class="co"># bytes</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="32">
+<pre><code>104</code></pre>
+</div>
+</div>
+<div id="e9b35457-1535-4dcc-a114-87f5d56466f2" class="cell" data-execution_count="33">
+<div class="sourceCode cell-code" id="e9b35457-1535-4dcc-a114-87f5d56466f2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="e9b35457-1535-4dcc-a114-87f5d56466f2-1"><a href="#e9b35457-1535-4dcc-a114-87f5d56466f2-1" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> generator_fn(<span class="dv">100_000_000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="263c6dd4-7711-418f-9e04-82095bd0b4d8" class="cell" data-execution_count="34">
+<div class="sourceCode cell-code" id="263c6dd4-7711-418f-9e04-82095bd0b4d8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="263c6dd4-7711-418f-9e04-82095bd0b4d8-1"><a href="#263c6dd4-7711-418f-9e04-82095bd0b4d8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">dir</span>(g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="34">
+<pre><code>['__class__',
+ '__del__',
+ '__delattr__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__iter__',
+ '__le__',
+ '__lt__',
+ '__name__',
+ '__ne__',
+ '__new__',
+ '__next__',
+ '__qualname__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ 'close',
+ 'gi_code',
+ 'gi_frame',
+ 'gi_running',
+ 'gi_yieldfrom',
+ 'send',
+ 'throw']</code></pre>
+</div>
+</div>
+<div id="04224b19-60b8-4141-a39c-9d392fff6a33" class="cell" data-execution_count="35">
+<div class="sourceCode cell-code" id="04224b19-60b8-4141-a39c-9d392fff6a33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="04224b19-60b8-4141-a39c-9d392fff6a33-1"><a href="#04224b19-60b8-4141-a39c-9d392fff6a33-1" aria-hidden="true" tabindex="-1"></a><span class="bu">next</span>(g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="35">
+<pre><code>0</code></pre>
+</div>
+</div>
+<div id="8c8543bf-482e-4a92-b17a-3253bc2f14ef" class="cell" data-execution_count="36">
+<div class="sourceCode cell-code" id="8c8543bf-482e-4a92-b17a-3253bc2f14ef"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="8c8543bf-482e-4a92-b17a-3253bc2f14ef-1"><a href="#8c8543bf-482e-4a92-b17a-3253bc2f14ef-1" aria-hidden="true" tabindex="-1"></a><span class="bu">next</span>(g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="36">
+<pre><code>1</code></pre>
+</div>
+</div>
+<div id="f3d8cb38-ed41-483c-92bf-ecf4aed2ddc3" class="cell" data-execution_count="37">
+<div class="sourceCode cell-code" id="f3d8cb38-ed41-483c-92bf-ecf4aed2ddc3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="f3d8cb38-ed41-483c-92bf-ecf4aed2ddc3-1"><a href="#f3d8cb38-ed41-483c-92bf-ecf4aed2ddc3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">next</span>(g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="37">
+<pre><code>2</code></pre>
+</div>
+</div>
+<div id="cc8dc0aa-b374-4c8a-9929-0bdb448961f6" class="cell" data-execution_count="38">
+<div class="sourceCode cell-code" id="cc8dc0aa-b374-4c8a-9929-0bdb448961f6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cc8dc0aa-b374-4c8a-9929-0bdb448961f6-1"><a href="#cc8dc0aa-b374-4c8a-9929-0bdb448961f6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">help</span>(g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Help on generator object:
+
+generator_fn = class generator(object)
+ |  Methods defined here:
+ |  
+ |  __del__(...)
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __iter__(self, /)
+ |      Implement iter(self).
+ |  
+ |  __next__(self, /)
+ |      Implement next(self).
+ |  
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |  
+ |  close(...)
+ |      close() -&gt; raise GeneratorExit inside generator.
+ |  
+ |  send(...)
+ |      send(arg) -&gt; send 'arg' into generator,
+ |      return next yielded value or raise StopIteration.
+ |  
+ |  throw(...)
+ |      throw(value)
+ |      throw(type[,value[,tb]])
+ |      
+ |      Raise exception in generator, return next yielded value or raise
+ |      StopIteration.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  gi_code
+ |  
+ |  gi_frame
+ |  
+ |  gi_running
+ |  
+ |  gi_yieldfrom
+ |      object being iterated by yield from, or None
+</code></pre>
+</div>
+</div>
+<section id="nested-generators" class="level3">
+<h3 class="anchored" data-anchor-id="nested-generators">Nested Generators</h3>
+<div id="d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600" class="cell" data-execution_count="39">
+<div class="sourceCode cell-code" id="d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-1"><a href="#d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> inner():</span>
+<span id="d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-2"><a href="#d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"We're inside"</span>)</span>
+<span id="d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-3"><a href="#d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-3" aria-hidden="true" tabindex="-1"></a>    value <span class="op">=</span> <span class="cf">yield</span> <span class="dv">2</span></span>
+<span id="d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-4"><a href="#d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Received"</span>, value)</span>
+<span id="d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-5"><a href="#d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">4</span></span>
+<span id="d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-6"><a href="#d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-7"><a href="#d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-8"><a href="#d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> outer():</span>
+<span id="d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-9"><a href="#d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">yield</span> <span class="dv">1</span></span>
+<span id="d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-10"><a href="#d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-10" aria-hidden="true" tabindex="-1"></a>    retval <span class="op">=</span> <span class="cf">yield</span> <span class="cf">from</span> inner()</span>
+<span id="d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-11"><a href="#d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Returned"</span>, retval)</span>
+<span id="d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-12"><a href="#d63aeb6c-cbac-4ea7-94c3-ebbf29ffc600-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">yield</span> <span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="d4773a70-57ed-4986-8220-5533b401493e" class="cell" data-execution_count="40">
+<div class="sourceCode cell-code" id="d4773a70-57ed-4986-8220-5533b401493e"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="d4773a70-57ed-4986-8220-5533b401493e-1"><a href="#d4773a70-57ed-4986-8220-5533b401493e-1" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> outer()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="8005b71b-f0e5-4161-b23d-ba45ae16dff7" class="cell" data-execution_count="41">
+<div class="sourceCode cell-code" id="8005b71b-f0e5-4161-b23d-ba45ae16dff7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="8005b71b-f0e5-4161-b23d-ba45ae16dff7-1"><a href="#8005b71b-f0e5-4161-b23d-ba45ae16dff7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">next</span>(g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="41">
+<pre><code>1</code></pre>
+</div>
+</div>
+<div id="00201c98-1920-484f-8110-6335df5fb4f2" class="cell" data-execution_count="42">
+<div class="sourceCode cell-code" id="00201c98-1920-484f-8110-6335df5fb4f2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="00201c98-1920-484f-8110-6335df5fb4f2-1"><a href="#00201c98-1920-484f-8110-6335df5fb4f2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">next</span>(g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>We're inside</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="42">
+<pre><code>2</code></pre>
+</div>
+</div>
+<div id="6ef9a436-33ee-4b94-92d7-eccc50fdc512" class="cell" data-execution_count="43">
+<div class="sourceCode cell-code" id="6ef9a436-33ee-4b94-92d7-eccc50fdc512"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="6ef9a436-33ee-4b94-92d7-eccc50fdc512-1"><a href="#6ef9a436-33ee-4b94-92d7-eccc50fdc512-1" aria-hidden="true" tabindex="-1"></a>g.send(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Received 3
+Returned 4</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="43">
+<pre><code>5</code></pre>
+</div>
+</div>
+</section>
+<section id="generator-vs.-list-comprehension" class="level3">
+<h3 class="anchored" data-anchor-id="generator-vs.-list-comprehension">Generator vs.&nbsp;List Comprehension</h3>
+<div id="0a9b7a19-4ac5-4150-afbf-ce01ad0f5a7f" class="cell" data-execution_count="44">
+<div class="sourceCode cell-code" id="0a9b7a19-4ac5-4150-afbf-ce01ad0f5a7f"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="0a9b7a19-4ac5-4150-afbf-ce01ad0f5a7f-1"><a href="#0a9b7a19-4ac5-4150-afbf-ce01ad0f5a7f-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cf0f912d-56cc-414f-b7e4-614c33290f90" class="cell" data-execution_count="45">
+<div class="sourceCode cell-code" id="cf0f912d-56cc-414f-b7e4-614c33290f90"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cf0f912d-56cc-414f-b7e4-614c33290f90-1"><a href="#cf0f912d-56cc-414f-b7e4-614c33290f90-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">100_000_000</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="124ca4da-2661-4117-be7f-554250c6d2e1" class="cell" data-execution_count="46">
+<div class="sourceCode cell-code" id="124ca4da-2661-4117-be7f-554250c6d2e1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="124ca4da-2661-4117-be7f-554250c6d2e1-1"><a href="#124ca4da-2661-4117-be7f-554250c6d2e1-1" aria-hidden="true" tabindex="-1"></a>start <span class="op">=</span> time.time()</span>
+<span id="124ca4da-2661-4117-be7f-554250c6d2e1-2"><a href="#124ca4da-2661-4117-be7f-554250c6d2e1-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [i <span class="op">*</span> i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n)]</span>
+<span id="124ca4da-2661-4117-be7f-554250c6d2e1-3"><a href="#124ca4da-2661-4117-be7f-554250c6d2e1-3" aria-hidden="true" tabindex="-1"></a>end <span class="op">=</span> time.time()</span>
+<span id="124ca4da-2661-4117-be7f-554250c6d2e1-4"><a href="#124ca4da-2661-4117-be7f-554250c6d2e1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(x))</span>
+<span id="124ca4da-2661-4117-be7f-554250c6d2e1-5"><a href="#124ca4da-2661-4117-be7f-554250c6d2e1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>end <span class="op">-</span> start<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'list'&gt;
+4.3685</code></pre>
+</div>
+</div>
+<div id="90a8fc84-4899-4734-a8fb-839245045c4a" class="cell" data-execution_count="47">
+<div class="sourceCode cell-code" id="90a8fc84-4899-4734-a8fb-839245045c4a"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="90a8fc84-4899-4734-a8fb-839245045c4a-1"><a href="#90a8fc84-4899-4734-a8fb-839245045c4a-1" aria-hidden="true" tabindex="-1"></a>start <span class="op">=</span> time.time()</span>
+<span id="90a8fc84-4899-4734-a8fb-839245045c4a-2"><a href="#90a8fc84-4899-4734-a8fb-839245045c4a-2" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> (i <span class="op">*</span> i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n))</span>
+<span id="90a8fc84-4899-4734-a8fb-839245045c4a-3"><a href="#90a8fc84-4899-4734-a8fb-839245045c4a-3" aria-hidden="true" tabindex="-1"></a>end <span class="op">=</span> time.time()</span>
+<span id="90a8fc84-4899-4734-a8fb-839245045c4a-4"><a href="#90a8fc84-4899-4734-a8fb-839245045c4a-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(g))</span>
+<span id="90a8fc84-4899-4734-a8fb-839245045c4a-5"><a href="#90a8fc84-4899-4734-a8fb-839245045c4a-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>end <span class="op">-</span> start<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'generator'&gt;
+0.0001</code></pre>
+</div>
+</div>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("http:\/\/toolkit\.goecoug\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../content/development/notebooks/pyspark-practice.html" class="pagination-link" aria-label="PySpark Practice">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">PySpark Practice</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../content/development/notebooks/sleep-data.html" class="pagination-link" aria-label="Sleep Data">
+        <span class="nav-page-text">Sleep Data</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Caleb Grant, 2025</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/geocoug/toolkit/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/geocoug/toolkit">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

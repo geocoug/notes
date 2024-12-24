@@ -2,6 +2,15 @@
   {
     "listing": "/content/recipes/index.html",
     "items": [
+      "/content/recipes/blackened-salmon-tacos.html",
+      "/content/recipes/buffalo-chicken-sliders.html",
+      "/content/recipes/chicken-tikka-masala.html",
+      "/content/recipes/pesto.html",
+      "/content/recipes/roasted-feta-and-red-pepper-soup.html",
+      "/content/recipes/roasted-garlic-bread-dip.html",
+      "/content/recipes/simple-salad-dressing.html",
+      "/content/recipes/white-chicken-chili.html",
+      "/content/recipes/wonton-soup.html",
       "/content/recipes/italian-wedding-soup.html",
       "/content/recipes/cinnamon-protein-balls.html",
       "/content/recipes/kuing-pao-chicken.html",
@@ -9,7 +18,8 @@
       "/content/recipes/shrimp-and-pineapple.html",
       "/content/recipes/spicy-chicken-and-sweet-potato.html",
       "/content/recipes/turkey-hummas-veggie-wrap.html",
-      "/content/recipes/avocado-tzatziki copy.html",
+      "/content/recipes/lasagna-soup.html",
+      "/content/recipes/avocado-tzatziki.html",
       "/content/recipes/blackened-shrimp-bowl.html",
       "/content/recipes/buffalo-shrimp-lettuce-wraps.html",
       "/content/recipes/chipotle-burrito-bowl.html",
@@ -20,6 +30,7 @@
       "/content/recipes/cheesesteak-lettuce-wraps.html",
       "/content/recipes/spicy-salmon-bowl.html",
       "/content/recipes/stuffed-peppers-with-falafel.html",
+      "/content/recipes/vodka-pasta.html",
       "/content/recipes/buffalo-cauliflower.html",
       "/content/recipes/egg-protein-bars.html",
       "/content/recipes/cesar-dressing.html",
@@ -41,53 +52,31 @@
     ]
   },
   {
-    "listing": "/content/blog/posts/infographics/index.html",
+    "listing": "/content/development/infographics.html",
     "items": []
-  },
-  {
-    "listing": "/content/blog/index.html",
-    "items": [
-      "/content/blog/posts/infographics/index.html",
-      "/content/blog/posts/linux-filesystem/index.html",
-      "/content/blog/posts/data-engineering-blogs/index.html",
-      "/content/blog/posts/diff-pdf-and-docx/index.html",
-      "/content/blog/posts/quarto-tabsets/index.html",
-      "/content/blog/posts/change-postgres-password/index.html",
-      "/content/blog/posts/sftp/index.html",
-      "/content/blog/posts/mounting-a-windows-share/index.html",
-      "/content/blog/posts/git-merge/index.html",
-      "/content/blog/posts/linux-permissions/index.html",
-      "/content/blog/posts/creating-a-post/index.html",
-      "/content/blog/posts/accessing-quarto-variables/index.html"
-    ]
   },
   {
     "listing": "/content/development/code/index.html",
     "items": [
       "/content/development/code/bash.html",
-      "/content/development/code/cmd.html",
-      "/content/development/code/html.html",
-      "/content/development/code/javascript.html",
-      "/content/development/code/notebooks/index.html",
-      "/content/development/code/powershell.html",
       "/content/development/code/python.html",
       "/content/development/code/regex.html",
       "/content/development/code/sql.html"
     ]
   },
   {
-    "listing": "/content/development/code/notebooks/index.html",
+    "listing": "/content/development/notebooks/index.html",
     "items": [
-      "/content/development/code/notebooks/data-science.html",
-      "/content/development/code/notebooks/grib.html",
-      "/content/development/code/notebooks/logging.html",
-      "/content/development/code/notebooks/ml-notes.html",
-      "/content/development/code/notebooks/ml-train-and-test.html",
-      "/content/development/code/notebooks/pyspark-practice.html",
-      "/content/development/code/notebooks/python-fundamentals.html",
-      "/content/development/code/notebooks/sleep-data.html",
-      "/content/development/code/notebooks/visualization-with-seaborn.html",
-      "/content/development/code/notebooks/web-scraping.html"
+      "/content/development/notebooks/data-science.html",
+      "/content/development/notebooks/grib.html",
+      "/content/development/notebooks/logging.html",
+      "/content/development/notebooks/ml-notes.html",
+      "/content/development/notebooks/ml-train-and-test.html",
+      "/content/development/notebooks/pyspark-practice.html",
+      "/content/development/notebooks/python-fundamentals.html",
+      "/content/development/notebooks/sleep-data.html",
+      "/content/development/notebooks/visualization-with-seaborn.html",
+      "/content/development/notebooks/web-scraping.html"
     ]
   }
 ]

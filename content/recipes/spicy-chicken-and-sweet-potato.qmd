@@ -1,7 +1,7 @@
 ---
 title: Spicy Chicken and Sweet Potato
 description: Spicy chicken and sweet potato
-categories: [Healthy, Lunch, Dinner]
+categories: [Lunch, Dinner]
 cooktime: 45 minutes
 date: 2024-01-14
 ---

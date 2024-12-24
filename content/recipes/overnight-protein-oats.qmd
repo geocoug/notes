@@ -1,7 +1,7 @@
 ---
 title: Overnight Protein Oats
 description: Overnight protein oats
-categories: [Healthy, Breakfast, Protein, Snack]
+categories: [Breakfast, Protein, Snack]
 cooktime: 12 hours
 date: 2023-06-01
 ---

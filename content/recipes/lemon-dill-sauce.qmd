@@ -1,7 +1,7 @@
 ---
 title: Lemon Dill Sauce
 description: Lemon dill sauce.
-categories: [Sauce, Dressing]
+categories: [Dip/Sauce, Dressing]
 cooktime: 5 minutes
 date: 2023-07-01
 ---

@@ -1,7 +1,7 @@
 ---
 title: Turkey Hummas Veggie Wrap
 description: Turkey, hummas, and veggie wrap
-categories: [Healthy, Lunch, Snack]
+categories: [Lunch, Snack, Dinner]
 cooktime: 5 minutes
 date: 2024-01-14
 ---

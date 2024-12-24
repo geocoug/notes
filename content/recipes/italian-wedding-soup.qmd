@@ -1,7 +1,7 @@
 ---
 title: Italian Wedding Soup
 description: Italian Wedding Soup
-categories: [Soup]
+categories: [Soup,Lunch,Dinner]
 cooktime: 1 hour
 date: 2024-12-23
 ---
@@ -44,7 +44,7 @@ date: 2024-12-23
 - 1/2 cup parmesan
 - Salt and pepper, to taste
 
-## Instructions
+## Directions
 
 1. In a bowl, soak the torn day-old bread in milk for 5-10 minutes. Squeeze out excess liquid.
 2. Combine the soaked bread, beef, pork, parsley, basil, salt, pepper, oregano, calabrian chili, garlic, egg, and Parmesan. Mix until just combined.

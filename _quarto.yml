@@ -29,7 +29,7 @@ website:
     location: navbar
     copy-button: true
   page-footer:
-    left: "Caleb Grant, 2023"
+    left: "Caleb Grant, 2025"
     background: light
     right:
       - icon: github
@@ -45,8 +45,6 @@ website:
         href: content/recipes/index.qmd
       - text: "Workouts"
         href: content/workouts/index.qmd
-      - text: "Blog"
-        href: content/blog/index.qmd
 
   sidebar:
     - id: development
@@ -61,10 +59,10 @@ website:
           href: content/development/code/index.qmd
           contents:
             - auto: "content/development/code/*"
-            - section: "Notebooks"
-              href: content/development/code/notebooks/index.qmd
-              contents:
-                - auto: "content/development/code/notebooks/*"
+        - section: "Notebooks"
+          href: content/development/notebooks/index.qmd
+          contents:
+            - auto: "content/development/notebooks/*"
         - section: "Tools"
           contents:
             - auto: "content/development/tools/*"
@@ -109,5 +107,3 @@ format:
             integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" 
             crossorigin="anonymous">
           </script>
-
-editor: visual

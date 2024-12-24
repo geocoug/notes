@@ -1,7 +1,7 @@
 ---
 title: Kung Pao Chicken
 description: Kung pao chicken
-categories: [Healthy, Lunch, Dinner]
+categories: [Lunch, Dinner]
 cooktime: 30 minutes
 date: 2024-01-14
 ---

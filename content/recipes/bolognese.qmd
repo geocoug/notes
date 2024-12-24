@@ -1,7 +1,7 @@
 ---
 title: Bolognese
 description: Bolognese Sauce
-categories: [Sauce]
+categories: [Dip/Sauce]
 cooktime: 1 hours
 date: 2023-07-02
 ---

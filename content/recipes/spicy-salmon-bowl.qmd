@@ -1,7 +1,7 @@
 ---
 title: Spicy Salmon Bowl
 description: Spicy Salmon Bowl
-categories: [Healthy,Meal]
+categories: [Lunch,Dinner]
 cooktime: 1 hours
 date: 2023-11-24
 ---

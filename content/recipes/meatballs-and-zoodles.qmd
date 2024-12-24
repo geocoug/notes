@@ -1,7 +1,7 @@
 ---
 title: Garlic Butter Meatballs & Zoodles
 description: Garlic Butter Meatballs & Zoodles
-categories: [Healthy,Meal]
+categories: [Lunch,Dinner]
 cooktime: 35 minutes
 date: 2023-11-24
 ---

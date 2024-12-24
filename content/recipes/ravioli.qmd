@@ -1,7 +1,7 @@
 ---
 title: Ravioli
 description: John & Matteo's famous ravioli
-categories: [Meal]
+categories: [Lunch,Dinner]
 cooktime: 2 hours
 date: 2023-01-01
 ---

@@ -1,0 +1,13 @@
+---
+title: Infographics
+description: Infographic templates
+listing:
+  - id: infographic-listing
+    contents: "infographics/*"
+    type: table
+---
+
+This is a collection of infographic templates.
+
+::: {#infographic-listing}
+:::
