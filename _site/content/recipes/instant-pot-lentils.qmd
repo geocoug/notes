@@ -2,7 +2,7 @@
 title: "Instant Pot Lentils"
 author: "Jacqui"
 source: "https://www.dishingdelish.com/instant-pot-lentils/"
-picture: "https://www.dishingdelish.com/wp-content/uploads/2024/03/Instant-Pot-Lentils-9.jpg"
+image: "https://www.dishingdelish.com/wp-content/uploads/2024/03/Instant-Pot-Lentils-9.jpg"
 date: 2025-10-06
 categories: ["Dinner", "Instant Pot"]
 prep_time: "5 minutes"
@@ -13,7 +13,8 @@ servings: "8"
 
 [Source]({{< meta source >}})
 
-![]({{< meta picture >}}){fig-align="center"}
+![]({{< meta image >}}){fig-align="center"}
+
 
 | Prep Time | Cook Time | Total Time | Servings |
 |-----------|-----------|------------|----------|

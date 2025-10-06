@@ -2,22 +2,23 @@
 title: "Red Curry Sweet Potato Lentil Soup"
 author: ""
 source: "https://rainbowplantlife.com/thai-red-curry-sweet-potato-soup/"
-picture: ""
+image: ""
 date: 2025-10-06
 categories: ["Lunch", "Dinner", "Instant Pot"]
 prep_time: ""
-total_time: "30 minutes"
 cook_time: ""
+total_time: "30 minutes"
 servings: ""
 ---
 
 [Source]({{< meta source >}})
 
-![]({{< meta picture >}}){fig-align="center"}
+![]({{< meta image >}}){fig-align="center"}
+
 
 | Prep Time | Cook Time | Total Time | Servings |
 |-----------|-----------|------------|----------|
-| — | {{< meta cook_time >}} | — | — |
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
 
 ## Ingredients
 

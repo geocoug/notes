@@ -2,7 +2,7 @@
 title: "Simple Salad Dressing"
 author: ""
 source: ""
-picture: ""
+image: ""
 date: 2024-12-24
 categories: ["Dip/Sauce", "Dressing"]
 prep_time: ""
@@ -13,11 +13,11 @@ servings: ""
 
 [Source]({{< meta source >}})
 
-![]({{< meta picture >}}){fig-align="center"}
+![]({{< meta image >}}){fig-align="center"}
 
 | Prep Time | Cook Time | Total Time | Servings |
 |-----------|-----------|------------|----------|
-| — | {{< meta cook_time >}} | — | — |
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
 
 ## Description
 

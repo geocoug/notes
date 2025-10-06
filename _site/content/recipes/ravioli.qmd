@@ -2,12 +2,12 @@
 title: "Ravioli"
 author: "John Trent"
 source: ""
-picture: ""
+image: ""
 date: 2023-01-01
 categories: ["Lunch", "Dinner"]
 prep_time: "2 hours"
 cook_time: "10 minutes"
-total_time: ""
+total_time: "2 hours 30 minutes"
 servings: ""
 ---
 
@@ -15,9 +15,10 @@ servings: ""
 
 ![]({{< meta picture >}}){fig-align="center"}
 
+
 | Prep Time | Cook Time | Total Time | Servings |
 |-----------|-----------|------------|----------|
-| — | {{< meta cook_time >}} | — | — |
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
 
 ## Ingredients
 

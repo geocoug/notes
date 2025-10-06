@@ -2,7 +2,7 @@
 title: "Avocado Tzatziki"
 author: "Caleb Grant"
 source: ""
-picture: "https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Washington_State_Cougars_logo.svg/300px-Washington_State_Cougars_logo.svg.png"
+image: ""
 date: 2023-11-24
 categories: ["Dip/Sauce", "Dressing"]
 prep_time: ""
@@ -13,11 +13,12 @@ servings: ""
 
 [Source]({{< meta source >}})
 
-![]({{< meta picture >}}){fig-align="center"}
+![]({{< meta image >}}){fig-align="center"}
+
 
 | Prep Time | Cook Time | Total Time | Servings |
 |-----------|-----------|------------|----------|
-| — | {{< meta cook_time >}} | — | — |
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
 
 ## Ingredients
 
