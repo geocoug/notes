@@ -14,7 +14,7 @@ project:
     - "*.ipynb"
 
 execute:
-  freeze: auto  # Re-compute previously generated computational output only in case their source file changes
+  freeze: auto # Re-compute previously generated computational output only in case their source file changes
 
 website:
   title: "Toolkit"
@@ -24,12 +24,11 @@ website:
   page-navigation: true
   back-to-top-navigation: false
   repo-url: https://github.com/geocoug/toolkit
-  repo-actions: [issue]
   search:
     location: navbar
     copy-button: true
   page-footer:
-    left: "Caleb Grant, 2025"
+    left: "Caleb Grant &copy; 2025"
     background: light
     right:
       - icon: github
@@ -39,37 +38,39 @@ website:
     logo: /static/logo.svg
     collapse-below: lg
     left:
-      - text: "Development"
-        href: content/development/index.qmd
+      # - text: "Development"
+      #   href: content/development/index.qmd
       - text: "Recipes"
         href: content/recipes/index.qmd
       - text: "Workouts"
         href: content/workouts/index.qmd
+      # - text: "Nutrition Plan"
+      #   href: content/nutrition-plan.qmd
 
   sidebar:
-    - id: development
-      title: "Development"
-      collapse-level: 2
-      align: left
-      style: "docked"
-      contents:
-        - content/development/index.qmd
-        - auto: "content/development/*"
-        - section: "Code"
-          href: content/development/code/index.qmd
-          contents:
-            - auto: "content/development/code/*"
-        - section: "Notebooks"
-          href: content/development/notebooks/index.qmd
-          contents:
-            - auto: "content/development/notebooks/*"
-        - section: "Tools"
-          contents:
-            - auto: "content/development/tools/*"
-        - section: "Server"
-          href: content/development/server/index.qmd
-          contents:
-            - auto: "content/development/server/*"
+    # - id: development
+    #   title: "Development"
+    #   collapse-level: 2
+    #   align: left
+    #   style: "docked"
+    #   contents:
+    #     - content/development/index.qmd
+    #     - auto: "content/development/*"
+    #     - section: "Code"
+    #       href: content/development/code/index.qmd
+    #       contents:
+    #         - auto: "content/development/code/*"
+    #     - section: "Notebooks"
+    #       href: content/development/notebooks/index.qmd
+    #       contents:
+    #         - auto: "content/development/notebooks/*"
+    #     - section: "Tools"
+    #       contents:
+    #         - auto: "content/development/tools/*"
+    #     - section: "Server"
+    #       href: content/development/server/index.qmd
+    #       contents:
+    #         - auto: "content/development/server/*"
     - id: workouts
       title: "Workouts"
       collapse-level: 1
@@ -100,7 +101,7 @@ format:
       sidebar-width: 350px
       body-width: 1000px
       margin-width: 250px
-    include-in-header: 
+    include-in-header:
       - text: |
           <script 
             src="https://code.jquery.com/jquery-3.7.0.min.js" 

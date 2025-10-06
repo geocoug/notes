@@ -1,0 +1,65 @@
+---
+title: "Instant Pot Lentils"
+author: "Jacqui"
+source: "https://www.dishingdelish.com/instant-pot-lentils/"
+picture: "https://www.dishingdelish.com/wp-content/uploads/2024/03/Instant-Pot-Lentils-9.jpg"
+date: 2025-10-06
+categories: ["Dinner", "Instant Pot"]
+prep_time: "5 minutes"
+cook_time: "35 minutes"
+total_time: "40 minutes"
+servings: "8"
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta picture >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Ingredients
+
+- 2 cups green or brown lentils, certified gluten-free, rinsed  
+- 6 cups vegetable or chicken broth *(gluten-free)*  
+- 15 ounces fire-roasted diced tomatoes (1 can), drained  
+- 3 garlic cloves, minced  
+- 1 teaspoon Italian seasoning  
+- ½ teaspoon kosher salt *(or to taste)*  
+- ½ teaspoon black pepper *(or to taste)*  
+
+## Instructions
+
+1. **Add Ingredients:**  
+   Add lentils, broth, garlic, spices, and diced tomatoes to the Instant Pot. Stir until well combined.  
+
+2. **Pressure Cook:**  
+   Lock the lid and set the steam valve to *Sealing*. Select **High Pressure** and cook for **10 minutes**. (It will take about 10 minutes to come to pressure.)  
+
+3. **Natural Release:**  
+   Once the timer ends, allow a **15-minute natural release**, then flip the valve to *Venting* to quick-release remaining pressure.  
+
+4. **Serve:**  
+   Stir the lentils and ensure they’re tender. Top with fresh parsley or chives, a drizzle of olive oil, and additional salt or pepper to taste.  
+
+## Notes
+
+- **Storage:**  
+  Refrigerate leftovers in an airtight container for **3–4 days**, or freeze for **2–3 months**.  
+- **Texture Check:**  
+  Lentils are done when soft and easily mashed with a fork. Add extra broth and simmer if they’re still firm.  
+- **Tips:**  
+  - Rinse lentils before cooking to remove any dust or debris.  
+  - Serve over rice or with crusty bread for a complete meal.  
+  - “Natural Release” means leaving the pot untouched for the specified time before venting.  
+
+## Nutrition (per serving)
+
+- **Calories:** 193 kcal  
+- **Carbohydrates:** 34 g  
+- **Protein:** 13 g  
+- **Fat:** 1 g  
+- **Fiber:** 15 g  
+- **Sodium:** 935 mg  
+- **Iron:** 4 mg  
