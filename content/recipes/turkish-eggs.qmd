@@ -1,0 +1,67 @@
+---
+title: "Prepped Turkish Egg Pots"
+author: "Ayat Sleymann"
+source: "https://themomnutritionist.com/sunday-meal-prep-may-18-2025/"
+picture: "https://themomnutritionist.com/wp-content/uploads/2025/05/IMG_6019-2048x2048.jpg"
+date: 2025-11-10
+categories: [Breakfast, High Protein, Meal Prep]
+prep_time: "15 minutes"
+cook_time: "8 minutes"
+total_time: "25 minutes"
+servings: "3"
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta picture >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Nutrition (per serving, approx.)
+
+- ~250 calories  
+- ~35 g protein  
+- ~3 g carbohydrates  
+- ~2 g fiber  
+- 0 g added sugar  
+
+## Ingredients
+
+- 6 large eggs
+- 3 cups thick Greek yogurt (avoid runny yogurt)
+- 1 garlic clove, finely grated
+- Fresh dill, chopped (about a small handful)
+- Pinch of salt, to taste
+- 1 tablespoon butter
+- 1 tablespoon olive oil
+- 1 tablespoon harissa paste (or chili paste)
+- Optional: extra dill and toasted bread for serving
+
+## Instructions
+
+1. **Boil the Eggs:**  
+   Bring a pot of water to a boil. Gently lower in the eggs and cook:
+   - 6 minutes for jammy centers  
+   - 8 minutes for hard-boiled  
+   Transfer immediately to an ice bath for 3 minutes. Peel and set aside.
+
+2. **Make the Yogurt Base:**  
+   In a bowl, mix the yogurt with garlic, dill, and salt. Taste and adjust seasoning.
+
+3. **Make the Spiced Butter:**  
+   In a small saucepan, melt the butter with olive oil and harissa over medium heat. Heat until foamy and fragrant. Remove from heat.
+
+4. **Assemble:**  
+   Divide the yogurt mixture evenly into 3 containers. Add 2 eggs to each. Drizzle each with spiced butter (or store butter separately to reheat when serving).
+
+5. **Store & Serve:**  
+   Refrigerate for up to 3 days. When ready to eat, let sit at room temp 10–15 minutes and serve with warm toasted bread.
+
+## Notes
+
+- Labneh or skyr makes this thicker and tangier.
+- Add cumin or smoked paprika to the butter for extra depth.
+- If the yogurt releases liquid during storage, just stir — totally normal.
+- Serve with sourdough toast, pita, or roasted potatoes for something heartier.

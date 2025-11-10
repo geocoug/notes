@@ -1,0 +1,82 @@
+---
+title: "Baked Feta Eggs + Sauteed Veggie Wraps"
+author: "Ayat Sleymann"
+source: "https://themomnutritionist.com/sunday-meal-prep-may-11-2025/"
+picture: "https://themomnutritionist.com/wp-content/uploads/2025/05/IMG_5417-2048x2048.jpg"
+date: 2025-11-10
+categories: [Breakfast, Meal Prep, High Protein]
+prep_time: "10 minutes"
+cook_time: "22 minutes"
+total_time: "32 minutes"
+servings: "4–6 wraps"
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta picture >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Nutrition (per wrap, approximate)
+
+- ~310 calories  
+- ~27 g protein  
+- ~24 g carbohydrates  
+- ~8 g fat  
+- ~7 g fiber (wrap + vegetables dependent)
+
+## Ingredients
+
+### Base
+
+- 4–6 whole wheat tortillas
+- 1 teaspoon butter (for greasing)
+- 3/4 cup crumbled feta (or ~7–8 oz block)
+- 6–8 eggs
+- 4–6 slices turkey (optional, for protein)
+
+### Vegetables
+
+- 1 tablespoon olive oil (plus extra if needed)
+- 1/2 yellow squash, diced
+- 1/2 bell pepper, chopped (or 1/4 each of multiple colors)
+- 1/2 cup mushrooms, sliced
+- 2 green onions, chopped
+- 1 handful spinach
+- 1 handful arugula
+- Salt and black pepper, to taste
+
+## Instructions
+
+1. **Bake the Eggs and Feta:**  
+   Preheat oven to 400°F. Grease an 8×8 inch baking dish with butter.  
+   Add feta to the center of the dish. Crack eggs around the feta.  
+   Drizzle lightly with olive oil and season with salt and pepper.  
+   Bake for **20–22 minutes**, until mostly set but still slightly runny.  
+   Stir gently with a fork to create a creamy mixture.
+
+2. **Sauté the Vegetables:**  
+   Heat olive oil in a skillet over medium heat.  
+   Add squash, bell pepper, mushrooms, and green onion.  
+   Cook until soft.  
+   Stir in spinach and arugula just until wilted.  
+   Season with salt and pepper.
+
+3. **Assemble the Wraps:**  
+   Lay out a tortilla.  
+   Add baked feta eggs, sautéed vegetables, and a slice of turkey.  
+   Wrap tightly.  
+   Optionally roll in parchment for grab-and-go storage.
+
+4. **Meal Prep Storage:**  
+   Refrigerate wraps for up to **4 days**.  
+   Reheat in microwave **30–45 seconds**, or warm in air fryer.
+
+## Notes
+
+- Add harissa or hot sauce before wrapping for heat.
+- Works great bowl-style over rice, quinoa, or greens.
+- For dairy-free, use plant-based feta or dairy-free cream cheese.
+- For vegetarian, omit turkey or swap with roasted chickpeas.

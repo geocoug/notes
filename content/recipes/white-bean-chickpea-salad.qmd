@@ -1,0 +1,66 @@
+---
+title: "White Bean & Chickpea Salad with Honey Mustard Dressing"
+author: "Ayat Sleymann"
+source: "https://themomnutritionist.com/sunday-meal-prep-april-27-2025/"
+picture: "https://themomnutritionist.com/wp-content/uploads/2025/04/White-Bean-Chickpea-Salad-with-Honey-Mustard-Dressing-2048x2048.jpg"
+date: 2025-11-10
+categories: [Lunch, Dinner, Salad, Meal Prep]
+prep_time: "15 minutes"
+cook_time: "0 minutes"
+total_time: "15 minutes"
+servings: "4"
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta picture >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Nutrition (estimated, per 1.5 cup serving)
+
+- Calories: 350  
+- Protein: 20g  
+- Carbohydrates: 30g  
+- Fat: 8g  
+- Fiber: 10g  
+
+## Ingredients
+
+### Salad
+
+- 1 can white beans (butter beans, cannellini, or pinto), drained and rinsed
+- 1 can chickpeas, drained and rinsed
+- 1 cup cherry tomatoes, halved
+- 1–2 small cucumbers, diced
+- Handful fresh spinach (optional)
+- 1/4 cup sun-dried tomatoes, chopped
+- 1/2 cup mozzarella balls (ciliegine)
+
+### Honey Mustard Dressing
+
+- 1/3 cup Dijon mustard
+- 1/4 cup honey
+- 1/4 cup extra virgin olive oil
+- 1 garlic clove, minced or mashed into paste
+- Juice of 1 lemon (~1/4 cup)
+- 1/4 cup Greek yogurt (optional, for thickness and creaminess)
+- Red pepper flakes (optional)
+- Salt and black pepper, to taste
+
+## Instructions
+
+1. Add the white beans, chickpeas, cherry tomatoes, cucumbers, spinach (if using), sun-dried tomatoes, and mozzarella to a large bowl.
+2. In a small bowl or jar, whisk together the Dijon mustard, honey, olive oil, garlic, lemon juice, Greek yogurt (if using), red pepper flakes, salt, and pepper.
+3. Pour the dressing over the salad and toss until evenly coated.
+4. Refrigerate 15–30 minutes before serving to allow flavors to develop.
+
+## Notes
+
+- This salad tastes even better the next day.
+- Keeps in the refrigerator up to 4–5 days.
+- Skip spinach if you want a crisp, non-leafy texture.
+- Add chopped basil or parsley for extra freshness.
+- Works well as a meal-prep lunch with toasted pita or alongside grilled protein.

@@ -1,0 +1,54 @@
+---
+title: "Peaches & Cream Chia Seed Pudding"
+author: "Ayat Sleymann"
+source: "https://themomnutritionist.com/sunday-meal-prep-11-9-2025/"
+picture: "https://themomnutritionist.com/wp-content/uploads/2025/07/peaches-and-cream-chia-seed-pudding-2048x2048.jpg"
+date: 2025-11-10
+categories: [Breakfast, Snack, Protein]
+prep_time: "5 minutes"
+cook_time: "0 minutes"
+total_time: "4 hours (overnight preferred)"
+servings: "4"
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta picture >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Nutrition (per serving, approximate)
+
+- ~180 calories  
+- ~10 g protein  
+- ~18 g carbohydrates  
+- ~11 g natural sugars  
+- ~5 g fiber  
+- ~6 g fat  
+
+## Ingredients
+
+- 2 ripe peaches, pitted
+- 1 cup plain Greek yogurt
+- 1 cup milk of choice (dairy or non-dairy)
+- 2 tbsp chia seeds
+- Unsweetened shredded coconut, for topping
+- Cinnamon, for topping
+- Extra peach slices, for topping
+
+## Instructions
+
+1. Add peaches, Greek yogurt, and milk to a blender. Blend until completely smooth and creamy.
+2. Pour about 1/2 cup of the mixture into each jar or container.
+3. Stir 2 tablespoons chia seeds into each jar, ensuring there are no clumps.
+4. Cover and refrigerate for at least 4 hours or overnight, until thickened.
+5. Stir before serving. Top with peach slices, shredded coconut, and cinnamon.
+
+## Notes
+
+- Frozen peaches work great when peaches are out of season.
+- Add honey or vanilla extract if you prefer it sweeter.
+- For added texture, top with chopped almonds or granola.
+- Stores up to 4–5 days refrigerated.

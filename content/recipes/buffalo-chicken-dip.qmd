@@ -1,0 +1,50 @@
+---
+title: "High-Protein Buffalo Chicken Dip"
+author: "Ayat Sleymann"
+source: "https://themomnutritionist.com/sunday-meal-prep-april-27-2025/"
+picture: "https://themomnutritionist.com/wp-content/uploads/2025/04/Buffalo-Chicken-Dip.jpg"
+date: 2025-11-10
+categories: [Snack, High Protein, Meal Prep]
+prep_time: "5 minutes"
+cook_time: "5 minutes"
+total_time: "10 minutes"
+servings: "1–4"
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta picture >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Nutrition (per serving, varies with cheese amount)
+
+High protein, lower carb. Protein varies depending on cottage cheese vs. Greek yogurt and amount of cheese.
+
+## Ingredients
+
+- 1/2 cup shredded chicken (rotisserie recommended)
+- 1/2 cup cottage cheese  
+  - Blend first for smoother dip  
+  - *Or substitute equal amount Greek yogurt*
+- 1/2 teaspoon garlic powder
+- 2 tablespoons buffalo sauce (Frank’s or Tabasco Buffalo Style)
+- 2 tablespoons shredded cheese (cheddar or preference), for topping
+
+## Instructions
+
+1. Shred the chicken. (Tip: a hand mixer makes this extremely quick.)
+2. In a bowl, combine chicken, cottage cheese (or Greek yogurt), and garlic powder.
+3. Transfer to an oven-safe container and sprinkle with shredded cheese.
+4. **To serve:**  
+   - Microwave until warm, **or**  
+   - Bake until cheese is melted and bubbly.
+
+## Notes
+
+- Serve with cucumbers, celery sticks, or baby carrots for a balanced high-protein snack.
+- Also works with whole grain crackers or pita chips.
+- Make multiple jars/containers at once for easy weekly meal prep.
+- To increase protein: use Greek yogurt + cottage cheese together.

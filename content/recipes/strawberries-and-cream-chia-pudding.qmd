@@ -1,0 +1,58 @@
+---
+title: "Strawberries & Cream Chia Pudding"
+author: "Ayat Sleymann"
+source: "https://themomnutritionist.com/sunday-meal-prep-9-28-25/"
+picture: "https://themomnutritionist.com/wp-content/uploads/2025/04/chia-seed-pudding.jpg"
+date: 2025-11-10
+categories: [Breakfast, Snack, Protein, Meal Prep]
+prep_time: "10 minutes"
+cook_time: "0 minutes"
+total_time: "4 hours inactive"
+servings: "2"
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta picture >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Nutrition (per serving, approximate, without protein powder)
+
+- ~200 calories  
+- ~10 g protein  
+- ~20 g carbohydrates  
+- ~8 g fat  
+- ~5 g fiber  
+
+## Ingredients
+
+### Pudding Base
+
+- 1/2 cup milk (dairy or non-dairy)
+- 1/2 cup strawberries (fresh or frozen)
+- 2 tablespoons chia seeds
+
+### Toppings (per serving)
+
+- 1/4 cup Greek yogurt
+- 1 scoop protein powder (optional)
+- 2 tablespoons diced strawberries
+- 1 tablespoon cashews (or nut/seed of choice)
+
+## Instructions
+
+1. In a blender, combine the milk and strawberries. Blend until smooth.
+2. Transfer to a bowl or jar and stir in the chia seeds.
+3. Let sit for 2–3 minutes, then stir again to prevent clumping.
+4. Cover and refrigerate for **at least 4 hours**, preferably overnight.
+5. Before serving, mix the Greek yogurt with protein powder (if using).
+6. Top the pudding with yogurt, fresh strawberries, and cashews.
+
+## Notes
+
+- Frozen strawberries are fine — no need to thaw.
+- If the pudding thickens too much, stir in a splash of milk before serving.
+- Store refrigerated for up to 4 days — great for weekly meal prep.

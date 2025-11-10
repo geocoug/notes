@@ -1,0 +1,55 @@
+---
+title: "Blueberry Chia Pudding"
+author: "Ayat Sleymann "
+source: "https://themomnutritionist.com/sunday-meal-prep-8-31-25/"
+picture: "https://themomnutritionist.com/wp-content/uploads/2025/08/IMG_3711-2048x2048.jpg"
+date: 2025-11-10
+categories: [Breakfast, Snack, Protein]
+prep_time: "5 minutes"
+cook_time: "0 minutes"
+total_time: "4 hours (overnight preferred)"
+servings: "3"
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta picture >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Nutrition (per serving, without toppings)
+
+- ~150 calories
+- ~5 g protein
+- ~20 g carbohydrates
+- ~8 g fiber
+- ~6 g fat
+- ~3 g omega-3
+
+## Ingredients
+
+- 1 1/2 cups milk of choice (dairy or non-dairy)
+- 1 cup frozen blueberries
+- 6 tablespoons chia seeds (2 tablespoons per jar)
+
+**Optional Toppings**
+
+- Greek yogurt
+- Nuts of choice
+- Fresh berries
+
+## Instructions
+
+1. In a high-speed blender, combine the milk and frozen blueberries. Blend until smooth.
+2. Divide the blueberry milk evenly into 3 small jars.
+3. Add 2 tablespoons chia seeds to each jar and stir very well to avoid clumping.
+4. Cover and refrigerate for at least 4 hours, ideally overnight, until thickened.
+5. When ready to serve, top with Greek yogurt, nuts, and fresh berries.
+
+## Notes
+
+- Adjust thickness by adding more chia (for thicker) or a splash of milk (for thinner).
+- Good up to 5 days in the refrigerator.
+- Swap blueberries for any frozen fruit such as strawberries or mango.

@@ -1,0 +1,79 @@
+---
+title: "Lebanese Beef Shawarma with Tahini Sauce"
+author: "Ayat Sleymann"
+source: "https://themomnutritionist.com/sunday-meal-prep-9-28-25/"
+picture: "https://themomnutritionist.com/wp-content/uploads/2024/09/lebanese-shawarma-recipe.jpg"
+date: 2025-11-10
+categories: [Lunch, Dinner, Meal Prep]
+prep_time: "20 minutes (plus marinating)"
+cook_time: "10 minutes"
+total_time: "30 minutes (active)"
+servings: "6"
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta picture >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Nutrition (per serving, approx.)
+
+- ~390 calories  
+- ~31 g protein  
+- ~26 g fat  
+- ~9 g carbs  
+- ~2 g fiber  
+- ~500 mg sodium  
+
+## Ingredients
+
+### Beef & Marinade
+
+- 2 lbs flank steak, sliced into thin strips
+- 1/4 cup olive oil
+- 1/4 cup vinegar
+- Juice + zest of 1 lemon
+- 4 cloves garlic, minced
+
+### Shawarma Spice Blend
+
+- 2 tsp paprika  
+- 1 1/2 tsp cumin  
+- 1/2 tsp black pepper  
+- 1/2 tsp cinnamon  
+- 1/2 tsp cardamom  
+- 1/2 tsp coriander  
+- 1/2 tsp ground cloves  
+- 1/2 tsp salt  
+
+(Optional: Sub 1–2 tbsp premade shawarma seasoning)
+
+### Tahini Sauce
+
+- 1/2 cup tahini
+- 1/4 cup lemon juice
+- 2 cloves garlic, minced
+- 1/2 tsp salt
+- ~1/4 cup water (to thin)
+
+### Serving Options
+
+- Pita or wraps (or serve over rice/quinoa)
+- Sliced onions, tomatoes, cucumbers, lettuce, parsley
+
+## Instructions
+
+1. In a bowl, whisk together olive oil, vinegar, lemon, garlic, and shawarma spices.
+2. Add the sliced steak and toss to coat. Cover and marinate **1–24 hours**.
+3. Heat a heavy skillet over medium-high. Add marinated beef and cook **8–10 minutes**, until browned and cooked through.
+4. Make the tahini sauce: whisk tahini and lemon, then add garlic and salt. Slowly whisk in water until smooth and pourable.
+5. Serve beef in pita or bowls with fresh vegetables and tahini sauce.
+
+## Notes
+
+- For meal prep: store beef and sauce separately; reheat beef in a skillet to avoid toughness.
+- Swap beef for **chicken thighs** (marinate + cook 6–8 minutes per side).
+- Serve with **pickled onions** or **toum** for a more traditional flavor.
