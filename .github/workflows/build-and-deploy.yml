@@ -27,7 +27,10 @@ jobs:
           enable-cache: true
 
       - name: Install Python dependencies
-        run: uv sync --locked --all-extras
+        run: |
+          uv venv
+          source .venv/bin/activate
+          uv sync --locked --all-extras
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
       - name: Install SSH Key
