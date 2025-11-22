@@ -1,0 +1,87 @@
+---
+title: "Shrimp Burrito Bowls"
+description: "High-protein shrimp burrito bowls with peppers, rice, beans, and chipotle-lime sauce."
+picture: "/static/recipes/shrimp-burrito-bowls.jpeg"
+source: ""
+date: 2025-11-22
+categories: ["Lunch", "Dinner", "Meal Prep"]
+cook_time: "30 minutes"
+prep_time: ""
+total_time: ""
+servings: "4"
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta picture >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Ingredients
+
+### Shrimp
+
+- 1½ lbs large shrimp, peeled and deveined  
+- 1 tbsp olive oil  
+- 1 tsp chili powder  
+- ½ tsp cumin  
+- ½ tsp smoked paprika  
+- ¼ tsp cayenne pepper (optional)  
+- ¼ tsp garlic powder  
+- Salt & pepper, to taste  
+- Juice of ½ lime  
+
+### Veggies
+
+- 1 red bell pepper, sliced  
+- 1 yellow bell pepper, sliced  
+- 1 green bell pepper, sliced  
+- ½ red onion, sliced  
+- 1 tsp olive oil  
+- Salt & pepper, to taste  
+
+### Bowls
+
+- 2 cups cooked brown rice (or white rice)  
+- 1½ cups black beans, drained & rinsed  
+- 1 cup corn (fresh, canned, or roasted)  
+- Fresh cilantro, chopped, for garnish  
+- Lime wedges, for serving  
+
+### Chipotle-Lime Sauce
+
+- ½ cup plain Greek yogurt  
+- 1 tbsp light mayonnaise  
+- 1 tsp chipotle chili powder  
+  - or 1 minced chipotle pepper in adobo  
+- Juice of ½ lime  
+- Salt, to taste  
+
+## Instructions
+
+1. **Cook the Rice:** Prepare rice according to package directions. Set aside to cool.
+
+2. **Cook the Shrimp:**  
+   Toss shrimp with olive oil, chili powder, cumin, smoked paprika, cayenne, garlic powder, salt, pepper, and lime juice.  
+   Heat a skillet over medium-high heat and cook shrimp 2–3 minutes per side until pink and opaque. Remove from pan.
+
+3. **Sauté the Veggies:**  
+   In the same skillet, heat olive oil. Add bell peppers and red onion.  
+   Cook 5–7 minutes until softened and slightly charred. Season with salt and pepper.
+
+4. **Make the Chipotle-Lime Sauce:**  
+   Whisk together Greek yogurt, mayonnaise, chipotle powder (or minced pepper), lime juice, and salt. Adjust seasoning as needed.
+
+5. **Assemble the Bowls:**  
+   Divide cooked rice among 4 meal prep containers.  
+   Top each with shrimp, sautéed peppers, black beans, and corn.  
+   Drizzle with chipotle-lime sauce or store it on the side.  
+   Garnish with cilantro and serve with lime wedges.
+
+## Notes
+
+- Great served warm or cold.  
+- Add avocado for extra healthy fats.  
+- Swap shrimp for chicken or tofu if desired.

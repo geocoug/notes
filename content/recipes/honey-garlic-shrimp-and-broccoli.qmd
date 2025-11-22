@@ -1,0 +1,51 @@
+---
+title: "Honey Garlic Shrimp with Broccoli & Brown Rice"
+author: ""
+source: ""
+image: "/static/recipes/honey-garlic-shrimp-and-broccoli.jpeg"
+date: 2025-11-22
+categories: [Lunch, Dinner]
+prep_time: "10 minutes"
+cook_time: "15 minutes"
+total_time: "25 minutes"
+servings: 2
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta image >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Nutrition (per serving)
+
+540 calories • 42 g protein • 45 g carbs • 18 g fat
+
+## Ingredients
+
+- 250 g shrimp, peeled and deveined  
+- 2 cups broccoli florets  
+- 2 tbsp soy sauce  
+- 1 tbsp honey  
+- 1 tbsp olive oil  
+- 2 garlic cloves, minced  
+- 1 tsp chili flakes (optional)  
+- 2 cups cooked brown rice  
+- Sesame seeds, for garnish  
+- Green onions, chopped, for garnish  
+
+## Instructions
+
+1. In a small bowl, whisk together soy sauce, honey, and garlic. Marinate shrimp for about 10 minutes.
+2. Heat olive oil in a skillet over medium heat. Add shrimp and cook 1–2 minutes per side until pink and slightly caramelized. Remove and set aside.
+3. Add broccoli to the same pan with a splash of water. Cover and steam for 3 minutes until bright and tender-crisp.
+4. Return shrimp to the pan, toss with remaining sauce, and cook for another minute until everything is coated.
+5. Serve over brown rice. Top with sesame seeds and chopped green onions.
+
+## Notes
+
+- Add chili flakes for heat.
+- Works great with cauliflower rice or stir-fried veggies.
+- Meal-prep friendly — keeps 2–3 days in the fridge.

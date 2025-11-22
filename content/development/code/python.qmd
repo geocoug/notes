@@ -111,7 +111,7 @@ logger.info(response.json())
 
 ## Regular Expressions
 
-See [here](regex.qmd) for more information on regex syntax.
+See the [regex](regex.qmd) page for more information on regex syntax.
 
 ```{python}
 import re

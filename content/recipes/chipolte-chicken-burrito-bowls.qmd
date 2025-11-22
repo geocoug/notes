@@ -1,0 +1,55 @@
+---
+title: "Chipotle Chicken Burrito Bowls"
+description: "Chipotle Chicken Burrito Bowls"
+categories: [Lunch, Dinner]
+date: 2025-11-22
+image: "/static/recipes/chipolte-chicken-burrito-bowls.jpeg"
+prep_time: ""
+cook_time: ""
+total_time: ""
+servings: "4"
+source: ""
+---
+
+## Ingredients
+
+### Chicken & Bowls
+
+- 1½ lbs chicken breast  
+- 4 cups cooked jasmine rice  
+- 1½ cups black beans, rinsed & drained  
+- 1½ cups roasted corn (canned or fresh)  
+- 8 tbsp pico de gallo (tomatoes, onions, jalapeños, cilantro, lime juice)  
+- 1 lime, cut into 4 wedges  
+
+### Chipotle Chicken Marinade
+
+- 7 oz chipotle peppers in adobo  
+- 1 tsp dried oregano  
+- 1 tsp ground cumin  
+- 1 tsp black pepper  
+- ½ tsp salt  
+- 3 tsp minced garlic  
+- ¼ cup lime juice  
+- ¼ cup diced red onion  
+
+### Avocado Crema (optional)
+
+- 3 tbsp Wholly Guacamole  
+- 4 tbsp light sour cream  
+- 1 tsp chili powder  
+- 1 tsp onion powder  
+- ½ tsp salt  
+- 2 tsp lime juice  
+
+## Instructions
+
+1. **Blend the Marinade:** Add all marinade ingredients to a blender and blend until smooth.  
+2. **Marinate the Chicken:** Place chicken breasts into two Ziploc bags and divide the marinade evenly. Seal and massage to coat. Refrigerate at least 3 hours.  
+3. **Prep the Chicken:** Remove chicken from marinade and cut into bite-sized pieces.  
+4. **Cook the Rice:** Start your rice cooker so the rice finishes around the same time as the chicken.  
+5. **Air Fry the Chicken:** Preheat air fryer to 400°F (200°C). Cook in two batches for 15 minutes each, shaking halfway. Transfer cooked chicken to a clean bowl.  
+6. **Prep Bowl Ingredients:** Rinse black beans, drain corn, chop pico if making fresh.  
+7. **Make the Crema:** Whisk all crema ingredients together and refrigerate.  
+8. **Assemble the Bowls:** Divide rice among 4 containers. Add chicken, black beans, corn, pico de gallo, and a lime wedge.  
+9. **Add Crema:** Spoon crema into small condiment cups and place inside each bowl.  

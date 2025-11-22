@@ -1,0 +1,77 @@
+---
+title: "Sticky Korean Fried Chicken and Rice Bowls"
+author: ""
+source: ""
+image: "/static/recipes/korean-fried-chicken-and-rice.jpeg"
+date: 2025-11-22
+categories: [Lunch, Dinner]
+prep_time: ""
+cook_time: ""
+total_time: ""
+servings: 4
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta image >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Nutrition (per serving)
+
+- Calories: 560  
+- Protein: 44 g  
+- Carbohydrates: 66 g  
+- Fat: 10 g  
+
+## Ingredients
+
+### Bowls
+
+- 4 cups cooked jasmine rice  
+- 1.5 lb chicken breast, cut into bite-size pieces  
+
+### Chicken Seasoning
+
+- 4 tsp garlic powder  
+- 4 tsp ground paprika  
+- 2 tbsp flour  
+- 2 tbsp cornstarch  
+- 1 tsp pink Himalayan salt  
+- 1 tsp black pepper  
+
+### Sticky Korean Sauce
+
+- 1/4 cup tamari or soy sauce  
+- 1/4 cup water  
+- 60 g keto honey substitute  
+- 60 g gochujang hot pepper paste  
+- 3 tbsp Swerve brown sugar substitute  
+- 2 tsp ground ginger  
+
+### Pickled Cucumbers
+
+- 2 cups sliced Persian cucumbers  
+- 2 tbsp tamari  
+- 1 tbsp seasoned rice vinegar  
+- 1/2 tbsp crushed red pepper flakes  
+- 1 tsp garlic powder  
+- 1 tsp garlic salt  
+- 1/2 tbsp white sesame seeds  
+
+## Instructions
+
+1. Place chicken in a bowl and toss with garlic powder, paprika, flour, cornstarch, salt, and pepper until fully coated.  
+2. Preheat air fryer to 400°F (200°C). Add half the chicken in a single layer and cook for 17 minutes, shaking or flipping a few times.  
+3. Begin cooking your jasmine rice while the first batch of chicken is in the air fryer.  
+4. Transfer cooked chicken to a clean bowl and repeat with the second batch.  
+5. In a separate bowl, combine cucumbers with tamari, rice vinegar, red pepper flakes, garlic powder, garlic salt, and sesame seeds. Set aside to pickle.  
+6. Add all sticky Korean sauce ingredients to a saucepan. Bring to a quick boil while whisking, then reduce heat and simmer until thickened.  
+7. Add all cooked chicken to the sauce and toss until coated.  
+8. Divide rice into 4 containers. Top with sticky Korean chicken and pickled cucumbers. Garnish with green onions, sesame seeds, or red pepper flakes if desired.  
+
+## Notes
+
+Optional garnishes: sliced green onions, extra sesame seeds, or red pepper flakes.

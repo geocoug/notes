@@ -13,3 +13,5 @@ MD036: false
 MD045: false
 # Code block style fenced vs indented
 MD046: false
+# Table pipe does not align with heading for style
+MD060: false

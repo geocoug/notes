@@ -13,7 +13,7 @@ servings: ""
 
 [Source]({{< meta source >}})
 
-![]({{< meta picture >}}){fig-align="center"}
+![]({{< meta image >}}){fig-align="center"}
 
 | Prep Time | Cook Time | Total Time | Servings |
 |-----------|-----------|------------|----------|

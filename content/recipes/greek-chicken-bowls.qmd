@@ -1,0 +1,65 @@
+---
+title: "Healthy Greek Chicken Bowls"
+description: "Healthy Greek chicken meal prep bowls"
+image: "/static/recipes/greek-chicken-bowls.jpeg"
+source: ""
+date: 2025-11-22
+categories: [Lunch, Dinner]
+prep_time: ""
+cook_time: ""
+total_time: ""
+servings: "4"
+---
+
+## Ingredients
+
+### For the Chicken
+
+- 1½ lbs boneless skinless chicken thighs (or breasts), cut into bite-sized pieces
+- 2 tbsp olive oil
+- 1½ tbsp lemon juice
+- 1 tsp red wine vinegar
+- 3 cloves garlic, minced
+- 1½ tsp dried oregano
+- 1 tsp paprika
+- ½ tsp cumin
+- Salt and pepper, to taste
+
+### For the Base
+
+- 2 cups cooked quinoa (or rice)
+
+### For the Greek Salad
+
+- 1½ cups cherry tomatoes, halved
+- 1 large cucumber, diced
+- ½ medium red onion, thinly sliced
+- ½ cup sliced black olives
+- ¼ cup feta cheese, cubed
+- Fresh dill, for garnish (optional)
+
+### For the Tzatziki Sauce
+
+- 1 cup nonfat Greek yogurt
+- ¼ cup grated cucumber (excess moisture squeezed out)
+- 1 clove garlic, minced
+- 1 tbsp lemon juice
+- 1 tbsp fresh dill, chopped
+- Salt and pepper, to taste
+
+## Instructions
+
+1. **Marinate the Chicken:**  
+   In a large bowl, whisk together olive oil, lemon juice, red wine vinegar, garlic, oregano, paprika, cumin, salt, and pepper. Add chicken and toss to coat. Refrigerate for at least 30 minutes (up to 2 hours for best flavor).
+
+2. **Cook the Chicken:**  
+   Heat a large skillet over medium-high heat. Add the marinated chicken and cook for 6–8 minutes, stirring occasionally, until cooked through and golden. Set aside.
+
+3. **Make the Tzatziki:**  
+   In a bowl, combine Greek yogurt, grated cucumber, garlic, lemon juice, dill, salt, and pepper. Adjust seasoning and refrigerate.
+
+4. **Assemble the Bowls:**  
+   Divide quinoa evenly into 4 meal prep containers. Top each with cooked chicken, tomatoes, cucumber, red onion, olives, and feta. Add a spoonful of tzatziki on the side.
+
+5. **Garnish:**  
+   Top with fresh dill or a squeeze of lemon, if desired.

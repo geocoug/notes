@@ -31,9 +31,9 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.12"
+          python-version: "3.13"
           cache: "pip"
-      - run: pip install -r requirements.txt
+      - run: pip install -r pyproject.toml
       - name: Setup Julia
         uses: julia-actions/setup-julia@v1
       - run: julia --project -e 'using Pkg; Pkg.instantiate()'

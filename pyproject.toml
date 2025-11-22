@@ -1,0 +1,81 @@
+[project]
+name = "toolkit"
+version = "0.1.0"
+authors = [{ name = "Caleb Grant", email = "grantcaleb22@gmail.com" }]
+description = "A collection of insights, resources, and inspirations that keep me productive and creative"
+requires-python = ">=3.10,<=3.14"
+license = "GPL-3.0-or-later"
+dependencies = [
+    "bs4>=0.0.2",
+    "findspark>=2.0.1",
+    "matplotlib>=3.10.7",
+    "numpy>=2.2.6",
+    "pandas>=2.3.3",
+    "polars>=1.35.2",
+    "pre-commit>=4.5.0",
+    "pygrib>=2.1.8",
+    "pyspark>=4.0.1",
+    "requests>=2.32.5",
+    "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
+    "sqlalchemy>=2.0.44",
+    "xarray>=2025.6.1",
+]
+
+[project.urls]
+Repository = "https://github.com/geocoug/toolkit"
+Issues = "https://github.com/geocoug/toolkit/issues"
+
+[tool.ruff]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "*cache*",
+]
+line-length = 120
+target-version = "py313"
+respect-gitignore = true
+fix = true
+
+[tool.ruff.lint]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+select = [
+    # "E",
+    # "F",
+    # "Q",
+    # "B",
+    # "I",
+    # "UP",
+    # "N",
+    # "S",
+    # "C4",
+    # "T20",
+    # "RET",
+    # "SIM",
+    # "PD",
+    # "RUF",
+]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"

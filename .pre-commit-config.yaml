@@ -1,12 +1,12 @@
 ---
 exclude: |
-    (?x)(
-        ^_extensions/|
-        ^_site/|
-        ^_freeze/|
-        ^renv/|
-        ^static/
-    )
+  (?x)(
+      ^_extensions/|
+      ^_site/|
+      ^_freeze/|
+      ^renv/|
+      ^static/
+  )
 
 repos:
   - repo: meta
@@ -15,7 +15,7 @@ repos:
       - id: check-hooks-apply
   # Protect secrets using Gitleaks
   - repo: https://github.com/zricethezav/gitleaks
-    rev: v8.28.0
+    rev: v8.29.1
     hooks:
       - id: gitleaks
   # Supported base hooks
@@ -27,31 +27,25 @@ repos:
       - id: check-yaml
   # Add trailing commas to calls and literals.
   - repo: https://github.com/asottile/add-trailing-comma
-    rev: v3.2.0
+    rev: v4.0.0
     hooks:
       - id: add-trailing-comma
-  # YAML linter
-  - repo: https://github.com/adrienverge/yamllint
-    rev: v1.37.1
-    hooks:
-      - id: yamllint
-        args: [--config-file, .github/linters/.yaml-lint.yml]
   # Markdown lint
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.45.0
+    rev: v0.46.0
     hooks:
       - id: markdownlint
-        args: [-c, .github/linters/.markdown-lint.yml, -f]
+        args: [-c, .markdown-lint.yml, -f]
         types: [file]
         files: .(md|qmd)$
   # Lint and format Python files
   - repo: https://github.com/astral-sh/ruff-pre-commit
     # Ruff version.
-    rev: v0.13.3
+    rev: v0.14.6
     hooks:
       # Run the Ruff formatter.
       - id: ruff-format
-        args: [--config=.ruff.toml]
-      # # Run the Ruff linter.
-      # - id: ruff
-      #   args: [--config=.ruff.toml, --exit-non-zero-on-fix]
+        args: [--config=pyproject.toml]
+      # Run the Ruff linter.
+      - id: ruff-check
+        args: [--config=pyproject.toml, --exit-non-zero-on-fix]

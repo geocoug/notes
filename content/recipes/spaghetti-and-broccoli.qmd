@@ -1,0 +1,77 @@
+---
+title: "High-Protein Spaghetti with Roasted Broccoli"
+author: ""
+source: ""
+image: "/static/recipes/spaghetti-and-broccoli.jpeg"
+date: 2025-11-22
+categories: [Lunch, Dinner, Meal Prep]
+prep_time: ""
+cook_time: ""
+total_time: ""
+servings: "4"
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta image >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Nutrition (per serving)
+
+- **Calories:** 510  
+- **Protein:** 45g  
+- **Carbohydrates:** 55g  
+- **Fat:** 12g  
+
+## Ingredients
+
+### Spaghetti & Meat Sauce
+
+- 8 oz high-protein spaghetti (Banza, Barilla Protein+, chickpea pasta)
+- 1 lb lean ground turkey or 93% lean ground beef
+- 1 tsp olive oil
+- 1 small yellow onion, diced
+- 3 cloves garlic, minced
+- 1 (24 oz) jar marinara sauce (no sugar added)
+- 1 tsp Italian seasoning
+- 1/2 tsp crushed red pepper flakes (optional)
+- Salt & pepper, to taste
+- 1/4 cup shredded parmesan cheese (for topping)
+
+### Roasted Broccoli
+
+- 4 cups broccoli florets
+- 1 tbsp olive oil
+- 1/2 tsp garlic powder
+- Salt & pepper, to taste
+- Optional: lemon juice or extra parmesan
+
+## Instructions
+
+1. **Cook the Pasta:**  
+   Bring a large pot of salted water to a boil. Add spaghetti and cook according to package directions until al dente. Drain and set aside.
+
+2. **Make the Meat Sauce:**  
+   Heat 1 tsp olive oil in a large skillet over medium heat. Add onion and sauté 3–4 minutes. Add garlic and cook 30 seconds.  
+   Add ground turkey (or beef), season with salt and pepper, and cook until browned.  
+   Stir in marinara sauce, Italian seasoning, and red pepper flakes. Simmer on low for 10 minutes.
+
+3. **Combine Pasta & Sauce:**  
+   Add cooked spaghetti to the meat sauce and toss to coat. Adjust seasoning as needed.
+
+4. **Roast the Broccoli:**  
+   Preheat oven to 425°F (220°C). Spread broccoli on a lined baking sheet.  
+   Drizzle with olive oil, sprinkle garlic powder, salt, and pepper.  
+   Roast 15–20 minutes, flipping halfway, until tender and slightly crispy.
+
+5. **Assemble the Bowls:**  
+   Divide spaghetti into 4 meal prep containers. Add roasted broccoli on the side.  
+   Top with shredded parmesan before serving.
+
+## Notes
+
+- Add lemon juice over broccoli for brightness.  
+- Keeps 3–4 days in the fridge. Can freeze the pasta but not the broccoli for best texture.

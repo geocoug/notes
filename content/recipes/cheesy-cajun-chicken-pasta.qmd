@@ -1,0 +1,78 @@
+---
+title: "Cheesy Cajun Chicken Pasta Bowls"
+author: ""
+source: ""
+image: "/static/recipes/cheesy-cajun-chicken-pasta.jpeg"
+date: 2025-11-22
+categories: [Lunch, Dinner, Meal Prep]
+prep_time: "15 minutes"
+cook_time: "25 minutes"
+total_time: "40 minutes"
+servings: 4
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta image >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Nutrition (per serving)
+
+Calories: 535  
+Protein: 48g  
+Carbs: 46g  
+Fat: 16g  
+
+## Ingredients
+
+### Chicken & Pasta
+
+- 24 oz Tyson Blackened Chicken Strips  
+- 3 cups Al Dente fusilli pasta (dry)  
+- 3 mini red sweet peppers, diced  
+- 1 medium sweet onion, chopped  
+- Fresh parsley and parmesan (for garnish)  
+
+### Creamy Cheesy Cajun Sauce
+
+- 2½ oz lite mozzarella, shredded (Trader Joe’s)  
+- 2 oz lite 3-cheese blend, shredded (Trader Joe’s)  
+- 4 Laughing Cow Light cheese wedges  
+- 2 tbsp reduced-fat cream cheese  
+- ½ oz freshly grated parmesan (reserve some for topping)  
+- 1 cup fat-free vegetable stock  
+- ⅔ cup unsweetened almond milk  
+- 1½ tbsp onion powder  
+- 1½ tbsp garlic powder  
+- 1 tsp Papa’s Pepper Extreme seasoning (or any Cajun seasoning)  
+- 2 tsp Dak's Original Red seasoning  
+- Dash black pepper  
+
+## Instructions
+
+1. **Cook the Pasta**  
+   Boil the fusilli according to package instructions until al dente. Drain and set aside.
+
+2. **Air Fry the Chicken**  
+   Preheat air fryer to 400°F (200°C). Cook blackened chicken for 11 minutes, shaking halfway. Let rest, then slice into bite-sized pieces.
+
+3. **Prep the Veggies**  
+   Dice red peppers and chop onion while the pasta and chicken cook.
+
+4. **Blend the Sauce**  
+   In a blender, combine mozzarella, three-cheese blend, Laughing Cow wedges, cream cheese, parmesan, vegetable stock, almond milk, onion powder, garlic powder, Cajun seasoning, Dak’s seasoning, and black pepper. Blend until smooth and creamy.
+
+5. **Combine Pasta & Sauce**  
+   Add drained pasta back to the pot. Stir in peppers, onion, and the blended sauce. Warm over low heat until the sauce thickens and coats the pasta evenly.
+
+6. **Assemble the Bowls**  
+   Divide pasta among 4 containers. Top with chopped blackened chicken, extra parmesan, and fresh parsley.
+
+## Notes
+
+- For extra heat, add cayenne or hot sauce to the blended sauce.  
+- Sauce thickens more after cooling — add a splash of almond milk if reheating.  
+- These bowls reheat well in 1–2 minutes in the microwave.

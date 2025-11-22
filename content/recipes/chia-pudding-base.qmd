@@ -1,0 +1,40 @@
+---
+title: "Chia Pudding Base"
+author: ""
+source: ""
+image: ""
+date: 2025-11-22
+categories: [Breakfast, Snack]
+prep_time: ""
+cook_time: ""
+total_time: ""
+servings:
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta image >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Nutrition (per serving)
+
+## Ingredients
+
+* 2 tablespoons chia seeds  
+* ½ cup milk of choice  
+* Splash of vanilla extract  
+
+## Instructions
+
+1. In each jar or container, stir together the chia seeds, milk, and vanilla until fully combined.  
+2. Cover and refrigerate overnight, or at least 3–4 hours, until thickened.  
+3. Stir before serving and add desired toppings such as berries, banana, nut butter, coconut, granola, cacao nibs, or Greek yogurt.  
+
+## Notes
+
+* Add extra milk in the morning if the pudding becomes too thick.  
+* Sweeten with honey or maple syrup if desired.  
+* Make 3–4 jars at once and refrigerate for up to 5 days.  

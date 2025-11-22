@@ -1,0 +1,63 @@
+---
+title: Garlic Herb Chicken & Spinach Protein Pasta
+description: Garlic herb marinated chicken served over protein pasta with sautéed spinach and roasted tomatoes.
+categories: [Lunch, Dinner]
+cook_time: 40 minutes
+date: 2025-11-22
+image: "/static/recipes/garlic-herb-chicken-and-spinach-pasta.jpeg"
+source: ""
+prep_time: ""
+total_time: ""
+servings: "4"
+---
+
+## Ingredients
+
+### Chicken
+
+- 1 lb (450 g) boneless skinless chicken breasts  
+- 1 tbsp olive oil  
+- 1 tsp garlic powder  
+- 1 tsp Italian seasoning  
+- ½ tsp onion powder  
+- ½ tsp salt  
+- ½ tsp black pepper  
+- Juice of ½ lemon  
+
+### Pasta
+
+- 8 oz (225 g) protein pasta (Barilla Protein+ or chickpea pasta)  
+- 1 tbsp olive oil  
+- 3 cloves garlic, minced  
+- 4 cups (120 g) fresh spinach  
+- ¼ tsp chili flakes (optional)  
+- Salt and pepper, to taste  
+
+### Roasted Tomatoes
+
+- 2 cups (300 g) cherry tomatoes  
+- 1 tsp olive oil  
+- ½ tsp salt  
+- ½ tsp Italian seasoning  
+
+## Instructions
+
+1. **Roast the tomatoes**  
+   Preheat oven to 400°F (200°C). Toss cherry tomatoes with olive oil, salt, and Italian seasoning. Spread on a parchment-lined sheet and roast 15–20 minutes until blistered and caramelized.
+
+2. **Cook the chicken**  
+   In a bowl, mix olive oil, garlic powder, Italian seasoning, onion powder, salt, pepper, and lemon juice. Coat chicken evenly.  
+   Air fry at 380°F (193°C) for 14–16 minutes, flipping halfway.  
+   Alternatively, grill or pan-sear until cooked through. Let rest, then slice.
+
+3. **Cook the pasta**  
+   Boil pasta in salted water until al dente. Drain, reserving ¼ cup of pasta water.
+
+4. **Sauté the spinach**  
+   Heat olive oil in a skillet over medium heat. Add garlic and chili flakes; sauté 30 seconds. Add spinach and cook until wilted. Season with salt and pepper.
+
+5. **Combine pasta and spinach**  
+   Add cooked pasta and a splash of pasta water to the skillet. Toss to coat evenly.
+
+6. **Assemble**  
+   Divide pasta among 4 meal prep containers. Top with roasted tomatoes and sliced chicken. Garnish with Parmesan or herbs if desired.

@@ -1,0 +1,101 @@
+---
+title: Cheesy Beef Taco Potato Bowls
+author: ""
+source: ""
+image: "/static/recipes/cheesy-beef-taco-potato-bowls.jpeg"
+date: 2025-11-22
+categories: [Lunch, Dinner]
+prep_time: "20 minutes"
+cook_time: "30 minutes"
+total_time: "50 minutes"
+servings: 4
+---
+
+[Source]({{< meta source >}})
+
+![]({{< meta image >}}){fig-align="center"}
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Nutrition (per serving)
+
+- **Calories:** 522  
+- **Protein:** 54g  
+- **Carbs:** 42g  
+- **Fat:** 18g  
+
+## Ingredients
+
+### Roasted Potatoes
+
+- 1.5 lbs russet or gold potatoes, diced into bite-sized cubes  
+- 1 tbsp olive oil  
+- 1 tsp paprika  
+- 1/2 tsp garlic powder  
+- 1/2 tsp salt  
+- 1/4 tsp black pepper  
+
+### Beef Taco Filling
+
+- 1.5 lbs extra-lean ground beef (93% lean or leaner)  
+- 1/2 medium onion, finely chopped  
+- 2 cloves garlic, minced  
+- 1 packet low-sodium taco seasoning *(or homemade)*  
+- 1/2 cup low-sodium beef broth  
+- Salt and pepper, to taste  
+
+### Pico de Gallo
+
+- 2 medium tomatoes, diced  
+- 1 small red onion, diced  
+- 1 jalapeño, finely chopped  
+- 1/4 cup fresh cilantro, chopped  
+- Juice of 1 lime  
+- Salt, to taste  
+
+### Cheesy Taco Sauce
+
+- 1/2 cup reduced-fat shredded cheddar cheese  
+- 1/4 cup plain Greek yogurt  
+- 1/4 cup low-fat milk  
+- 1 tbsp hot sauce *(optional)*  
+- 1/4 tsp paprika  
+- Salt, to taste  
+
+## Instructions
+
+### 1. Roasted Potatoes
+
+1. Preheat oven to **425°F (220°C)**.  
+2. Toss diced potatoes with olive oil, paprika, garlic powder, salt, and pepper.  
+3. Spread evenly on a parchment-lined baking sheet and bake **25–30 minutes**, flipping halfway, until crispy and golden.
+
+### 2. Beef Taco Filling
+
+1. Heat a large skillet over medium-high heat. Add ground beef and cook **5–6 minutes**, breaking it apart.  
+2. Add onion and garlic, cooking another **2–3 minutes** until soft.  
+3. Stir in taco seasoning and beef broth. Simmer **3–4 minutes** until the liquid reduces and thickens. Season to taste.
+
+### 3. Pico de Gallo
+
+1. Combine tomatoes, red onion, jalapeño, cilantro, lime juice, and salt.  
+2. Toss and refrigerate until serving.
+
+### 4. Cheesy Taco Sauce
+
+1. In a small saucepan over low heat, whisk cheddar cheese, Greek yogurt, milk, hot sauce, paprika, and salt.  
+2. Stir constantly until smooth and creamy.
+
+### 5. Assemble
+
+1. Divide roasted potatoes among 4 bowls or meal prep containers.  
+2. Add beef taco filling.  
+3. Top with pico de gallo.  
+4. Drizzle with the cheesy taco sauce and enjoy.
+
+## Notes
+
+- Add avocado, shredded lettuce, or salsa for extra volume and fiber.  
+- Stores well in the fridge for **up to 4 days**.  

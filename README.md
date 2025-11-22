@@ -16,10 +16,6 @@ This site is my personal toolkit - a collection of insights, resources, and insp
 5. Install `pre-commit` hooks: `python -m pre_commit install --install-hooks`
 6. Start the Quarto preview server: `quarto preview`
 
-## Using the Jupyter Notebooks
-
-Jupyter Lab can be spun up to using the [docker-compose.yml](./docker-compose.yml) file with `docker compose up -d`. The notebook directory (`development/code/notebooks`) gets bind mounted into the docker container. The notebook environment is served locally at [http://jupyter.localhost](http://jupyter.localhost) using [Caddy](https://caddyserver.com/).
-
 ## Quarto Extensions
 
 - [black-formatter](https://github.com/shafayetShafee/black-formatter)
