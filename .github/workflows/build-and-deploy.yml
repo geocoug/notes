@@ -29,7 +29,6 @@ jobs:
       - name: Install Python dependencies
         run: |
           uv venv --python-preference managed
-          source .venv/bin/activate
           uv sync --locked --all-extras
       - name: Render Quarto Project
         run: |
