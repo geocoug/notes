@@ -2,49 +2,83 @@
 title: Strength Training
 description: Strength training workout routines
 image: /static/resources/workouts.png
-execute:
-  echo: false
 ---
 
 ## Intermediate Routines
 
 ### Version 1
 
-```{python}
-import polars as pl
-
-workouts = "../../static/resources/workouts.xlsx"
-back_biceps = pl.read_excel(workouts, sheet_id=1)
-chest_triceps = pl.read_excel(workouts, sheet_id=2)
-legs = pl.read_excel(workouts, sheet_id=3)
-shoulders_traps = pl.read_excel(workouts, sheet_id=4)
-```
-
 The following regimen can be used for any 5 day/week workout schedule. I typically workout Monday-Friday, where each lift is executed once Monday-Thursday, and any targeted muscle group is performed again on Friday.
 
 #### Back & Biceps
 
-```{python}
-back_biceps.to_pandas().fillna("").to_html(index=False, render_links=True)
-```
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| Rowerg | 1 | 2-5 minutes | Warmup |
+| [Deadlift](https://www.youtube.com/watch?v=hCDzSR6bW10) | 5 | 10, 8, 6, 8, 10 | Pyramid intensity |
+| [Pull-Ups](https://www.youtube.com/watch?v=sIvJTfGxdFo) | 3 | 10 | Failure on last set |
+| [Lat Pull Downs](https://www.youtube.com/watch?v=SALxEARiMkw) | 3 | 10 | |
+| [One Arm Seated Cable Rows](https://www.youtube.com/watch?v=CrylzZHfO1c) | 3 | 12 | |
+| [Face Pulls](https://www.youtube.com/watch?v=0Po47vvj9g4) | 3 | 12 | |
+| [Bent Over Rows](https://www.youtube.com/watch?v=FWJR5Ve8bnQ) | 3 | 10 | |
+| Shoulder Superset | 3 | 12 | Failure |
+| [Hammer Curls](https://www.youtube.com/results?search_query=dumbbell+hammer+curl+proper+form) | 3 | 12 | |
+| [Barbell Curls](https://www.youtube.com/watch?v=KS-1_r9K4XA) | 3 | 12 | |
+| [Back Hyperextension](https://www.youtube.com/results?search_query=back+hyperextension+proper+form) | 4 | 12 | |
+| [Planks](https://www.youtube.com/watch?v=2aGunzN5YWA) | 3 | 60 seconds | |
+| [Leg Raises](https://www.youtube.com/watch?v=g7hssQDruXw) | 3 | 15 | |
+| [Sit Ups](https://www.youtube.com/results?search_query=sit+up+proper+form) | 3 | 25 | |
+| Bike | 1 | 20-30 minutes | |
 
 #### Chest & Triceps
 
-```{python}
-chest_triceps.to_pandas().fillna("").to_html(index=False, render_links=True)
-```
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| [Bench Press](https://www.youtube.com/watch?v=-MAABwVKxok) | 4 | 10, 8, 5, 3 | Pyramid intensity |
+| [Incline Press](https://www.youtube.com/watch?v=sK4Rvug6ufo) | 4 | 12 | |
+| [Flys](https://www.youtube.com/watch?v=idAvu2HvqSQ) | 4 | 12 | |
+| [Dips](https://www.youtube.com/watch?v=hsEKg3M45dc) | 3 | Failure | |
+| [Tricep Pushdowns](https://www.youtube.com/watch?v=qHDrQglWgS4) | 4 | 12 | |
+| [Dumbbell Press](https://www.youtube.com/watch?v=sK4Rvug6ufo) | 4 | 12 | |
+| [Ab Roller](https://www.youtube.com/watch?v=j6lR4u193gE) | 3 | 10 | |
+| [Sitting Twists](https://www.youtube.com/results?search_query=russian+twist+proper+form) | 3 | 30 | |
+| [Wipers](https://www.youtube.com/results?search_query=windshield+wiper+ab+exercise+proper+form) | 3 | 12 | |
+| Run | 1 | 6 miles | |
 
 #### Legs
 
-```{python}
-legs.to_pandas().fillna("").to_html(index=False, render_links=True)
-```
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| Rowerg | 1 | 10 minutes | Warmup |
+| [Back Squat](https://www.youtube.com/watch?v=Uv_DKDl7EjA) | 5 | 10, 8, 6, 8, 10 | Pyramid intensity |
+| [Lunges](https://www.youtube.com/watch?v=I34ysEkPK7w) | 3 | 12 | |
+| [Good Mornings](https://www.youtube.com/watch?v=nWyx81AfTos) | 3 | 12 | |
+| [Kettlebell Deadlift](https://www.youtube.com/watch?v=BP3uhdsMlS4) | 3 | 12 | |
+| Mixed Cable | 3 | 12 | Leg Curl, Side Step, Knee Raise |
+| [Back Hyperextension](https://www.youtube.com/results?search_query=back+hyperextension+proper+form) | 3 | 12 | Hold for 3 seconds at full extension |
+| [Calf Raises](https://www.youtube.com/results?search_query=standing+calf+raise+proper+form) | 3 | 12 | |
+| One Leg Balance | 3 | 45 seconds | On incline |
+| [Glute Bridges](https://www.youtube.com/results?search_query=glute+bridge+proper+form) | 3 | 10 | |
+| Rowerg | 1 | 5 minutes | |
 
 #### Shoulders & Traps
 
-```{python}
-shoulders_traps.to_pandas().fillna("").to_html(index=False, render_links=True)
-```
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| Rowerg | 1 | 10 minutes | Warmup |
+| [Military Press](https://www.youtube.com/watch?v=nNMR9fRGRjQ) | 4 | 12, 8, 5, 3 | Failure on last set |
+| [Lateral Raises](https://www.youtube.com/watch?v=LZW5GZAQvXg) | 3 | 12 | |
+| [Rear Delt Flys](https://www.youtube.com/watch?v=LsT-bR_zxLo) | 3 | 12 | |
+| [Front Raises](https://www.youtube.com/watch?v=LZW5GZAQvXg) | 3 | 10 | |
+| Dumbbell Superset | — | — | |
+| [Barbell Shrugs](https://www.youtube.com/results?search_query=barbell+shrugs+proper+form) | 3 | 10 | |
+| [One Arm Dumbbell Snatch](https://www.youtube.com/results?search_query=one+arm+dumbbell+snatch+proper+form) | 3 | 10 | |
+| [Upright Rows](https://www.youtube.com/results?search_query=barbell+upright+row+proper+form) | 3 | 10 | |
+| [Kettlebell Swing](https://www.youtube.com/results?search_query=kettlebell+swing+proper+form) | 3 | 10 | |
+| [Farmers Carry](https://www.youtube.com/results?search_query=farmers+carry+walk+proper+form) | 3 | Failure | |
+| [Scissor Kicks](https://www.youtube.com/results?search_query=scissor+kicks+ab+exercise) | 3 | 30 seconds | |
+| [L-sit](https://www.youtube.com/watch?v=Y52Yv57UJ_8) | 3 | Failure | |
+| [Toe Taps](https://www.youtube.com/results?search_query=toe+tap+ab+exercise) | 3 | 20 | |
 
 ### Version 2
 
@@ -105,3 +139,78 @@ Using a barbell, perform the following exercises with 10 reps each, resting for 
 5. Bent-over row
 6. Lunges (hold center of barbell with one hand)
 7. Landmine twists
+
+### Version 3
+
+A 5-day strength-biased split aimed at building strength and a balanced physique without bodybuilder-style hypertrophy volume. Main lifts sit in the 4-6 rep range with longer rest (3-5 minutes); accessories stay in the 8-12 range. The posterior chain gets two dedicated days, and every session **starts** with a short core/anti-rotation primer so the trunk is engaged before heavy compounds — and so core work doesn't get skipped at the end when you're cooked. Rotate the order Mon-Fri however fits your week.
+
+#### Day 1: Lower — Squat Focus
+
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| Rowerg | 1 | 5 minutes | Warmup |
+| [Dead Bug](https://www.youtube.com/watch?v=2aGunzN5YWA) | 3 | 10/side | Core primer; lower back stays flat to the floor |
+| [Pallof Press](https://www.youtube.com/watch?v=SsQWYNxlYsQ) | 3 | 10/side | Anti-rotation; 2 sec hold at full extension |
+| [Back Squat](https://www.youtube.com/watch?v=Uv_DKDl7EjA) | 5 | 5 | Heavy; 3-5 min rest between sets |
+| [Bulgarian Split Squat](https://www.youtube.com/results?search_query=bulgarian+split+squat+proper+form) | 3 | 8/leg | Hold DBs at sides |
+| [Goblet Squat](https://www.youtube.com/results?search_query=goblet+squat+proper+form) | 3 | 10 | Slow 3-sec descent |
+| [Hanging Leg Raise](https://www.youtube.com/watch?v=g7hssQDruXw) | 3 | 10 | No swinging |
+| [Calf Raises](https://www.youtube.com/results?search_query=standing+calf+raise+proper+form) | 4 | 12 | 1 sec pause at top |
+
+#### Day 2: Upper — Push
+
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| Rowerg | 1 | 5 minutes | Warmup |
+| [Hollow Hold](https://www.youtube.com/results?search_query=hollow+body+hold+proper+form) | 3 | 30 seconds | Core primer |
+| [Pallof Press](https://www.youtube.com/watch?v=SsQWYNxlYsQ) | 3 | 10/side | Anti-rotation |
+| [Bench Press](https://www.youtube.com/watch?v=-MAABwVKxok) | 5 | 5 | Heavy; 3-5 min rest |
+| [Military Press](https://www.youtube.com/watch?v=nNMR9fRGRjQ) | 4 | 6 | Strict — no leg drive |
+| [Incline Dumbbell Press](https://www.youtube.com/watch?v=sK4Rvug6ufo) | 3 | 8-10 | Upper chest |
+| [Dips](https://www.youtube.com/watch?v=hsEKg3M45dc) | 3 | AMRAP | Add weight if &gt;12 unweighted |
+| [Lateral Raises](https://www.youtube.com/watch?v=LZW5GZAQvXg) | 3 | 12-15 | Slight forward lean |
+| [Tricep Pushdowns](https://www.youtube.com/watch?v=qHDrQglWgS4) | 3 | 12 | Rope, split at bottom |
+
+#### Day 3: Lower — Hinge Focus (Posterior Chain Priority)
+
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| Rowerg | 1 | 5 minutes | Warmup |
+| [Bird Dog](https://www.youtube.com/watch?v=2aGunzN5YWA) | 3 | 10/side | Slow tempo; brace |
+| [Plank](https://www.youtube.com/watch?v=2aGunzN5YWA) | 3 | 45 seconds | Brace hard, ribs down |
+| [Deadlift](https://www.youtube.com/watch?v=hCDzSR6bW10) | 5 | 3-5 | Heavy; 3-5 min rest. Reset every rep |
+| [Romanian Deadlift](https://www.youtube.com/watch?v=uhghy9pFIPY) | 3 | 8 | Hamstrings; stop 1 inch above lockout |
+| [Hip Thrust](https://www.youtube.com/results?search_query=barbell+hip+thrust+proper+form) | 3 | 10 | 1 sec pause at top, squeeze glutes |
+| [Back Hyperextension](https://www.youtube.com/results?search_query=back+hyperextension+proper+form) | 4 | 12 | Hold 3 sec at full extension |
+| [Good Mornings](https://www.youtube.com/watch?v=nWyx81AfTos) | 3 | 10 | Lighter load; perfect form |
+| [Farmers Carry](https://www.youtube.com/results?search_query=farmers+carry+walk+proper+form) | 3 | 40 yards | Heavy DBs or KBs |
+
+#### Day 4: Upper — Pull
+
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| Rowerg | 1 | 5 minutes | Warmup |
+| [Dead Bug](https://www.youtube.com/watch?v=2aGunzN5YWA) | 3 | 10/side | Core primer |
+| [Pallof Press](https://www.youtube.com/watch?v=SsQWYNxlYsQ) | 3 | 10/side | Anti-rotation |
+| [Pull-Ups](https://www.youtube.com/watch?v=sIvJTfGxdFo) | 5 | 5 | Add weight if &gt;8 bodyweight |
+| [Bent-Over Row](https://www.youtube.com/watch?v=FWJR5Ve8bnQ) | 4 | 6 | Strict barbell row |
+| [Lat Pull Downs](https://www.youtube.com/watch?v=SALxEARiMkw) | 3 | 10 | Squeeze at bottom |
+| [One Arm Cable Row](https://www.youtube.com/watch?v=CrylzZHfO1c) | 3 | 10/side | Focus on scapular retraction |
+| [Face Pulls](https://www.youtube.com/watch?v=0Po47vvj9g4) | 3 | 15 | Rear delts + upper back |
+| [Barbell Curls](https://www.youtube.com/watch?v=KS-1_r9K4XA) | 3 | 10 | |
+| [Hammer Curls](https://www.youtube.com/results?search_query=dumbbell+hammer+curl+proper+form) | 3 | 10 | |
+
+#### Day 5: Full Body / Weak-Point
+
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| Rowerg | 1 | 10 minutes | Warmup |
+| [Ab Roller](https://www.youtube.com/watch?v=j6lR4u193gE) | 3 | 8 | Slow eccentric, knees if needed |
+| [Side Plank](https://www.youtube.com/watch?v=2aGunzN5YWA) | 3 | 30 sec/side | Hips stacked |
+| [Hanging Leg Raise](https://www.youtube.com/watch?v=g7hssQDruXw) | 3 | 10 | |
+| [Goblet Squat](https://www.youtube.com/results?search_query=goblet+squat+proper+form) | 4 | 8 | Front-loaded; chest tall |
+| [Push Press](https://www.youtube.com/results?search_query=push+press+proper+form) | 4 | 6 | Leg drive ok here |
+| [Bent-Over Row](https://www.youtube.com/watch?v=FWJR5Ve8bnQ) | 4 | 8 | |
+| [Romanian Deadlift](https://www.youtube.com/watch?v=uhghy9pFIPY) | 3 | 10 | Lighter; hamstring stretch focus |
+| [Lunges](https://www.youtube.com/watch?v=I34ysEkPK7w) | 3 | 10/leg | Walking, DBs at sides |
+| [Kettlebell Swing](https://www.youtube.com/results?search_query=kettlebell+swing+proper+form) | 3 | 15 | Finisher; hinge-driven, not squat |

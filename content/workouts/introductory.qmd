@@ -2,35 +2,42 @@
 title: Introductory Workouts
 description: Introductory workout routines
 image: /static/resources/workouts.png
-execute:
-  echo: false
 ---
 
 ## Introductory Routines
 
-```{python}
-import polars as pl
-
-workouts = "../../static/resources/workouts.xlsx"
-intro_push = pl.read_excel(workouts, sheet_id=5)
-intro_pull = pl.read_excel(workouts, sheet_id=6)
-intro_legs = pl.read_excel(workouts, sheet_id=7)
-```
-
 ### Intro to Push
 
-```{python}
-intro_push.to_pandas().fillna("").to_html(index=False, render_links=True)
-```
+| Lift | Sets | Reps | How-To |
+|---|---|---|---|
+| Dumbbell Bench Press | 3 | 10 | [View](https://weighttraining.guide/exercises/dumbbell-bench-press/) |
+| Dumbbell Incline Press | 3 | 10 | [View](https://weighttraining.guide/exercises/incline-dumbbell-bench-press/) |
+| Dumbbell Flys | 3 | 10 | [View](https://weighttraining.guide/exercises/dumbbell-fly/) |
+| Lateral Raises | 3 | 10 | [View](https://weighttraining.guide/exercises/cable-one-arm-lateral-raise/) |
+| Front Raises | 3 | 10 | [View](https://weighttraining.guide/exercises/seated-dumbbell-front-raise/) |
+| Tricep Push Down | 3 | 10 | [View](https://weighttraining.guide/exercises/triceps-push-down/) |
+| Planks | 3 | Failure | [View](https://weighttraining.guide/exercises/front-plank/) |
+| Sit-ups | 3 | 12 | [View](https://weighttraining.guide/exercises/sit-up/) |
+| Leg Raises | 3 | 10 | [View](https://weighttraining.guide/exercises/seated-knee-raise/) |
 
 ### Intro to Pull
 
-```{python}
-intro_pull.to_pandas().fillna("").to_html(index=False, render_links=True)
-```
+| Lift | Sets | Reps | How-To |
+|---|---|---|---|
+| Cable Rows | 3 | 10 | [View](https://weighttraining.guide/exercises/straight-back-seated-cable-row/) |
+| Dumbbell Rows | 3 | 10 | [View](https://weighttraining.guide/exercises/bent-over-dumbbell-row/) |
+| Upright Rows | 3 | 10 | [View](https://weighttraining.guide/exercises/dumbbell-wide-grip-upright-row/) |
+| Dumbbell Curls | 3 | 10 | [View](https://weighttraining.guide/exercises/seated-alternating-dumbbell-curl/) |
+| Hammer Curls | 3 | 10 | [View](https://weighttraining.guide/exercises/dumbbell-hammer-curl/) |
+| Farmer Carry | 3 | 10 | [View](https://weighttraining.guide/exercises/dumbbell-farmers-walk/) |
 
 ### Intro to Legs
 
-```{python}
-intro_legs.to_pandas().fillna("").to_html(index=False, render_links=True)
-```
+| Lift | Sets | Reps | How-To |
+|---|---|---|---|
+| Kettlebell Deadlift | 4 | 10, 8, 5, 3 | [View](https://weighttraining.guide/exercises/barbell-deadlift/) |
+| Half Squat | 3 | 10 | [View](https://weighttraining.guide/exercises/dumbbell-squat/) |
+| Calf Raises | 3 | 12 | [View](https://weighttraining.guide/exercises/standing-dumbbell-one-leg-calf-raise/) |
+| 1 Leg Balance | 3 | 30 sec | |
+| Back Hyperextension | 3 | 10 | [View](https://weighttraining.guide/exercises/hyperextension/) |
+| Bird Dog | 3 | 10 | [View](https://www.verywellfit.com/how-to-do-the-bird-dog-exercise-3498253) |

@@ -17,3 +17,4 @@
 .npm
 **/*.quarto_ipynb
 _site/
+.claude/
