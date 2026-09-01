@@ -1,5 +1,5 @@
 [project]
-name = "toolkit"
+name = "notes"
 version = "0.1.0"
 authors = [{ name = "Caleb Grant", email = "grantcaleb22@gmail.com" }]
 description = "A collection of insights, resources, and inspirations that keep me productive and creative"
@@ -30,8 +30,8 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/geocoug/toolkit"
-Issues = "https://github.com/geocoug/toolkit/issues"
+Repository = "https://github.com/geocoug/notes"
+Issues = "https://github.com/geocoug/notes/issues"
 
 [tool.ruff]
 exclude = [

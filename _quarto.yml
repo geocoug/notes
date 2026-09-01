@@ -17,13 +17,13 @@ execute:
   freeze: auto # Re-compute previously generated computational output only in case their source file changes
 
 website:
-  title: "Toolkit"
-  description: "Geocoug's Toolkit"
+  title: "Notes"
+  description: "Recipes, workouts, and development references."
   favicon: /static/favicon.ico
-  site-url: http://toolkit.goecoug.com
+  site-url: https://notes.geocoug.com
   page-navigation: true
   back-to-top-navigation: false
-  repo-url: https://github.com/geocoug/toolkit
+  repo-url: https://github.com/geocoug/notes
   search:
     location: navbar
     copy-button: true
@@ -32,7 +32,7 @@ website:
     background: light
     right:
       - icon: github
-        href: https://github.com/geocoug/toolkit
+        href: https://github.com/geocoug/notes
   navbar:
     title: false
     logo: /static/logo.svg
