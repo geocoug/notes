@@ -163,7 +163,7 @@ A 5-day strength-biased split aimed at building strength and a balanced physique
 |---|---|---|---|
 | Rowerg | 1 | 5 minutes | Warmup |
 | [Hollow Hold](https://www.youtube.com/results?search_query=hollow+body+hold+proper+form) | 3 | 30 seconds | Core primer |
-| [Pallof Press](https://www.youtube.com/watch?v=SsQWYNxlYsQ) | 3 | 10/side | Anti-rotation |
+| [Plank with Shoulder Taps](https://www.youtube.com/results?search_query=plank+shoulder+taps+proper+form) | 3 | 20 total | Anti-rotation. Hips must not sway — that is the whole rep |
 | [Bench Press](https://www.youtube.com/watch?v=-MAABwVKxok) | 5 | 5 | Heavy; 3-5 min rest |
 | [Military Press](https://www.youtube.com/watch?v=nNMR9fRGRjQ) | 4 | 6 | Strict — no leg drive |
 | [Incline Dumbbell Press](https://www.youtube.com/watch?v=sK4Rvug6ufo) | 3 | 8-10 | Upper chest |
@@ -191,7 +191,7 @@ A 5-day strength-biased split aimed at building strength and a balanced physique
 |---|---|---|---|
 | Rowerg | 1 | 5 minutes | Warmup |
 | [Dead Bug](https://www.youtube.com/watch?v=2aGunzN5YWA) | 3 | 10/side | Core primer |
-| [Pallof Press](https://www.youtube.com/watch?v=SsQWYNxlYsQ) | 3 | 10/side | Anti-rotation |
+| [Plank with Shoulder Taps](https://www.youtube.com/results?search_query=plank+shoulder+taps+proper+form) | 3 | 20 total | Anti-rotation. Hips must not sway — that is the whole rep |
 | [Pull-Ups](https://www.youtube.com/watch?v=sIvJTfGxdFo) | 5 | 5 | Add weight if &gt;8 bodyweight |
 | [Bent-Over Row](https://www.youtube.com/watch?v=FWJR5Ve8bnQ) | 4 | 6 | Strict barbell row |
 | [Lat Pull Downs](https://www.youtube.com/watch?v=SALxEARiMkw) | 3 | 10 | Squeeze at bottom |
@@ -214,3 +214,264 @@ A 5-day strength-biased split aimed at building strength and a balanced physique
 | [Romanian Deadlift](https://www.youtube.com/watch?v=uhghy9pFIPY) | 3 | 10 | Lighter; hamstring stretch focus |
 | [Lunges](https://www.youtube.com/watch?v=I34ysEkPK7w) | 3 | 10/leg | Walking, DBs at sides |
 | [Kettlebell Swing](https://www.youtube.com/results?search_query=kettlebell+swing+proper+form) | 3 | 15 | Finisher; hinge-driven, not squat |
+
+### Version 4
+
+#### Day 1 (Mon): Core Block — Flexion + Rotation
+
+Run this before pressing, not after. Two sets each if you are short on time.
+
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| Kettlebell Standing Side Crunch | 3 | 12/side | 55lb |
+| [Hanging Leg Raise](https://www.youtube.com/watch?v=g7hssQDruXw) | 3 | 15 | Floor version with kettlebell anchor also fine |
+| Elbow-to-Knee Crunch | 3 | 20 | |
+| [Russian Twist](https://www.youtube.com/results?search_query=russian+twist+proper+form) | 3 | 30 | Weighted |
+| [Ab Roller](https://www.youtube.com/watch?v=j6lR4u193gE) | 3 | 10 | Or extended plank 45 sec |
+| [Superman](https://www.youtube.com/results?search_query=superman+exercise+proper+form) | 3 | 30 sec | |
+
+#### Day 1 (Mon): Push — Week A
+
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| Rowerg | 1 | 5 minutes | Warmup |
+| [Incline Barbell Press](https://www.youtube.com/watch?v=sK4Rvug6ufo) | 4 | 10, 8, 6, 6 | Pyramid intensity |
+| [Flat Dumbbell Press](https://www.youtube.com/watch?v=-MAABwVKxok) | 3 | 10 | Full stretch at bottom |
+| [Machine Chest Press](https://www.youtube.com/results?search_query=machine+chest+press+proper+form) | 3 | 12 | Load it up |
+| [Seated Dumbbell Overhead Press](https://www.youtube.com/watch?v=nNMR9fRGRjQ) | 3 | 10 | |
+| [Cable Lateral Raise](https://www.youtube.com/watch?v=LZW5GZAQvXg) | 3 | 15 | One arm at a time |
+| [Dips](https://www.youtube.com/watch?v=hsEKg3M45dc) | 3 | Failure | Add weight if &gt;12 |
+| [Overhead Cable Tricep Extension](https://www.youtube.com/watch?v=qHDrQglWgS4) | 3 | 12 | |
+| Rowerg | 1 | 10-20 minutes | |
+
+#### Day 1 (Mon): Push — Week B
+
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| Rowerg | 1 | 5 minutes | Warmup |
+| [Flat Barbell Bench Press](https://www.youtube.com/watch?v=-MAABwVKxok) | 4 | 10, 8, 6, 6 | Pyramid intensity |
+| [Incline Dumbbell Press](https://www.youtube.com/watch?v=sK4Rvug6ufo) | 3 | 10 | |
+| [Low-to-High Cable Fly](https://www.youtube.com/watch?v=idAvu2HvqSQ) | 3 | 12 | Upper chest emphasis |
+| [Standing Barbell Overhead Press](https://www.youtube.com/watch?v=nNMR9fRGRjQ) | 4 | 8 | Last set to failure |
+| Delt Superset | 3 | 10 each | Elbows-tucked out-swing → half lateral → full lateral |
+| [Close-Grip Bench or Skull Crushers](https://www.youtube.com/results?search_query=skull+crusher+proper+form) | 3 | 10 | |
+| [Tricep Pushdown](https://www.youtube.com/watch?v=qHDrQglWgS4) | 3 | 12 | |
+| Rowerg | 1 | 10-20 minutes | |
+
+#### Day 2 (Tue): Conditioning + Core A (Anti-Movement)
+
+Bike 30 miles **or** 30 minutes Rowerg — alternate week to week.
+
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| [Pallof Press](https://www.youtube.com/watch?v=SsQWYNxlYsQ) | 3 | 10/side | Anti-rotation; resist the twist |
+| [Suitcase Carry](https://www.youtube.com/results?search_query=suitcase+carry+proper+form) | 3 | 40 yd/side | 55lb kettlebell, one side only |
+| [Dead Bug](https://www.youtube.com/watch?v=2aGunzN5YWA) | 3 | 10/side | Low back pinned to floor |
+| [Side Plank](https://www.youtube.com/watch?v=2aGunzN5YWA) | 3 | 45 sec/side | Hips stacked |
+| [Hollow Hold](https://www.youtube.com/watch?v=Y52Yv57UJ_8) | 3 | 30 sec | |
+| [Bird Dog](https://www.youtube.com/results?search_query=bird+dog+exercise+proper+form) | 2 | 10/side | 3 second hold per rep |
+
+#### Day 3 (Wed): Legs — Week A (Squat Priority)
+
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| [Back Squat](https://www.youtube.com/watch?v=Uv_DKDl7EjA) | 6-7 | Pyramid to failure, then strip down | Smith machine or barbell |
+| [Romanian Deadlift](https://www.youtube.com/watch?v=uhghy9pFIPY) | 4 | 8 | The missing hinge; hamstring stretch, flat back |
+| [Leg Extension](https://www.youtube.com/results?search_query=leg+extension+proper+form) | 3 | 12 | |
+| [Seated Hamstring Curl](https://www.youtube.com/results?search_query=seated+hamstring+curl+proper+form) | 3 | 12 | |
+| [Standing Calf Raise](https://www.youtube.com/results?search_query=standing+calf+raise+proper+form) | 5 | 10 | Pause at full stretch |
+| [Hip Abduction Machine](https://www.youtube.com/results?search_query=hip+abduction+machine+proper+form) | 3 | 15 | Knees apart — the opposite of the adduction machine |
+| Stair Stepper | 1 | 20 minutes | |
+
+#### Day 3 (Wed): Legs — Week B (Hinge Priority)
+
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| [Trap Bar or Conventional Deadlift](https://www.youtube.com/watch?v=hCDzSR6bW10) | 5 | 5 | Trap bar if the low back is cranky |
+| [Bulgarian Split Squat](https://www.youtube.com/results?search_query=bulgarian+split+squat+proper+form) | 4 | 10/leg | Or single-leg press on the sled |
+| [Barbell Hip Thrust](https://www.youtube.com/results?search_query=barbell+hip+thrust+proper+form) | 3 | 10 | Replaces the 20-second glute bridge |
+| [Lying Hamstring Curl](https://www.youtube.com/results?search_query=lying+hamstring+curl+proper+form) | 4 | 10 | |
+| [Seated Calf Raise](https://www.youtube.com/results?search_query=seated+calf+raise+proper+form) | 5 | 12 | |
+| [Hip Adduction Machine](https://www.youtube.com/results?search_query=hip+adduction+machine+proper+form) | 3 | 15 | The "squash a watermelon" machine |
+| Stair Stepper | 1 | 20 minutes | |
+
+#### Day 4 (Thu): Pull — Week A
+
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| Rowerg | 1 | 5 minutes | Warmup |
+| [Pull-Ups](https://www.youtube.com/watch?v=sIvJTfGxdFo) | 4 | 6-10 | Add weight if &gt;10 bodyweight |
+| [Bent-Over Barbell Row](https://www.youtube.com/watch?v=FWJR5Ve8bnQ) | 4 | 8 | Strict, no body english |
+| [One Arm Dumbbell Row](https://www.youtube.com/watch?v=CrylzZHfO1c) | 3 | 10/side | |
+| [Face Pulls](https://www.youtube.com/watch?v=0Po47vvj9g4) | 3 | 15 | Rear delts — the biggest hole in the old plan |
+| [Reverse Pec Deck](https://www.youtube.com/watch?v=LsT-bR_zxLo) | 3 | 15 | |
+| [Barbell Curls](https://www.youtube.com/watch?v=KS-1_r9K4XA) | 3 | 10 | |
+| [Hammer Curls](https://www.youtube.com/results?search_query=dumbbell+hammer+curl+proper+form) | 3 | 12 | |
+| [45° Back Extension](https://www.youtube.com/results?search_query=back+hyperextension+proper+form) | 3 | 12 | 3 second hold at top |
+| Rowerg | 1 | 20 minutes | |
+
+#### Day 4 (Thu): Pull — Week B
+
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| Rowerg | 1 | 5 minutes | Warmup |
+| [Lat Pull Downs](https://www.youtube.com/watch?v=SALxEARiMkw) | 3 | 10 each grip | Wide, narrow, neutral |
+| [Seated Cable Row](https://www.youtube.com/watch?v=CrylzZHfO1c) | 4 | 10 | |
+| [Chest-Supported or T-Bar Row](https://www.youtube.com/results?search_query=chest+supported+row+proper+form) | 3 | 10 | No low-back involvement |
+| [Face Pulls](https://www.youtube.com/watch?v=0Po47vvj9g4) | 3 | 15 | |
+| [Barbell Shrugs](https://www.youtube.com/results?search_query=barbell+shrugs+proper+form) | 4 | 12 | Pause at top |
+| [Incline Dumbbell Curl](https://www.youtube.com/results?search_query=incline+dumbbell+curl+proper+form) | 3 | 10 | Long-head biceps stretch |
+| [Cable or Preacher Curl](https://www.youtube.com/results?search_query=preacher+curl+proper+form) | 3 | 12 | |
+| [Farmers Carry](https://www.youtube.com/results?search_query=farmers+carry+walk+proper+form) | 3 | 40 yd | Grip and forearms |
+| Rowerg | 1 | 20 minutes | |
+
+#### Day 5 (Fri): Barbell Complex — Week A
+
+One barbell, no rest inside a round. 3-4 rounds, 10 reps each, 2 minutes rest between rounds. Pick the weight your **weakest** movement can handle for 10 — that is the overhead tricep extension. This day is metabolic, not heavy; do not chase load.
+
+| # | Lift | Reps | Notes |
+|---|---|---|---|
+| 1 | [Bent-Over Row](https://www.youtube.com/watch?v=FWJR5Ve8bnQ) | 10 | Bar starts at the hang |
+| 2 | [Romanian Deadlift](https://www.youtube.com/watch?v=uhghy9pFIPY) | 10 | **New** — the hinge this circuit was missing; same position as the row |
+| 3 | [Reverse Curl](https://www.youtube.com/results?search_query=barbell+reverse+curl+proper+form) | 10 | |
+| 4 | [Overhead Press](https://www.youtube.com/watch?v=nNMR9fRGRjQ) | 10 | |
+| 5 | [Overhead Tricep Extension](https://www.youtube.com/results?search_query=barbell+overhead+tricep+extension+proper+form) | 10 | Usually the limiting lift — set the weight here |
+| 6 | [Back Squat](https://www.youtube.com/watch?v=Uv_DKDl7EjA) | 10 | Bar already on the back from the press |
+| 7 | [Lunge](https://www.youtube.com/watch?v=I34ysEkPK7w) | 10/leg | |
+| 8 | [Landmine Side-to-Side](https://www.youtube.com/results?search_query=landmine+rotation+proper+form) | 10 | Rotate from the hips, not the arms |
+
+#### Day 5 (Fri): Barbell Complex — Week B
+
+Same rules: 3-4 rounds, 10 reps, no rest inside a round.
+
+| # | Lift | Reps | Notes |
+|---|---|---|---|
+| 1 | [Barbell High Pull](https://www.youtube.com/results?search_query=barbell+high+pull+proper+form) | 10 | Explosive; elbows lead |
+| 2 | [Good Morning](https://www.youtube.com/watch?v=nWyx81AfTos) | 10 | Hinge variant; go light |
+| 3 | [Barbell Curl](https://www.youtube.com/watch?v=KS-1_r9K4XA) | 10 | Supinated — complements week A's reverse curl |
+| 4 | [Push Press](https://www.youtube.com/results?search_query=push+press+proper+form) | 10 | Leg drive allowed |
+| 5 | [Skull Crusher (standing to forehead)](https://www.youtube.com/results?search_query=barbell+skull+crusher+proper+form) | 10 | Or repeat overhead extension |
+| 6 | [Front Squat](https://www.youtube.com/results?search_query=barbell+front+squat+proper+form) | 10 | Front rack; more core demand than back squat |
+| 7 | [Reverse Lunge](https://www.youtube.com/watch?v=I34ysEkPK7w) | 10/leg | Easier on the knees than forward lunges |
+| 8 | [Landmine Rotation](https://www.youtube.com/results?search_query=landmine+rotation+proper+form) | 10 | Half-kneeling version for more oblique isolation |
+
+### Version 5
+
+A different organizing principle from Versions 1-4. Those were all **body-part splits** — chest day, leg day, pull day. This one is a **movement-pattern rotation with undulating intensity**: every lifting day is full body, and what changes day to day is the *intensity zone*, not the muscle group.
+
+| Day | Zone | Reps | Length |
+|---|---|---|---|
+| Mon | Heavy | 4-6, antagonist pairs | ~60 min |
+| Tue | Rowerg intervals + core + hips | — | ~50 min |
+| Wed | Power | 3-5 explosive | ~40 min |
+| Thu | Volume | 8-15, antagonist pairs | ~65 min |
+| Fri | Density | EMOM blocks | ~40 min |
+| **Sat or Sun** | **Long ride** | **30-40 miles** | **2-3 hrs** |
+| The other weekend day | Full rest | — | Walk only |
+
+#### Day 1 (Mon): Heavy — 4-6 Reps
+
+Alternate A1 and A2 with minimal rest between them, then rest 2-3 minutes before the next round. Add weight when you hit the top of the rep range on every set.
+
+| Pair | Lift | Sets | Reps | Notes |
+|---|---|---|---|---|
+| A1 | [Smith Machine Back Squat](https://www.youtube.com/results?search_query=smith+machine+squat+proper+form) | 5 | 5 | Anchor lift. Vertical torso, stop at parallel |
+| A2 | [Dead Bug](https://www.youtube.com/watch?v=2aGunzN5YWA) | 5 | 8/side | Plate overhead if it gets easy |
+| B1 | [Seated Dumbbell Overhead Press](https://www.youtube.com/watch?v=nNMR9fRGRjQ) | 5 | 6 | Seated with back support — no standing arch |
+| B2 | [Weighted Pull-Up](https://www.youtube.com/watch?v=sIvJTfGxdFo) | 4 | 5 | Belt or held dumbbell; spine in traction |
+| C1 | [Close-Grip Bench Press](https://www.youtube.com/watch?v=-MAABwVKxok) | 4 | 6 | Chest and triceps together |
+| C2 | [Chest-Supported Row](https://www.youtube.com/results?search_query=chest+supported+row+proper+form) | 4 | 6 | Replaces bent-over rows; the pad does the bracing |
+| D1 | [Barbell Hip Thrust](https://www.youtube.com/results?search_query=barbell+hip+thrust+proper+form) | 4 | 6 | Heavy hip extension; ribs down, chin tucked |
+| D2 | [Seated Hamstring Curl](https://www.youtube.com/results?search_query=seated+hamstring+curl+proper+form) | 4 | 8 | Heavy |
+| E1 | [Farmers Carry](https://www.youtube.com/results?search_query=farmers+carry+walk+proper+form) | 3 | 50 yd | Heavy. Stand tall — do not lean away from the weight |
+| E2 | [Single-Leg Standing Calf Raise](https://www.youtube.com/results?search_query=single+leg+standing+calf+raise+proper+form) | 4 | 10/leg | Gastroc. 3 sec pause at the bottom stretch, full ROM |
+
+#### Day 2 (Tue): Rowerg Intervals + Core + Hips
+
+**8 × 500m, rest equal to work time.** Alternate weekly with 4 × 2000m at a steadier pace.
+
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| [Couch Stretch](https://www.youtube.com/results?search_query=couch+stretch+hip+flexor) | 2 | 60 sec/side | Hip flexors, right after the row |
+| [90/90 Hip Switch](https://www.youtube.com/results?search_query=90+90+hip+switch+mobility) | 2 | 10/side | Internal and external rotation |
+| [Bird Dog](https://www.youtube.com/results?search_query=bird+dog+exercise+proper+form) | 3 | 10/side | 5 second hold; the single best low-back drill |
+| [Plank with Shoulder Taps](https://www.youtube.com/results?search_query=plank+shoulder+taps+proper+form) | 3 | 20 total | Anti-rotation. Hips must not sway — that is the whole rep |
+| [Suitcase Carry](https://www.youtube.com/results?search_query=suitcase+carry+proper+form) | 3 | 40 yd/side | 55lb kettlebell, one side only |
+| [Side Plank](https://www.youtube.com/watch?v=2aGunzN5YWA) | 3 | 45 sec/side | Hips stacked; lateral core endurance |
+| [Hollow Hold](https://www.youtube.com/watch?v=Y52Yv57UJ_8) | 3 | 30 sec | Low back flat to the floor the whole time |
+
+#### Day 3 (Wed): Power — 3-5 Explosive Reps
+
+Every rep is fast. Stop the set the moment speed drops — this day builds output, not fatigue. Rest 90 seconds. About 40 minutes.
+
+| Lift | Sets | Reps | Notes |
+|---|---|---|---|
+| [Broad Jump](https://www.youtube.com/results?search_query=standing+broad+jump+proper+form) | 5 | 3 | Horizontal hip drive — the closest thing to a sled push. Reset fully between reps |
+| Stationary Bike Sprint | 6 | 20 sec | All-out, 90 sec easy spin between. Concentric-only like the sled, and it feeds your road rides |
+| [Squat Jump](https://www.youtube.com/results?search_query=bodyweight+squat+jump+proper+form) | 5 | 5 | Bodyweight only; land soft, reset between reps |
+| [Box Jump](https://www.youtube.com/results?search_query=box+jump+proper+form) | 5 | 3 | Step down, never jump down |
+| [Landmine Push Press](https://www.youtube.com/results?search_query=landmine+push+press+proper+form) | 4 | 5/arm | Angled bar path is easier on the spine than overhead |
+| [Explosive Pull-Up](https://www.youtube.com/watch?v=sIvJTfGxdFo) | 4 | 5 | Pull as fast as possible; chest to bar if you can |
+| [Medicine Ball Rotational Throw](https://www.youtube.com/results?search_query=medicine+ball+rotational+throw) | 4 | 8/side | Pivot the back foot. Rotate from the hips, not the spine |
+| [Medicine Ball Chest Pass](https://www.youtube.com/results?search_query=medicine+ball+chest+pass+wall) | 4 | 8 | Explosive horizontal push |
+| [Jump Rope](https://www.youtube.com/results?search_query=jump+rope+double+foot+bounce) | 3 | 60 sec | Gastroc elastic work. If you would rather not jump: explosive leg-press calf raise, 4 × 12 fast |
+| [Bear Crawl](https://www.youtube.com/results?search_query=bear+crawl+proper+form) | 3 | 20 yd | Knees an inch off the floor, hips low and level. Total-body stability, same job the get-up had |
+
+#### Day 4 (Thu): Volume — 8-15 Reps
+
+Rest 60-90 seconds between pairs. Chase the rep count, not the load. Every lift here has your torso either supported or vertical.
+
+| Pair | Lift | Sets | Reps | Notes |
+|---|---|---|---|---|
+| A1 | [Leg Press](https://www.youtube.com/results?search_query=leg+press+proper+form) | 4 | 12 | Feet mid-platform. Do not let the low back round off the pad |
+| A2 | [Lying Hamstring Curl](https://www.youtube.com/results?search_query=lying+hamstring+curl+proper+form) | 4 | 12 | |
+| B1 | [Incline Dumbbell Press](https://www.youtube.com/watch?v=sK4Rvug6ufo) | 4 | 12 | |
+| B2 | [Chest-Supported Row](https://www.youtube.com/results?search_query=chest+supported+row+proper+form) | 4 | 12 | |
+| C1 | [Machine Shoulder Press](https://www.youtube.com/watch?v=nNMR9fRGRjQ) | 3 | 12 | |
+| C2 | [Lat Pull Downs](https://www.youtube.com/watch?v=SALxEARiMkw) | 3 | 12 | Rotate grips week to week |
+| D1 | [Leg Extension](https://www.youtube.com/results?search_query=leg+extension+proper+form) | 3 | 15 | Quad-only; no hip involvement at all |
+| D2 | [Nordic Hamstring Lower](https://www.youtube.com/results?search_query=nordic+hamstring+curl+proper+form) | 3 | 6 | Slow eccentric. Band-assisted to start |
+| E1 | [Bulgarian Split Squat](https://www.youtube.com/results?search_query=bulgarian+split+squat+proper+form) | 3 | 10/leg | Dumbbells at the sides, torso upright |
+| E2 | [Standing Cable Hip Extension](https://www.youtube.com/results?search_query=cable+glute+kickback+standing+proper+form) | 3 | 15/side | Torso vertical, no spinal load |
+| F1 | [Cable Lateral Raise](https://www.youtube.com/watch?v=LZW5GZAQvXg) | 3 | 15 | |
+| F2 | [Face Pulls](https://www.youtube.com/watch?v=0Po47vvj9g4) | 3 | 20 | Rear delts |
+| G1 | [Incline Dumbbell Curl](https://www.youtube.com/results?search_query=incline+dumbbell+curl+proper+form) | 3 | 12 | |
+| G2 | [Overhead Cable Tricep Extension](https://www.youtube.com/watch?v=qHDrQglWgS4) | 3 | 12 | |
+| H1 | [Seated Calf Raise](https://www.youtube.com/results?search_query=seated+calf+raise+proper+form) | 4 | 20 | **Soleus — the muscle standing raises miss.** 2 sec bottom pause |
+| H2 | [Tibialis Raise](https://www.youtube.com/results?search_query=tibialis+raise+proper+form) | 2 | 20 | Front of the shin. Antagonist and ankle insurance |
+| I | [Hip Abduction Machine](https://www.youtube.com/results?search_query=hip+abduction+machine+proper+form) | 3 | 20 | Glute medius — a weak one makes the low back compensate |
+
+#### Day 5 (Fri): Density — EMOM Blocks
+
+Three blocks, 10 minutes each, 3 minutes rest between blocks. **EMOM** = every minute on the minute: start the listed reps at the top of each minute, and whatever time is left is your rest. If you cannot finish inside the minute, the weight is too heavy.
+
+Progression is the clock, not the bar. Same weights next week — finish each minute faster.
+
+| Block | Minute | Work | Notes |
+|---|---|---|---|
+| A (10 min) | Odd | 8 [Goblet Squats](https://www.youtube.com/results?search_query=goblet+squat+proper+form) | Front-loaded and self-limiting; chest tall |
+| A | Even | 8 [Landmine Press](https://www.youtube.com/results?search_query=landmine+press+proper+form) | 4/arm |
+| B (10 min) | Odd | 12 [Reverse Lunges](https://www.youtube.com/watch?v=I34ysEkPK7w) | 6/leg. Bodyweight, or light dumbbells at the sides |
+| B | Even | 8 [Renegade Rows](https://www.youtube.com/results?search_query=renegade+row+proper+form) | 4/side; hips square, no twisting |
+| C (10 min) | Odd | 12 [Landmine Rotations](https://www.youtube.com/results?search_query=landmine+rotation+proper+form) | Rotate from the hips, back foot pivots |
+| C | Even | 20 yd [Suitcase Carry](https://www.youtube.com/results?search_query=suitcase+carry+proper+form) | Each side |
+
+**If you ride Sunday:** run two blocks instead of three.
+
+#### Day 6 (Sat or Sun): Long Ride — 30-35 Miles
+
+Afterward, 10 minutes: couch stretch, 90/90 hip switches, and a few minutes of walking. The hip flexors have just spent two hours shortened.
+
+**The other weekend day is a full rest day.** Walk if you want. No gym, no rower.
+
+#### How to Progress Version 5
+
+| Day | What goes up | When |
+|---|---|---|
+| Mon (Heavy) | Weight | Top of rep range hit on every set |
+| Wed (Power) | Height, distance, or speed | Never add load at the cost of speed |
+| Thu (Volume) | Reps first, then weight | 15 reps on all sets → add load, reset to 8 |
+| Fri (Density) | Reps per minute, or rounds | Same weight until the clock stops beating you |
+| Sat/Sun (Ride) | Distance, then pace | Stay aerobic; the ride is not a fifth hard session |
+
+Run it 6-8 weeks, then take an easy week: same sessions, two-thirds the load, no sets to failure, ride 20 miles instead of 35.
