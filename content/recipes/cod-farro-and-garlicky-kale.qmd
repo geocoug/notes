@@ -1,0 +1,38 @@
+---
+title: "Cod, Farro and Garlicky Kale"
+description: "Roasted cod or halibut over farro with sautéed garlic kale. Cook two fillets: one for dinner, one for lunch."
+categories: [Dinner, Meal Prep, Protein]
+date: 2026-10-11
+prep_time: "10 minutes"
+cook_time: "30 minutes"
+total_time: "40 minutes"
+servings: 2
+source: ""
+image: ""
+---
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Ingredients
+
+- 2 cod or halibut fillets, 6–7 oz each
+- ¼ cup dry farro (about ¾ cup cooked)
+- 1 bunch kale (or spinach)
+- 3 cloves garlic, sliced
+- 1 lemon
+- Olive oil, salt, and pepper
+
+## Instructions
+
+1. Cook farro in about 1 cup water or broth for 25–30 minutes until chewy-tender. Drain any excess.
+2. Strip and chop the kale. Sauté in olive oil with sliced garlic for 4–5 minutes, adding a splash of water to wilt. Salt.
+3. Season the fish and roast at 400°F for 12–14 minutes, or pan-sear 3–4 minutes per side.
+4. Serve fish over farro with kale on the side and a squeeze of lemon.
+5. Refrigerate the second fillet for lunch.
+
+## Notes
+
+- Farro portion (¾ cup cooked) is a floor. Bump to a full cup on heavy training days.
+- One serving lands around 45–55 g protein plus fiber.

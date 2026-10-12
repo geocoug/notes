@@ -1,0 +1,31 @@
+---
+title: "Lemon-Dijon Honey Dill Sauce"
+description: "Quick whisked sauce of Dijon, honey, lemon, olive oil, and dill. Good on salmon, cod, or chicken."
+categories: ["Dip/Sauce", "Dressing"]
+date: 2026-10-11
+prep_time: "5 minutes"
+cook_time: ""
+total_time: "5 minutes"
+servings: ""
+source: ""
+image: ""
+---
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Ingredients
+
+- 1 tablespoon Dijon mustard
+- 1 tablespoon honey
+- 1½ tablespoons fresh lemon juice
+- 2 tablespoons olive oil
+- 1 teaspoon chopped fresh dill, or ½ teaspoon dried
+- 1 small clove garlic, grated or minced
+- Salt and black pepper, to taste
+
+## Instructions
+
+1. Whisk together Dijon, honey, lemon juice, olive oil, dill, and garlic until smooth.
+2. Season with salt and pepper to taste.

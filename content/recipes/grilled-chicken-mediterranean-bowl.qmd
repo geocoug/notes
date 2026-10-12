@@ -1,0 +1,39 @@
+---
+title: "Grilled Chicken Mediterranean Bowl"
+description: "Grilled oregano chicken over greens with chickpeas, cucumber, tomato, red onion, and feta."
+categories: [Dinner, Salad, Protein]
+date: 2026-10-11
+prep_time: "15 minutes"
+cook_time: "15 minutes"
+total_time: "30 minutes"
+servings: 1
+source: ""
+image: ""
+---
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Ingredients
+
+- 1 chicken breast or 2 thighs, 6–7 oz
+- ½ can chickpeas (about ¾ cup), drained and rinsed
+- ½ cucumber, chopped
+- 1 cup cherry tomatoes, halved
+- ¼ red onion, thinly sliced
+- 2 cups greens
+- Feta, a small crumble
+- 1 lemon
+- Olive oil, dried oregano, salt, and pepper
+
+## Instructions
+
+1. Season chicken with olive oil, salt, pepper, and oregano. Grill or pan-sear 5–6 minutes per side to 165°F. Rest, then slice.
+2. Chop the cucumber, halve the tomatoes, and thinly slice the onion.
+3. Build the bowl: bed of greens, chickpeas, chopped vegetables, sliced chicken.
+4. Finish with olive oil, a squeeze of lemon, feta, and a crack of pepper.
+
+## Notes
+
+- One serving lands around 45–55 g protein plus fiber.

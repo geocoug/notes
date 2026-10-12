@@ -1,0 +1,44 @@
+---
+title: "Shrimp Stir-Fry with Edamame and Brown Rice"
+description: "Quick shrimp and vegetable stir-fry with edamame, ginger, and soy over brown rice."
+categories: [Dinner, Protein]
+date: 2026-10-11
+prep_time: "15 minutes"
+cook_time: "15 minutes"
+total_time: "30 minutes"
+servings: 1
+source: ""
+image: ""
+---
+
+| Prep Time | Cook Time | Total Time | Servings |
+|-----------|-----------|------------|----------|
+| {{< meta prep_time >}} | {{< meta cook_time >}} | {{< meta total_time >}} | {{< meta servings >}} |
+
+## Ingredients
+
+- 8 oz shrimp, peeled and deveined
+- ¾ cup shelled edamame
+- ¼ cup dry brown rice (about ¾ cup cooked), or a precooked pouch
+- 1 bell pepper, sliced
+- 1 cup snap peas
+- 1 head bok choy, stems and leaves separated
+- 2 tablespoons low-sodium soy sauce
+- 1 tablespoon grated fresh ginger
+- 2 cloves garlic, minced
+- 1 teaspoon sesame oil
+- Neutral oil, for the pan
+
+## Instructions
+
+1. Cook the brown rice, or reheat a precooked pouch.
+2. Heat a wok or large pan over high heat with a splash of oil. Sear shrimp about 2 minutes per side, then remove.
+3. In the same pan, add bell pepper, snap peas, bok choy stems, and edamame. Stir-fry 4–5 minutes.
+4. Add garlic, ginger, bok choy leaves, soy sauce, and sesame oil. Return the shrimp and toss 1 minute.
+5. Serve over rice.
+
+## Notes
+
+- Total time assumes a precooked rice pouch. Dry brown rice adds about 45 minutes.
+- Rice portion (¾ cup cooked) is a floor. Bump to a full cup on heavy training days.
+- One serving lands around 45–55 g protein plus fiber.
